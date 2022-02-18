@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.saxophone = new System.Windows.Forms.PictureBox();
             this.trumpet = new System.Windows.Forms.PictureBox();
             this.flute = new System.Windows.Forms.PictureBox();
             this.trombone = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saxophone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trumpet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flute)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trombone)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox3
+            // saxophone
             // 
-            this.pictureBox3.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(417, 413);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.saxophone.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
+            this.saxophone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.saxophone.Location = new System.Drawing.Point(417, 413);
+            this.saxophone.Name = "saxophone";
+            this.saxophone.Size = new System.Drawing.Size(200, 200);
+            this.saxophone.TabIndex = 7;
+            this.saxophone.TabStop = false;
+            this.saxophone.Click += new System.EventHandler(this.saxophone_Click);
             // 
             // trumpet
             // 
@@ -99,13 +100,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 625);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.saxophone);
             this.Controls.Add(this.trumpet);
             this.Controls.Add(this.flute);
             this.Controls.Add(this.trombone);
             this.Name = "InstrumentForm";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saxophone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trumpet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trombone)).EndInit();
@@ -119,7 +120,7 @@
         private System.Windows.Forms.PictureBox trombone;
         private System.Windows.Forms.PictureBox flute;
         private System.Windows.Forms.PictureBox trumpet;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox saxophone;
         private System.Windows.Forms.Label label1;
     }
 }
