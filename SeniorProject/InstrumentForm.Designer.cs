@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.instrumentList = new System.Windows.Forms.ListBox();
+            this.advanceButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             // 
             this.instrumentPicture.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
             this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.instrumentPicture.Location = new System.Drawing.Point(430, 343);
+            this.instrumentPicture.Location = new System.Drawing.Point(426, 295);
             this.instrumentPicture.Name = "instrumentPicture";
             this.instrumentPicture.Size = new System.Drawing.Size(213, 170);
             this.instrumentPicture.TabIndex = 9;
@@ -57,11 +58,21 @@
             // instrumentList
             // 
             this.instrumentList.FormattingEnabled = true;
-            this.instrumentList.Location = new System.Drawing.Point(464, 120);
+            this.instrumentList.Location = new System.Drawing.Point(464, 82);
             this.instrumentList.Name = "instrumentList";
             this.instrumentList.Size = new System.Drawing.Size(143, 186);
             this.instrumentList.TabIndex = 10;
-            this.instrumentList.SelectedIndexChanged += instrumentList_SelectedIndexChanged;
+            this.instrumentList.SelectedIndexChanged += new System.EventHandler(this.instrumentList_SelectedIndexChanged);
+            // 
+            // advanceButton
+            // 
+            this.advanceButton.Location = new System.Drawing.Point(479, 504);
+            this.advanceButton.Name = "advanceButton";
+            this.advanceButton.Size = new System.Drawing.Size(109, 52);
+            this.advanceButton.TabIndex = 11;
+            this.advanceButton.Text = "GO!";
+            this.advanceButton.UseVisualStyleBackColor = true;
+            this.advanceButton.Click += new System.EventHandler(this.advanceButton_Click);
             // 
             // InstrumentForm
             // 
@@ -69,6 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.advanceButton);
             this.Controls.Add(this.instrumentList);
             this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.label1);
@@ -90,6 +102,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox instrumentPicture;
         private System.Windows.Forms.ListBox instrumentList;
+        private System.Windows.Forms.Button advanceButton;
     }
 }
 

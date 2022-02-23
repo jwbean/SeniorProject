@@ -63,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConcertCircleOfFifths.resx">
+      <DependentUpon>ConcertCircleOfFifths.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstrumentForm.resx">
       <DependentUpon>InstrumentForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -48,5 +48,16 @@ namespace SeniorProject
                     break;
             }
         }
+
+        private void advanceButton_Click(object sender, EventArgs e)
+        {
+            if (instrumentList.SelectedItem.ToString() == "Flute")
+            {
+                this.Hide();
+                ConcertCircleOfFifths scales = new ConcertCircleOfFifths();
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+        }
     }
 }
