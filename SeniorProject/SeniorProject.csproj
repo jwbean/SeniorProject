@@ -49,6 +49,12 @@
     <Compile Include="Class1.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ConcertCircleOfFifths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConcertCircleOfFifths.Designer.cs">
+      <DependentUpon>ConcertCircleOfFifths.cs</DependentUpon>
+    </Compile>
     <Compile Include="InstrumentForm.cs">
       <SubType>Form</SubType>
     </Compile>

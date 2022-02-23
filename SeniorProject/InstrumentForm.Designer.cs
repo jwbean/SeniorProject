@@ -28,60 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.saxophone = new System.Windows.Forms.PictureBox();
-            this.trumpet = new System.Windows.Forms.PictureBox();
-            this.flute = new System.Windows.Forms.PictureBox();
-            this.trombone = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.saxophone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trumpet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flute)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trombone)).BeginInit();
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
+            this.instrumentList = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // saxophone
-            // 
-            this.saxophone.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
-            this.saxophone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.saxophone.Location = new System.Drawing.Point(417, 413);
-            this.saxophone.Name = "saxophone";
-            this.saxophone.Size = new System.Drawing.Size(200, 200);
-            this.saxophone.TabIndex = 7;
-            this.saxophone.TabStop = false;
-            this.saxophone.Click += new System.EventHandler(this.saxophone_Click);
-            // 
-            // trumpet
-            // 
-            this.trumpet.BackgroundImage = global::SeniorProject.Properties.Resources.AdjustedTrumpet;
-            this.trumpet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.trumpet.Location = new System.Drawing.Point(635, 233);
-            this.trumpet.Name = "trumpet";
-            this.trumpet.Size = new System.Drawing.Size(200, 200);
-            this.trumpet.TabIndex = 6;
-            this.trumpet.TabStop = false;
-            this.trumpet.Click += new System.EventHandler(this.trumpet_Click);
-            // 
-            // flute
-            // 
-            this.flute.BackgroundImage = global::SeniorProject.Properties.Resources.AdjustedFlute;
-            this.flute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flute.Location = new System.Drawing.Point(200, 233);
-            this.flute.Name = "flute";
-            this.flute.Size = new System.Drawing.Size(200, 200);
-            this.flute.TabIndex = 5;
-            this.flute.TabStop = false;
-            this.flute.Click += new System.EventHandler(this.flute_Click);
-            // 
-            // trombone
-            // 
-            this.trombone.BackgroundImage = global::SeniorProject.Properties.Resources.AdjustedTrombone;
-            this.trombone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.trombone.Location = new System.Drawing.Point(417, 56);
-            this.trombone.Name = "trombone";
-            this.trombone.Size = new System.Drawing.Size(200, 200);
-            this.trombone.TabIndex = 4;
-            this.trombone.TabStop = false;
-            this.trombone.Click += new System.EventHandler(this.trombone_Click);
             // 
             // label1
             // 
@@ -93,35 +44,52 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Select Your Instrument:";
             // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(430, 343);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(213, 170);
+            this.instrumentPicture.TabIndex = 9;
+            this.instrumentPicture.TabStop = false;
+            // 
+            // instrumentList
+            // 
+            this.instrumentList.FormattingEnabled = true;
+            this.instrumentList.Location = new System.Drawing.Point(464, 120);
+            this.instrumentList.Name = "instrumentList";
+            this.instrumentList.Size = new System.Drawing.Size(143, 186);
+            this.instrumentList.TabIndex = 10;
+            this.instrumentList.SelectedIndexChanged += instrumentList_SelectedIndexChanged;
+            // 
             // InstrumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.instrumentList);
+            this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.saxophone);
-            this.Controls.Add(this.trumpet);
-            this.Controls.Add(this.flute);
-            this.Controls.Add(this.trombone);
             this.Name = "InstrumentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Instrument";
-            ((System.ComponentModel.ISupportInitialize)(this.saxophone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trumpet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flute)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trombone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        #endregion
+        private void InstrumentList_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
 
-        private System.Windows.Forms.PictureBox trombone;
-        private System.Windows.Forms.PictureBox flute;
-        private System.Windows.Forms.PictureBox trumpet;
-        private System.Windows.Forms.PictureBox saxophone;
+        #endregion
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox instrumentPicture;
+        private System.Windows.Forms.ListBox instrumentList;
     }
 }
 

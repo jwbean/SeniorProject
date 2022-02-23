@@ -16,38 +16,37 @@ namespace SeniorProject
         public InstrumentForm()
         {
             InitializeComponent();
+            instrumentList.Items.Add("Alto Sax");
+            instrumentList.Items.Add("Bassoon");
+            instrumentList.Items.Add("Clarinet");
+            instrumentList.Items.Add("Flute");
+            instrumentList.Items.Add("French Horn");
+            instrumentList.Items.Add("Oboe");
+            instrumentList.Items.Add("Tenor Sax");
+            instrumentList.Items.Add("Trombone");
+            instrumentList.Items.Add("Trumpet");
+            instrumentList.Items.Add("Tuba");
         }
 
-        private void trombone_Click(object sender, EventArgs e)
+        private void instrumentList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*TODO:
-             * add sound to signify a click
-             * close out of this form and go to corresponding scale screen
-             */
-        }
-
-        private void flute_Click(object sender, EventArgs e)
-        {
-            /*TODO:
-             * add sound to signify a click
-             * close out of this form and go to corresponding scale screen
-             */
-        }
-
-        private void trumpet_Click(object sender, EventArgs e)
-        {
-            /*TODO:
-             * add sound to signify a click
-             * close out of this form and go to corresponding scale screen
-             */
-        }
-
-        private void saxophone_Click(object sender, EventArgs e)
-        {
-            /*TODO:
-             * add sound to signify a click
-             * close out of this form and go to corresponding scale screen
-             */
+            switch (instrumentList.SelectedItem.ToString())
+            {
+                case "Alto Sax":
+                    instrumentPicture.BackgroundImage = Properties.Resources.AltoSax;
+                    break;
+                case "Flute":
+                    instrumentPicture.BackgroundImage = Properties.Resources.AdjustedFlute;
+                    break;
+                case "Trombone":
+                    instrumentPicture.BackgroundImage = Properties.Resources.AdjustedTrombone;
+                    break;
+                case "Trumpet":
+                    instrumentPicture.BackgroundImage = Properties.Resources.AdjustedTrumpet;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
