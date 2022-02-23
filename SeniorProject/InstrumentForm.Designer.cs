@@ -105,7 +105,7 @@
             this.Controls.Add(this.flute);
             this.Controls.Add(this.trombone);
             this.Name = "InstrumentForm";
-            this.Text = "Form1";
+            this.Text = "Select Instrument";
             ((System.ComponentModel.ISupportInitialize)(this.saxophone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trumpet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flute)).EndInit();
