@@ -35,6 +35,12 @@ namespace SeniorProject
                 case "Alto Sax":
                     instrumentPicture.BackgroundImage = Properties.Resources.AltoSax;
                     break;
+                case "Bassoon":
+                    instrumentPicture.BackgroundImage = Properties.Resources.Bassoon;
+                    break;
+                case "Clarinet":
+                    instrumentPicture.BackgroundImage = Properties.Resources.Clarinet;
+                    break;
                 case "Flute":
                     instrumentPicture.BackgroundImage = Properties.Resources.AdjustedFlute;
                     break;
