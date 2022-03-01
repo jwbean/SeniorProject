@@ -63,36 +63,6 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AdjustedFlute {
-            get {
-                object obj = ResourceManager.GetObject("AdjustedFlute", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap AdjustedTrombone {
-            get {
-                object obj = ResourceManager.GetObject("AdjustedTrombone", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap AdjustedTrumpet {
-            get {
-                object obj = ResourceManager.GetObject("AdjustedTrumpet", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap AltoSax {
             get {
                 object obj = ResourceManager.GetObject("AltoSax", resourceCulture);
@@ -133,9 +103,9 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TromboneBiggerCanvas {
+        internal static System.Drawing.Bitmap FrenchHorn {
             get {
-                object obj = ResourceManager.GetObject("TromboneBiggerCanvas", resourceCulture);
+                object obj = ResourceManager.GetObject("FrenchHorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +113,49 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TromboneCircle {
+        internal static System.Drawing.Bitmap Oboe {
             get {
-                object obj = ResourceManager.GetObject("TromboneCircle", resourceCulture);
+                object obj = ResourceManager.GetObject("Oboe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TenorSax {
+            get {
+                object obj = ResourceManager.GetObject("TenorSax", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trombone {
+            get {
+                object obj = ResourceManager.GetObject("Trombone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trumpet {
+            get {
+                object obj = ResourceManager.GetObject("Trumpet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tuba {
+            get {
+                object obj = ResourceManager.GetObject("Tuba", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -93,28 +93,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AdjustedTrombone.png" />
+    <None Include="Resources\FrenchHorn.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TromboneCircle.png" />
+    <None Include="Resources\Oboe.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TromboneBiggerCanvas.png" />
+    <None Include="Resources\TenorSax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tuba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bassoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trombone.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Flute.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AdjustedFlute.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AdjustedTrumpet.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\AltoSax.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bassoon.png" />
+    <None Include="Resources\Trumpet.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Clarinet.png" />

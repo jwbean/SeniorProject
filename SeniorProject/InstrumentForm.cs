@@ -26,6 +26,7 @@ namespace SeniorProject
             instrumentList.Items.Add("Trombone");
             instrumentList.Items.Add("Trumpet");
             instrumentList.Items.Add("Tuba");
+            instrumentList.SelectedIndex = 0;
         }
 
         private void instrumentList_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,14 +42,26 @@ namespace SeniorProject
                 case "Clarinet":
                     instrumentPicture.BackgroundImage = Properties.Resources.Clarinet;
                     break;
+                case "French Horn":
+                    instrumentPicture.BackgroundImage = Properties.Resources.FrenchHorn;
+                    break;
                 case "Flute":
-                    instrumentPicture.BackgroundImage = Properties.Resources.AdjustedFlute;
+                    instrumentPicture.BackgroundImage = Properties.Resources.Flute;
+                    break;
+                case "Oboe":
+                    instrumentPicture.BackgroundImage = Properties.Resources.Oboe;
+                    break;
+                case "Tenor Sax":
+                    instrumentPicture.BackgroundImage = Properties.Resources.TenorSax;
                     break;
                 case "Trombone":
-                    instrumentPicture.BackgroundImage = Properties.Resources.AdjustedTrombone;
+                    instrumentPicture.BackgroundImage = Properties.Resources.Trombone;
                     break;
                 case "Trumpet":
-                    instrumentPicture.BackgroundImage = Properties.Resources.AdjustedTrumpet;
+                    instrumentPicture.BackgroundImage = Properties.Resources.Trumpet;
+                    break;
+                case "Tuba":
+                    instrumentPicture.BackgroundImage = Properties.Resources.Tuba;
                     break;
                 default:
                     break;
