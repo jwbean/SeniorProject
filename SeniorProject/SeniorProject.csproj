@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BFlatCircleOfFifths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFlatCircleOfFifths.Designer.cs">
+      <DependentUpon>BFlatCircleOfFifths.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -54,6 +60,18 @@
     </Compile>
     <Compile Include="ConcertCircleOfFifths.Designer.cs">
       <DependentUpon>ConcertCircleOfFifths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFlatCircleOfFifths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFlatCircleOfFifths.Designer.cs">
+      <DependentUpon>EFlatCircleOfFifths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCircleOfFifths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCircleOfFifths.Designer.cs">
+      <DependentUpon>FCircleOfFifths.cs</DependentUpon>
     </Compile>
     <Compile Include="InstrumentForm.cs">
       <SubType>Form</SubType>
@@ -71,18 +89,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -121,6 +139,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Clarinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteGSharp5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteG5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteFSharp5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteF5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteE5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteDSharp5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteD5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteCSharp5.wav" />
+    <None Include="Resources\InstrumentWavFiles\FluteB5.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteASharp4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteA4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteB4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteCSharp4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteC4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteC5.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteDSharp4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteD4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteE4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteFSharp4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteF4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteGSharp4.wav" />
+    <Content Include="Resources\InstrumentWavFiles\FluteG4.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -130,6 +130,78 @@
   <data name="Flute" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FluteA4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutea4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteA5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteA5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteASharp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\fluteasharp4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteASharp5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteASharp5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteB4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\fluteb4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteB5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutec4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteC5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutec5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteCSharp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutecsharp4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteCSharp5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteCSharp5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteD4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\fluted4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteD5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteDSharp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutedsharp4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteDSharp5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteDSharp5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteE4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutee4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteE5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteE5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteF4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutef4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteF5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteF5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteFSharp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutefsharp4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteFSharp5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteFSharp5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteG4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\fluteg4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteG5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteG5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteGSharp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\instrumentwavfiles\flutegsharp4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FluteGSharp5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstrumentWavFiles\FluteGSharp5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="FrenchHorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FrenchHorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

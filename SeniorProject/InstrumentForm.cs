@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeniorProject.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,10 +71,36 @@ namespace SeniorProject
 
         private void advanceButton_Click(object sender, EventArgs e)
         {
-            if (instrumentList.SelectedItem.ToString() == "Flute")
+            //research the possibility of having one form and adjusting the scale within it based on passed parameter
+            this.Hide();
+            string instr = instrumentList.SelectedItem.ToString();
+            if (instr == "Flute" || instr == "Oboe")
             {
-                this.Hide();
-                ConcertCircleOfFifths scales = new ConcertCircleOfFifths();
+                ConcertCircleOfFifths scales = new ConcertCircleOfFifths(); //make treble clef version and bass for others
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+            else if (instr == "Bassoon" || instr == "Trombone" || instr == "Tuba")
+            {
+                ConcertCircleOfFifths scales = new ConcertCircleOfFifths(); //might even need to make own for tuba
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+            else if (instr == "Alto Sax")
+            {
+                EFlatCircleOfFifths scales = new EFlatCircleOfFifths();
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+            else if (instr == "Clarinet" || instr == "Trumpet" || instr == "Tenor Sax")
+            {
+                BFlatCircleOfFifths scales = new BFlatCircleOfFifths();
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+            else if (instr == "French Horn")
+            {
+                FCircleOfFifths scales = new FCircleOfFifths();
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
