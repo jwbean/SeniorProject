@@ -81,6 +81,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScaleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScaleScreen.Designer.cs">
+      <DependentUpon>ScaleScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ConcertCircleOfFifths.resx">
       <DependentUpon>ConcertCircleOfFifths.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +97,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScaleScreen.resx">
+      <DependentUpon>ScaleScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
