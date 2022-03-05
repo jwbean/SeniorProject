@@ -1,0 +1,13 @@
+Use MusicBook;
+DROP TABLE IF EXISTS dbo.Excerpt
+
+CREATE TABLE dbo.Excerpt(
+ExcerptId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+ExcerptTitle NVARCHAR(128) NOT NULL,
+Composer NVARCHAR(50) NOT NULL,
+Instrument NVARCHAR(25) NOT NULL,
+YearPublished SMALLINT NOT NULL,
+Difficulty TINYINT NOT NULL,
+StoreLink NVARCHAR(500) NOT NULL,
+UNIQUE(StoreLink)
+)
