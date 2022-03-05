@@ -12,14 +12,25 @@ namespace SeniorProject
 {
     public partial class SoloExcerpts : Form
     {
-        public SoloExcerpts()
+        private int instrumentIndex;
+        
+        public SoloExcerpts(int instrumentIndex)
         {
             InitializeComponent();
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Connection.CnnVal("Database")))
+            this.instrumentIndex = instrumentIndex;
+            /*using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Connection.CnnVal("Database")))
             {
                 var output = connection.Query<Models.Excerpt>("dbo.RetrieveUsers").ToList();
                 return output;
-            }
+            }*/
+        }
+
+        private void changeInstrumentButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            instruments.Closed += (s, args) => this.Close();
+            instruments.Show();
         }
     }
 }

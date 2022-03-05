@@ -13,9 +13,12 @@ namespace SeniorProject
 {
     public partial class ScaleScreen : Form
     {
-        public ScaleScreen()
+        private int instrumentIndex;
+        
+        public ScaleScreen(int instrumentIndex)
         {
             InitializeComponent();
+            this.instrumentIndex = instrumentIndex;
         }
 
         //https://stackoverflow.com/questions/4052598/draw-a-music-staff-in-c-sharp
@@ -42,6 +45,14 @@ namespace SeniorProject
 
             g.FillEllipse(_noteBrush, 100, 2 * _staffHght, _noteWdth, _noteHght);
             g.FillEllipse(_noteBrush, 150, 4 * _staffHght, _noteWdth, _noteHght);
+        }
+
+        private void changeInstrumentButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            instruments.Closed += (s, args) => this.Close();
+            instruments.Show();
         }
     }
 }

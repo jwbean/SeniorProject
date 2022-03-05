@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.changeInstrumentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // changeInstrumentButton
+            // 
+            this.changeInstrumentButton.Location = new System.Drawing.Point(950, 13);
+            this.changeInstrumentButton.Name = "changeInstrumentButton";
+            this.changeInstrumentButton.Size = new System.Drawing.Size(140, 34);
+            this.changeInstrumentButton.TabIndex = 0;
+            this.changeInstrumentButton.Text = "Change Instruments";
+            this.changeInstrumentButton.UseVisualStyleBackColor = true;
+            this.changeInstrumentButton.Click += new System.EventHandler(this.changeInstrumentButton_Click);
             // 
             // ConcertCircleOfFifths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.changeInstrumentButton);
             this.Name = "ConcertCircleOfFifths";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConcertCircleOfFifths";
@@ -43,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button changeInstrumentButton;
     }
 }

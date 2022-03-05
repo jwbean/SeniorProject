@@ -12,9 +12,20 @@ namespace SeniorProject
 {
     public partial class EFlatCircleOfFifths : Form
     {
-        public EFlatCircleOfFifths()
+        private int instrumentIndex;
+        
+        public EFlatCircleOfFifths(int instrumentIndex)
         {
             InitializeComponent();
+            this.instrumentIndex = instrumentIndex;
+        }
+
+        private void changeInstrumentButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            instruments.Closed += (s, args) => this.Close();
+            instruments.Show();
         }
     }
 }
