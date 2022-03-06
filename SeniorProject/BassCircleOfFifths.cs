@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace SeniorProject
 {
-    public partial class EFlatCircleOfFifths : Form
+    public partial class BassCircleOfFifths : Form
     {
         private int instrumentIndex;
-        
-        public EFlatCircleOfFifths(int instrumentIndex)
+
+        public BassCircleOfFifths(int instrumentIndex)
         {
             InitializeComponent();
             this.instrumentIndex = instrumentIndex;

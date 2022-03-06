@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace SeniorProject
 {
-    public partial class FCircleOfFifths : Form
+    public partial class TrebleCircleOfFifths : Form
     {
         private int instrumentIndex;
-        
-        public FCircleOfFifths(int instrumentIndex)
+
+        public TrebleCircleOfFifths(int instrumentIndex)
         {
             InitializeComponent();
             this.instrumentIndex = instrumentIndex;
@@ -26,6 +26,14 @@ namespace SeniorProject
             InstrumentForm instruments = new InstrumentForm(instrumentIndex);
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
+        }
+
+        private void CMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.CMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
         }
     }
 }

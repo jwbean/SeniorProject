@@ -77,33 +77,15 @@ namespace SeniorProject
             //research the possibility of having one form and adjusting the scale within it based on passed parameter
             this.Hide();
             string instr = instrumentList.SelectedItem.ToString();
-            if (instr == "Flute" || instr == "Oboe")
+            if (instr == "Bassoon" || instr == "Trombone" || instr == "Tuba")
             {
-                ConcertCircleOfFifths scales = new ConcertCircleOfFifths(instrumentList.SelectedIndex); //make treble clef version and bass for others
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrumentList.SelectedIndex);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
-            else if (instr == "Bassoon" || instr == "Trombone" || instr == "Tuba")
+            else
             {
-                ConcertCircleOfFifths scales = new ConcertCircleOfFifths(instrumentList.SelectedIndex); //might even need to make own for tuba
-                scales.Closed += (s, args) => this.Close();
-                scales.Show();
-            }
-            else if (instr == "Alto Sax")
-            {
-                EFlatCircleOfFifths scales = new EFlatCircleOfFifths(instrumentList.SelectedIndex);
-                scales.Closed += (s, args) => this.Close();
-                scales.Show();
-            }
-            else if (instr == "Clarinet" || instr == "Trumpet" || instr == "Tenor Sax")
-            {
-                BFlatCircleOfFifths scales = new BFlatCircleOfFifths(instrumentList.SelectedIndex);
-                scales.Closed += (s, args) => this.Close();
-                scales.Show();
-            }
-            else if (instr == "French Horn")
-            {
-                FCircleOfFifths scales = new FCircleOfFifths(instrumentList.SelectedIndex);
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrumentList.SelectedIndex);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }

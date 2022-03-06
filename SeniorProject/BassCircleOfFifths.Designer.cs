@@ -1,6 +1,6 @@
 ﻿namespace SeniorProject
 {
-    partial class FCircleOfFifths
+    partial class BassCircleOfFifths
     {
         /// <summary>
         /// Required designer variable.
@@ -41,15 +41,15 @@
             this.changeInstrumentButton.UseVisualStyleBackColor = true;
             this.changeInstrumentButton.Click += new System.EventHandler(this.changeInstrumentButton_Click);
             // 
-            // FCircleOfFifths
+            // BassCircleOfFifths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 625);
             this.Controls.Add(this.changeInstrumentButton);
-            this.Name = "FCircleOfFifths";
+            this.Name = "BassCircleOfFifths";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FCircleOfFifths";
+            this.Text = "BassCircleOfFifths";
             this.ResumeLayout(false);
 
         }

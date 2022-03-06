@@ -48,7 +48,7 @@ namespace SeniorProject
             switch (scale)
             {
                 case SeniorProject.Scale.CMajor:
-                    noteHeight[0] = 5.6f * _staffHght;
+                    noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
                     noteHeight[1] = 5 * _staffHght;
                     noteHeight[2] = 4.6f * _staffHght;
                     noteHeight[3] = 4 * _staffHght;
@@ -81,33 +81,15 @@ namespace SeniorProject
         private void circleOfFifthsButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            if (instrumentIndex == (int)Instrument.Flute || instrumentIndex == (int)Instrument.Oboe)
+            if (instrumentIndex == (int)Instrument.Bassoon || instrumentIndex == (int)Instrument.Trombone || instrumentIndex == (int)Instrument.Tuba)
             {
-                ConcertCircleOfFifths scales = new ConcertCircleOfFifths(instrumentIndex); //make treble clef version and bass for others
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrumentIndex); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
-            else if (instrumentIndex == (int)Instrument.Bassoon || instrumentIndex == (int)Instrument.Trombone || instrumentIndex == (int)Instrument.Tuba)
+            else
             {
-                ConcertCircleOfFifths scales = new ConcertCircleOfFifths(instrumentIndex); //might even need to make own for tuba
-                scales.Closed += (s, args) => this.Close();
-                scales.Show();
-            }
-            else if (instrumentIndex == (int)Instrument.AltoSax)
-            {
-                EFlatCircleOfFifths scales = new EFlatCircleOfFifths(instrumentIndex);
-                scales.Closed += (s, args) => this.Close();
-                scales.Show();
-            }
-            else if (instrumentIndex == (int)Instrument.Clarinet || instrumentIndex == (int)Instrument.Trumpet || instrumentIndex == (int)Instrument.TenorSax)
-            {
-                BFlatCircleOfFifths scales = new BFlatCircleOfFifths(instrumentIndex);
-                scales.Closed += (s, args) => this.Close();
-                scales.Show();
-            }
-            else if (instrumentIndex == (int)Instrument.FrenchHorn)
-            {
-                FCircleOfFifths scales = new FCircleOfFifths(instrumentIndex);
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrumentIndex); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }

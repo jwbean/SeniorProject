@@ -62,34 +62,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BFlatCircleOfFifths.cs">
+    <Compile Include="BassCircleOfFifths.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BFlatCircleOfFifths.Designer.cs">
-      <DependentUpon>BFlatCircleOfFifths.cs</DependentUpon>
+    <Compile Include="BassCircleOfFifths.Designer.cs">
+      <DependentUpon>BassCircleOfFifths.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ConcertCircleOfFifths.cs">
+    <Compile Include="TrebleCircleOfFifths.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConcertCircleOfFifths.Designer.cs">
-      <DependentUpon>ConcertCircleOfFifths.cs</DependentUpon>
+    <Compile Include="TrebleCircleOfFifths.Designer.cs">
+      <DependentUpon>TrebleCircleOfFifths.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
-    <Compile Include="EFlatCircleOfFifths.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EFlatCircleOfFifths.Designer.cs">
-      <DependentUpon>EFlatCircleOfFifths.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FCircleOfFifths.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FCircleOfFifths.Designer.cs">
-      <DependentUpon>FCircleOfFifths.cs</DependentUpon>
-    </Compile>
     <Compile Include="Instrument.cs" />
     <Compile Include="InstrumentForm.cs">
       <SubType>Form</SubType>
@@ -113,17 +101,11 @@
     <Compile Include="SoloExcerpts.Designer.cs">
       <DependentUpon>SoloExcerpts.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BFlatCircleOfFifths.resx">
-      <DependentUpon>BFlatCircleOfFifths.cs</DependentUpon>
+    <EmbeddedResource Include="BassCircleOfFifths.resx">
+      <DependentUpon>BassCircleOfFifths.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConcertCircleOfFifths.resx">
-      <DependentUpon>ConcertCircleOfFifths.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EFlatCircleOfFifths.resx">
-      <DependentUpon>EFlatCircleOfFifths.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FCircleOfFifths.resx">
-      <DependentUpon>FCircleOfFifths.cs</DependentUpon>
+    <EmbeddedResource Include="TrebleCircleOfFifths.resx">
+      <DependentUpon>TrebleCircleOfFifths.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InstrumentForm.resx">
       <DependentUpon>InstrumentForm.cs</DependentUpon>
