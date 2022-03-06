@@ -27,5 +27,13 @@ namespace SeniorProject
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
         }
+
+        private void CMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.CMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
     }
 }

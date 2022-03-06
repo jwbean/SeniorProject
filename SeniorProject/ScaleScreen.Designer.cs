@@ -30,7 +30,10 @@
         {
             this.musicPanel = new System.Windows.Forms.PictureBox();
             this.changeInstrumentButton = new System.Windows.Forms.Button();
+            this.circleOfFifthsButton = new System.Windows.Forms.Button();
+            this.keySignature = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.keySignature)).BeginInit();
             this.SuspendLayout();
             // 
             // musicPanel
@@ -52,17 +55,39 @@
             this.changeInstrumentButton.UseVisualStyleBackColor = true;
             this.changeInstrumentButton.Click += new System.EventHandler(this.changeInstrumentButton_Click);
             // 
+            // circleOfFifthsButton
+            // 
+            this.circleOfFifthsButton.Location = new System.Drawing.Point(13, 13);
+            this.circleOfFifthsButton.Name = "circleOfFifthsButton";
+            this.circleOfFifthsButton.Size = new System.Drawing.Size(140, 34);
+            this.circleOfFifthsButton.TabIndex = 2;
+            this.circleOfFifthsButton.Text = "Back to Circle of Fifths";
+            this.circleOfFifthsButton.UseVisualStyleBackColor = true;
+            this.circleOfFifthsButton.Click += new System.EventHandler(this.circleOfFifthsButton_Click);
+            // 
+            // keySignature
+            // 
+            this.keySignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.keySignature.Location = new System.Drawing.Point(141, 166);
+            this.keySignature.Name = "keySignature";
+            this.keySignature.Size = new System.Drawing.Size(178, 166);
+            this.keySignature.TabIndex = 3;
+            this.keySignature.TabStop = false;
+            // 
             // ScaleScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.keySignature);
+            this.Controls.Add(this.circleOfFifthsButton);
             this.Controls.Add(this.changeInstrumentButton);
             this.Controls.Add(this.musicPanel);
             this.Name = "ScaleScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScaleScreen";
             ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.keySignature)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,5 +96,7 @@
 
         private System.Windows.Forms.PictureBox musicPanel;
         private System.Windows.Forms.Button changeInstrumentButton;
+        private System.Windows.Forms.Button circleOfFifthsButton;
+        private System.Windows.Forms.PictureBox keySignature;
     }
 }
