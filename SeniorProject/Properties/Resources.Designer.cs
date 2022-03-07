@@ -63,6 +63,16 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AFlatMajor {
+            get {
+                object obj = ResourceManager.GetObject("AFlatMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AltoSax {
             get {
                 object obj = ResourceManager.GetObject("AltoSax", resourceCulture);
@@ -73,9 +83,39 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AMajor {
+            get {
+                object obj = ResourceManager.GetObject("AMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bassoon {
             get {
                 object obj = ResourceManager.GetObject("Bassoon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BFlatMajor {
+            get {
+                object obj = ResourceManager.GetObject("BFlatMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BMajor {
+            get {
+                object obj = ResourceManager.GetObject("BMajor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +136,46 @@ namespace SeniorProject.Properties {
         internal static System.Drawing.Bitmap CMajor {
             get {
                 object obj = ResourceManager.GetObject("CMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DFlatMajor {
+            get {
+                object obj = ResourceManager.GetObject("DFlatMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DMajor {
+            get {
+                object obj = ResourceManager.GetObject("DMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EFlatMajor {
+            get {
+                object obj = ResourceManager.GetObject("EFlatMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMajor {
+            get {
+                object obj = ResourceManager.GetObject("EMajor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -329,9 +409,39 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FMajor {
+            get {
+                object obj = ResourceManager.GetObject("FMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FrenchHorn {
             get {
                 object obj = ResourceManager.GetObject("FrenchHorn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GFlatMajor {
+            get {
+                object obj = ResourceManager.GetObject("GFlatMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GMajor {
+            get {
+                object obj = ResourceManager.GetObject("GMajor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -24,7 +24,6 @@ namespace SeniorProject
             InitializeComponent();
             this.instrumentIndex = instrumentIndex;
             this.scale = scale;
-            keySignature.BackgroundImage = Resources.CMajor; //change to be relevant to scale
             //populate the noteArray with sound file names, preferably in a smart way using instrument name and scale
         }
 
@@ -48,6 +47,7 @@ namespace SeniorProject
             switch (scale)
             {
                 case SeniorProject.Scale.CMajor:
+                    keySignature.BackgroundImage = Resources.CMajor;
                     noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
                     noteHeight[1] = 5 * _staffHght;
                     noteHeight[2] = 4.6f * _staffHght;
@@ -56,6 +56,49 @@ namespace SeniorProject
                     noteHeight[5] = 3 * _staffHght;
                     noteHeight[6] = 2.6f * _staffHght;
                     noteHeight[7] = 2 * _staffHght;
+                    break;
+                case SeniorProject.Scale.FMajor:
+                    keySignature.BackgroundImage = Resources.FMajor;
+                    noteHeight[0] = 4 * _staffHght;
+                    noteHeight[1] = 3.6f * _staffHght;
+                    noteHeight[2] = 3 * _staffHght;
+                    noteHeight[3] = 2.6f * _staffHght;
+                    noteHeight[4] = 2 * _staffHght;
+                    noteHeight[5] = 1.6f * _staffHght;
+                    noteHeight[6] = _staffHght;
+                    noteHeight[7] = 0.6f * _staffHght;
+                    break;
+                case SeniorProject.Scale.BFlatMajor:
+                    keySignature.BackgroundImage = Resources.BFlatMajor;
+                    noteHeight[0] = 2.6f * _staffHght;
+                    noteHeight[1] = 2 * _staffHght;
+                    noteHeight[2] = 1.6f * _staffHght;
+                    noteHeight[3] = _staffHght;
+                    noteHeight[4] = 0.6f * _staffHght;
+                    noteHeight[5] = 0.01f * _staffHght;
+                    noteHeight[6] = _staffHght - 20; //not only ledger lines needed, but need to adjust to work with music panel
+                    noteHeight[7] = _staffHght - 30; // check this value
+                    break;
+                case SeniorProject.Scale.EFlatMajor:
+                    keySignature.BackgroundImage = Resources.EFlatMajor;
+                    break;
+                case SeniorProject.Scale.AFlatMajor:
+                    break;
+                case SeniorProject.Scale.DFlatMajor:
+                    break;
+                case SeniorProject.Scale.GFlatMajor:
+                    break;
+                case SeniorProject.Scale.BMajor:
+                    break;
+                case SeniorProject.Scale.EMajor:
+                    break;
+                case SeniorProject.Scale.AMajor:
+                    break;
+                case SeniorProject.Scale.DMajor:
+                    keySignature.BackgroundImage = Resources.DMajor;
+                    break;
+                case SeniorProject.Scale.GMajor:
+                    keySignature.BackgroundImage = Resources.GMajor;
                     break;
             }
 

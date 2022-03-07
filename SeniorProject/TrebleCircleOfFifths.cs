@@ -35,5 +35,45 @@ namespace SeniorProject
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
+
+        private void FMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.FMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void BFlatMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.BFlatMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void EFlatMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.EFlatMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void GMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.GMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void DMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.DMajor);
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
     }
 }

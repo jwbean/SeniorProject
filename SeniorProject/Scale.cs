@@ -11,6 +11,14 @@ namespace SeniorProject
         AMajor,
         BFlatMajor,
         BMajor,
-        CMajor
+        CMajor,
+        DFlatMajor,
+        DMajor,
+        EFlatMajor,
+        EMajor,
+        FMajor,
+        GFlatMajor,
+        GMajor,
+        AFlatMajor,
     }
 }

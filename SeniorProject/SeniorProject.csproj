@@ -170,6 +170,10 @@
     <None Include="Resources\Clarinet.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\BFlatMajor.png" />
+    <None Include="Resources\AFlatMajor.png" />
+    <None Include="Resources\AMajor.png" />
+    <None Include="Resources\BMajor.png" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -182,6 +186,13 @@
     <None Include="Resources\InstrumentWavFiles\FluteD5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteCSharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteB5.wav" />
+    <None Include="Resources\FMajor.png" />
+    <None Include="Resources\EFlatMajor.png" />
+    <None Include="Resources\GMajor.png" />
+    <None Include="Resources\DMajor.png" />
+    <None Include="Resources\EMajor.png" />
+    <None Include="Resources\DFlatMajor.png" />
+    <None Include="Resources\GFlatMajor.png" />
     <Content Include="Resources\InstrumentWavFiles\FluteASharp4.wav" />
     <Content Include="Resources\InstrumentWavFiles\FluteA4.wav" />
     <Content Include="Resources\InstrumentWavFiles\FluteB4.wav" />
