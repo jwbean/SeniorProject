@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScaleScreen));
             this.musicPanel = new System.Windows.Forms.PictureBox();
             this.changeInstrumentButton = new System.Windows.Forms.Button();
             this.circleOfFifthsButton = new System.Windows.Forms.Button();
             this.keySignature = new System.Windows.Forms.PictureBox();
+            this.playButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.keySignature)).BeginInit();
             this.SuspendLayout();
@@ -74,11 +76,23 @@
             this.keySignature.TabIndex = 3;
             this.keySignature.TabStop = false;
             // 
+            // playButton
+            // 
+            this.playButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("playButton.BackgroundImage")));
+            this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.playButton.Location = new System.Drawing.Point(335, 328);
+            this.playButton.Name = "playButton";
+            this.playButton.Size = new System.Drawing.Size(45, 41);
+            this.playButton.TabIndex = 4;
+            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            // 
             // ScaleScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.playButton);
             this.Controls.Add(this.keySignature);
             this.Controls.Add(this.circleOfFifthsButton);
             this.Controls.Add(this.changeInstrumentButton);
@@ -98,5 +112,6 @@
         private System.Windows.Forms.Button changeInstrumentButton;
         private System.Windows.Forms.Button circleOfFifthsButton;
         private System.Windows.Forms.PictureBox keySignature;
+        private System.Windows.Forms.Button playButton;
     }
 }

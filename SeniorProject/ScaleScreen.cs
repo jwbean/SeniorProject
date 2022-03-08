@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -136,6 +137,50 @@ namespace SeniorProject
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
+        }
+
+        private void playButton_Click(object sender, EventArgs e)
+        {
+            //change to set str to noteArray[i] from i=0..7
+            System.IO.Stream str = Resources.FluteC4;
+            SoundPlayer player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(800);
+            str = Resources.FluteD4;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(800);
+            str = Resources.FluteE4;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(800);
+            str = Resources.FluteF4;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(800);
+            str = Resources.FluteG4;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(750);
+            str = Resources.FluteA4;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(750);
+            str = Resources.FluteB4;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
+            System.Threading.Thread.Sleep(750);
+            str = Resources.FluteC5;
+            player = new SoundPlayer(str);
+            player.Load();
+            player.Play();
         }
     }
 }
