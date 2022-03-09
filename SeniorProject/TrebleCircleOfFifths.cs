@@ -12,18 +12,18 @@ namespace SeniorProject
 {
     public partial class TrebleCircleOfFifths : Form
     {
-        private int instrumentIndex;
+        private Instrument instrument;
 
-        public TrebleCircleOfFifths(int instrumentIndex)
+        public TrebleCircleOfFifths(Instrument instrument)
         {
             InitializeComponent();
-            this.instrumentIndex = instrumentIndex;
+            this.instrument = instrument;
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            InstrumentForm instruments = new InstrumentForm(instrument);
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
         }
@@ -31,7 +31,7 @@ namespace SeniorProject
         private void CMajor_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.CMajor);
+            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.CMajor);
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
@@ -39,7 +39,7 @@ namespace SeniorProject
         private void FMajor_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.FMajor);
+            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.FMajor);
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
@@ -47,7 +47,7 @@ namespace SeniorProject
         private void BFlatMajor_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.BFlatMajor);
+            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMajor);
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
@@ -55,7 +55,7 @@ namespace SeniorProject
         private void EFlatMajor_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.EFlatMajor);
+            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMajor);
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
@@ -63,7 +63,7 @@ namespace SeniorProject
         private void GMajor_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.GMajor);
+            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.GMajor);
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
@@ -71,7 +71,7 @@ namespace SeniorProject
         private void DMajor_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrumentIndex, SeniorProject.Scale.DMajor);
+            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.DMajor);
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }

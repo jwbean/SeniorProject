@@ -12,18 +12,18 @@ namespace SeniorProject
 {
     public partial class BassCircleOfFifths : Form
     {
-        private int instrumentIndex;
+        private Instrument instrument;
 
-        public BassCircleOfFifths(int instrumentIndex)
+        public BassCircleOfFifths(Instrument instrument)
         {
             InitializeComponent();
-            this.instrumentIndex = instrumentIndex;
+            this.instrument = instrument;
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            InstrumentForm instruments = new InstrumentForm(instrument);
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
         }

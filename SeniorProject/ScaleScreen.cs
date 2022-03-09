@@ -16,15 +16,15 @@ namespace SeniorProject
 {
     public partial class ScaleScreen : Form
     {
-        private int instrumentIndex;
+        private Instrument instrument;
         private Scale scale;
         private string[] noteArray = new string[8];
         private float[] noteHeight = new float[8];
         
-        public ScaleScreen(int instrumentIndex, Scale scale)
+        public ScaleScreen(Instrument instrument, Scale scale)
         {
             InitializeComponent();
-            this.instrumentIndex = instrumentIndex;
+            this.instrument = instrument;
             this.scale = scale;
             noteArray = new[]{ "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"}; //add switch statement for each scale (and instrument? :/)
             //maybe use switch statement from below
@@ -121,7 +121,7 @@ namespace SeniorProject
         private void changeInstrumentButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            InstrumentForm instruments = new InstrumentForm(instrument);
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
         }
@@ -129,15 +129,15 @@ namespace SeniorProject
         private void circleOfFifthsButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            if (instrumentIndex == (int)Instrument.Bassoon || instrumentIndex == (int)Instrument.Trombone || instrumentIndex == (int)Instrument.Tuba)
+            if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
             {
-                BassCircleOfFifths scales = new BassCircleOfFifths(instrumentIndex); //might even need to make own for tuba
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrument); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
             else
             {
-                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrumentIndex); //might even need to make own for tuba
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
@@ -145,13 +145,11 @@ namespace SeniorProject
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            //change to set str to noteArray[i] from i=0..7
-            //for loop outside of using statement
             var asmbly = Assembly.GetExecutingAssembly();
             //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());            
             for (int i = 0; i < 8; i++)
             {
-                var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + (Instrument)instrumentIndex + "." + (Instrument)instrumentIndex + noteArray[i] + ".wav");
+                var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + instrument + "." + instrument + noteArray[i] + ".wav");
                 using (System.IO.Stream str = wav)
                 {
                     SoundPlayer player = new SoundPlayer(str);

@@ -14,9 +14,9 @@ namespace SeniorProject
 {
     public partial class InstrumentForm : Form
     {
-        private int instrumentIndex;
+        private Instrument instrument;
         
-        public InstrumentForm(int instrumentIndex)
+        public InstrumentForm(Instrument instrument)
         {
             InitializeComponent();
             instrumentList.Items.Add("Alto Sax");
@@ -29,8 +29,8 @@ namespace SeniorProject
             instrumentList.Items.Add("Trombone");
             instrumentList.Items.Add("Trumpet");
             instrumentList.Items.Add("Tuba");
-            this.instrumentIndex = instrumentIndex;
-            instrumentList.SelectedIndex = instrumentIndex;
+            this.instrument = instrument;
+            instrumentList.SelectedIndex = (int)instrument;
         }
 
         private void instrumentList_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,16 +76,16 @@ namespace SeniorProject
         {
             //research the possibility of having one form and adjusting the scale within it based on passed parameter
             this.Hide();
-            string instr = instrumentList.SelectedItem.ToString();
-            if (instr == "Bassoon" || instr == "Trombone" || instr == "Tuba")
+            Instrument instr = (Instrument)instrumentList.SelectedIndex;
+            if (instr == Instrument.Bassoon || instr == Instrument.Trombone || instr == Instrument.Tuba)
             {
-                BassCircleOfFifths scales = new BassCircleOfFifths(instrumentList.SelectedIndex);
+                BassCircleOfFifths scales = new BassCircleOfFifths(instr);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
             else
             {
-                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrumentList.SelectedIndex);
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instr);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }

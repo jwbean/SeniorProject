@@ -12,23 +12,18 @@ namespace SeniorProject
 {
     public partial class SoloExcerpts : Form
     {
-        private int instrumentIndex;
+        private Instrument instrument;
         
-        public SoloExcerpts(int instrumentIndex)
+        public SoloExcerpts(Instrument instrument)
         {
             InitializeComponent();
-            this.instrumentIndex = instrumentIndex;
-            /*using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Connection.CnnVal("Database")))
-            {
-                var output = connection.Query<Models.Excerpt>("dbo.RetrieveUsers").ToList();
-                return output;
-            }*/
+            this.instrument = instrument;
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            InstrumentForm instruments = new InstrumentForm(instrumentIndex);
+            InstrumentForm instruments = new InstrumentForm(instrument);
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
         }
