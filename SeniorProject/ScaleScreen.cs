@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Media;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,7 +26,8 @@ namespace SeniorProject
             InitializeComponent();
             this.instrumentIndex = instrumentIndex;
             this.scale = scale;
-            //populate the noteArray with sound file names, preferably in a smart way using instrument name and scale
+            noteArray = new[]{ "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"}; //add switch statement for each scale (and instrument? :/)
+            //maybe use switch statement from below
         }
 
         //https://stackoverflow.com/questions/4052598/draw-a-music-staff-in-c-sharp
@@ -49,6 +51,7 @@ namespace SeniorProject
             {
                 case SeniorProject.Scale.CMajor:
                     keySignature.BackgroundImage = Resources.CMajor;
+                    g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
                     noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
                     noteHeight[1] = 5 * _staffHght;
                     noteHeight[2] = 4.6f * _staffHght;
@@ -71,13 +74,14 @@ namespace SeniorProject
                     break;
                 case SeniorProject.Scale.BFlatMajor:
                     keySignature.BackgroundImage = Resources.BFlatMajor;
+                    g.DrawLine(Pens.Black, 45, _staffHght - 20, 75, _staffHght - 20); //check this height
                     noteHeight[0] = 2.6f * _staffHght;
                     noteHeight[1] = 2 * _staffHght;
                     noteHeight[2] = 1.6f * _staffHght;
                     noteHeight[3] = _staffHght;
                     noteHeight[4] = 0.6f * _staffHght;
                     noteHeight[5] = 0.01f * _staffHght;
-                    noteHeight[6] = _staffHght - 20; //not only ledger lines needed, but need to adjust to work with music panel
+                    noteHeight[6] = _staffHght - 20; //need to adjust to work with music panel
                     noteHeight[7] = _staffHght - 30; // check this value
                     break;
                 case SeniorProject.Scale.EFlatMajor:
@@ -142,45 +146,20 @@ namespace SeniorProject
         private void playButton_Click(object sender, EventArgs e)
         {
             //change to set str to noteArray[i] from i=0..7
-            System.IO.Stream str = Resources.FluteC4;
-            SoundPlayer player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(800);
-            str = Resources.FluteD4;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(800);
-            str = Resources.FluteE4;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(800);
-            str = Resources.FluteF4;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(800);
-            str = Resources.FluteG4;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(750);
-            str = Resources.FluteA4;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(750);
-            str = Resources.FluteB4;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
-            System.Threading.Thread.Sleep(750);
-            str = Resources.FluteC5;
-            player = new SoundPlayer(str);
-            player.Load();
-            player.Play();
+            //for loop outside of using statement
+            var asmbly = Assembly.GetExecutingAssembly();
+            //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());            
+            for (int i = 0; i < 8; i++)
+            {
+                var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + (Instrument)instrumentIndex + "." + (Instrument)instrumentIndex + noteArray[i] + ".wav");
+                using (System.IO.Stream str = wav)
+                {
+                    SoundPlayer player = new SoundPlayer(str);
+                    player.Load();
+                    player.Play();
+                    System.Threading.Thread.Sleep(800);
+                }
+            }          
         }
     }
 }
