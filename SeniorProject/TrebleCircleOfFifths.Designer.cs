@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.changeInstrumentButton = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BMajor = new System.Windows.Forms.Button();
+            this.GFlatMajor = new System.Windows.Forms.Button();
+            this.DFlatMajor = new System.Windows.Forms.Button();
+            this.EMajor = new System.Windows.Forms.Button();
+            this.AMajor = new System.Windows.Forms.Button();
+            this.AFlatMajor = new System.Windows.Forms.Button();
             this.EFlatMajor = new System.Windows.Forms.Button();
             this.GMajor = new System.Windows.Forms.Button();
             this.DMajor = new System.Windows.Forms.Button();
@@ -56,6 +56,7 @@
             this.twoSharps = new System.Windows.Forms.Label();
             this.oneSharp = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.excerptsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // changeInstrumentButton
@@ -68,65 +69,71 @@
             this.changeInstrumentButton.UseVisualStyleBackColor = true;
             this.changeInstrumentButton.Click += new System.EventHandler(this.changeInstrumentButton_Click);
             // 
-            // button4
+            // BMajor
             // 
-            this.button4.BackgroundImage = global::SeniorProject.Properties.Resources.BMajor;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(336, 623);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 85);
-            this.button4.TabIndex = 13;
-            this.button4.UseVisualStyleBackColor = true;
+            this.BMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BMajor;
+            this.BMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BMajor.Location = new System.Drawing.Point(336, 623);
+            this.BMajor.Name = "BMajor";
+            this.BMajor.Size = new System.Drawing.Size(100, 85);
+            this.BMajor.TabIndex = 13;
+            this.BMajor.UseVisualStyleBackColor = true;
+            this.BMajor.Click += new System.EventHandler(this.BMajor_Click);
             // 
-            // button5
+            // GFlatMajor
             // 
-            this.button5.BackgroundImage = global::SeniorProject.Properties.Resources.GFlatMajor;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(463, 663);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 85);
-            this.button5.TabIndex = 12;
-            this.button5.UseVisualStyleBackColor = true;
+            this.GFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GFlatMajor;
+            this.GFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.GFlatMajor.Location = new System.Drawing.Point(463, 663);
+            this.GFlatMajor.Name = "GFlatMajor";
+            this.GFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.GFlatMajor.TabIndex = 12;
+            this.GFlatMajor.UseVisualStyleBackColor = true;
+            this.GFlatMajor.Click += new System.EventHandler(this.GFlatMajor_Click);
             // 
-            // button6
+            // DFlatMajor
             // 
-            this.button6.BackgroundImage = global::SeniorProject.Properties.Resources.DFlatMajor;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Location = new System.Drawing.Point(587, 623);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 85);
-            this.button6.TabIndex = 11;
-            this.button6.UseVisualStyleBackColor = true;
+            this.DFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DFlatMajor;
+            this.DFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DFlatMajor.Location = new System.Drawing.Point(587, 623);
+            this.DFlatMajor.Name = "DFlatMajor";
+            this.DFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.DFlatMajor.TabIndex = 11;
+            this.DFlatMajor.UseVisualStyleBackColor = true;
+            this.DFlatMajor.Click += new System.EventHandler(this.DFlatMajor_Click);
             // 
-            // button1
+            // EMajor
             // 
-            this.button1.BackgroundImage = global::SeniorProject.Properties.Resources.EMajor;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(231, 510);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 85);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
+            this.EMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EMajor;
+            this.EMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EMajor.Location = new System.Drawing.Point(231, 510);
+            this.EMajor.Name = "EMajor";
+            this.EMajor.Size = new System.Drawing.Size(100, 85);
+            this.EMajor.TabIndex = 10;
+            this.EMajor.UseVisualStyleBackColor = true;
+            this.EMajor.Click += new System.EventHandler(this.EMajor_Click);
             // 
-            // button2
+            // AMajor
             // 
-            this.button2.BackgroundImage = global::SeniorProject.Properties.Resources.AMajor;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(207, 390);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 85);
-            this.button2.TabIndex = 9;
-            this.button2.UseVisualStyleBackColor = true;
+            this.AMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AMajor;
+            this.AMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AMajor.Location = new System.Drawing.Point(207, 390);
+            this.AMajor.Name = "AMajor";
+            this.AMajor.Size = new System.Drawing.Size(100, 85);
+            this.AMajor.TabIndex = 9;
+            this.AMajor.UseVisualStyleBackColor = true;
+            this.AMajor.Click += new System.EventHandler(this.AMajor_Click);
             // 
-            // button3
+            // AFlatMajor
             // 
-            this.button3.BackgroundImage = global::SeniorProject.Properties.Resources.AFlatMajor;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(697, 510);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 85);
-            this.button3.TabIndex = 8;
-            this.button3.UseVisualStyleBackColor = true;
+            this.AFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AFlatMajor;
+            this.AFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AFlatMajor.Location = new System.Drawing.Point(697, 510);
+            this.AFlatMajor.Name = "AFlatMajor";
+            this.AFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.AFlatMajor.TabIndex = 8;
+            this.AFlatMajor.UseVisualStyleBackColor = true;
+            this.AFlatMajor.Click += new System.EventHandler(this.AFlatMajor_Click);
             // 
             // EFlatMajor
             // 
@@ -356,11 +363,22 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "Circle of Fifths";
             // 
+            // excerptsButton
+            // 
+            this.excerptsButton.Location = new System.Drawing.Point(13, 13);
+            this.excerptsButton.Name = "excerptsButton";
+            this.excerptsButton.Size = new System.Drawing.Size(140, 34);
+            this.excerptsButton.TabIndex = 29;
+            this.excerptsButton.Text = "Solo Excerpts";
+            this.excerptsButton.UseVisualStyleBackColor = true;
+            this.excerptsButton.Click += new System.EventHandler(this.excerptsButton_Click);
+            // 
             // TrebleCircleOfFifths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 779);
+            this.Controls.Add(this.excerptsButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.oneSharp);
             this.Controls.Add(this.twoSharps);
@@ -376,12 +394,12 @@
             this.Controls.Add(this.noFlats);
             this.Controls.Add(this.majorMinorSwitch);
             this.Controls.Add(this.majorOrMinor);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BMajor);
+            this.Controls.Add(this.GFlatMajor);
+            this.Controls.Add(this.DFlatMajor);
+            this.Controls.Add(this.EMajor);
+            this.Controls.Add(this.AMajor);
+            this.Controls.Add(this.AFlatMajor);
             this.Controls.Add(this.EFlatMajor);
             this.Controls.Add(this.GMajor);
             this.Controls.Add(this.DMajor);
@@ -406,12 +424,12 @@
         private System.Windows.Forms.Button EFlatMajor;
         private System.Windows.Forms.Button GMajor;
         private System.Windows.Forms.Button DMajor;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button EMajor;
+        private System.Windows.Forms.Button AMajor;
+        private System.Windows.Forms.Button AFlatMajor;
+        private System.Windows.Forms.Button BMajor;
+        private System.Windows.Forms.Button GFlatMajor;
+        private System.Windows.Forms.Button DFlatMajor;
         private System.Windows.Forms.Label majorOrMinor;
         private System.Windows.Forms.Button majorMinorSwitch;
         private System.Windows.Forms.Label noFlats;
@@ -427,5 +445,6 @@
         private System.Windows.Forms.Label twoSharps;
         private System.Windows.Forms.Label oneSharp;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button excerptsButton;
     }
 }

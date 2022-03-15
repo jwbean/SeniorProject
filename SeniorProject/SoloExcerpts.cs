@@ -27,5 +27,22 @@ namespace SeniorProject
             instruments.Closed += (s, args) => this.Close();
             instruments.Show();
         }
+
+        private void circleOfFifths_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+            {
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrument); //might even need to make own for tuba
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+            else
+            {
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument); //might even need to make own for tuba
+                scales.Closed += (s, args) => this.Close();
+                scales.Show();
+            }
+        }
     }
 }

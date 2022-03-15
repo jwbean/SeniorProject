@@ -28,50 +28,194 @@ namespace SeniorProject
             instruments.Show();
         }
 
-        private void CMajor_Click(object sender, EventArgs e)
+        private void CMajor_Click(object sender, EventArgs e) //C Major or A Minor
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.CMajor);
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.CMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.AMinor);
+            }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
 
-        private void FMajor_Click(object sender, EventArgs e)
+        private void FMajor_Click(object sender, EventArgs e) //F Major or D Minor
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.FMajor);
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.FMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.DMinor);
+            }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
 
-        private void BFlatMajor_Click(object sender, EventArgs e)
+        private void BFlatMajor_Click(object sender, EventArgs e) //BFlat Major or G Minor
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMajor);
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GMinor);
+            }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
 
-        private void EFlatMajor_Click(object sender, EventArgs e)
+        private void EFlatMajor_Click(object sender, EventArgs e) //EFlat Major or C Minor
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMajor);
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.CMinor);
+            }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
 
-        private void GMajor_Click(object sender, EventArgs e)
+        private void GMajor_Click(object sender, EventArgs e) //G Major or E Minor
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.GMajor);
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EMinor);
+            }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
 
-        private void DMajor_Click(object sender, EventArgs e)
+        private void DMajor_Click(object sender, EventArgs e) //D Major or B Minor
         {
             this.Hide();
-            ScaleScreen scale = new ScaleScreen(instrument, SeniorProject.Scale.DMajor);
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.DMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BMinor);
+            }
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void AFlatMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.AFlatMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.FMinor);
+            }
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void DFlatMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.DFlatMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMinor);
+            }
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void GFlatMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GFlatMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMinor);
+            }
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void BMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GSharpMinor);
+            }
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void EMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.CSharpMinor);
+            }
+            scale.Closed += (s, args) => this.Close();
+            scale.Show();
+        }
+
+        private void AMajor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScaleScreen scale;
+            if (majorOrMinor.Text == "Major Scales")
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.AMajor);
+            }
+            else
+            {
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.FSharpMinor);
+            }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
@@ -113,5 +257,13 @@ namespace SeniorProject
                 oneSharp.Text = "G";
             }
         }
+
+        private void excerptsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SoloExcerpts excerpts = new SoloExcerpts(instrument);
+            excerpts.Closed += (s, args) => this.Close();
+            excerpts.Show();
+        }       
     }
 }

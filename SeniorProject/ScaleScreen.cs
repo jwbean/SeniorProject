@@ -50,7 +50,14 @@ namespace SeniorProject
             switch (scale)
             {
                 case SeniorProject.Scale.CMajor:
-                    keySignature.BackgroundImage = Resources.CMajor;
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.bass_clef4;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.CMajor;
+                    }                   
                     g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
                     noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
                     noteHeight[1] = 5 * _staffHght;
@@ -62,7 +69,14 @@ namespace SeniorProject
                     noteHeight[7] = 2 * _staffHght;
                     break;
                 case SeniorProject.Scale.FMajor:
-                    keySignature.BackgroundImage = Resources.FMajor;
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassFMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.FMajor;
+                    }
                     noteHeight[0] = 4 * _staffHght;
                     noteHeight[1] = 3.6f * _staffHght;
                     noteHeight[2] = 3 * _staffHght;
@@ -73,7 +87,14 @@ namespace SeniorProject
                     noteHeight[7] = 0.6f * _staffHght;
                     break;
                 case SeniorProject.Scale.BFlatMajor:
-                    keySignature.BackgroundImage = Resources.BFlatMajor;
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassBFlatMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.BFlatMajor;
+                    }
                     g.DrawLine(Pens.Black, 45, _staffHght - 20, 75, _staffHght - 20); //check this height
                     noteHeight[0] = 2.6f * _staffHght;
                     noteHeight[1] = 2 * _staffHght;
@@ -85,25 +106,94 @@ namespace SeniorProject
                     noteHeight[7] = _staffHght - 30; // check this value
                     break;
                 case SeniorProject.Scale.EFlatMajor:
-                    keySignature.BackgroundImage = Resources.EFlatMajor;
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassEFlatMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.EFlatMajor;
+                    }
                     break;
                 case SeniorProject.Scale.AFlatMajor:
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassAFlatMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.AFlatMajor;
+                    }
                     break;
                 case SeniorProject.Scale.DFlatMajor:
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassDFlatMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.DFlatMajor;
+                    }
                     break;
                 case SeniorProject.Scale.GFlatMajor:
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassGFlatMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.GFlatMajor;
+                    }
                     break;
                 case SeniorProject.Scale.BMajor:
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassBMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.BMajor;
+                    }
                     break;
                 case SeniorProject.Scale.EMajor:
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassEMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.EMajor;
+                    }
                     break;
                 case SeniorProject.Scale.AMajor:
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassAMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.AMajor;
+                    }
                     break;
                 case SeniorProject.Scale.DMajor:
-                    keySignature.BackgroundImage = Resources.DMajor;
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassDMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.DMajor;
+                    }
                     break;
                 case SeniorProject.Scale.GMajor:
-                    keySignature.BackgroundImage = Resources.GMajor;
+                    if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
+                    {
+                        keySignature.BackgroundImage = Resources.BassGMajor;
+                    }
+                    else
+                    {
+                        keySignature.BackgroundImage = Resources.GMajor;
+                    }
                     break;
             }
 
@@ -158,6 +248,14 @@ namespace SeniorProject
                     System.Threading.Thread.Sleep(800);
                 }
             }          
+        }
+
+        private void excerptButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SoloExcerpts excerpts = new SoloExcerpts(instrument);
+            excerpts.Closed += (s, args) => this.Close();
+            excerpts.Show();
         }
     }
 }

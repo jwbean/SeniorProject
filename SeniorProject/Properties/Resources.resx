@@ -127,8 +127,44 @@
   <data name="AMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassAFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassAFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassAMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassAMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassBFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassBFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassBMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassBMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassDFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassDFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassDMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassDMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassEFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassEFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassEMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassEMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassFMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassFMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassGFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassGFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassGMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassGMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Bassoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bassoon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bass_clef4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bass-clef4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

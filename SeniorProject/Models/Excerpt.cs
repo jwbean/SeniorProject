@@ -8,7 +8,7 @@ namespace SeniorProject.Models
 {
     public class Excerpt
     {
-        public int ExcerptId { get; set; }
+        public int ExcerptId { get; set; }      
         public string ExcerptTitle { get; set; }
         public string Composer { get; set; }
         public int YearPublished { get; set; }

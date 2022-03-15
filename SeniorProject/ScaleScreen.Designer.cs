@@ -34,6 +34,7 @@
             this.circleOfFifthsButton = new System.Windows.Forms.Button();
             this.keySignature = new System.Windows.Forms.PictureBox();
             this.playButton = new System.Windows.Forms.Button();
+            this.excerptButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.keySignature)).BeginInit();
             this.SuspendLayout();
@@ -87,11 +88,22 @@
             this.playButton.UseVisualStyleBackColor = true;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
+            // excerptButton
+            // 
+            this.excerptButton.Location = new System.Drawing.Point(13, 57);
+            this.excerptButton.Name = "excerptButton";
+            this.excerptButton.Size = new System.Drawing.Size(140, 34);
+            this.excerptButton.TabIndex = 5;
+            this.excerptButton.Text = "Solo Excerpts";
+            this.excerptButton.UseVisualStyleBackColor = true;
+            this.excerptButton.Click += new System.EventHandler(this.excerptButton_Click);
+            // 
             // ScaleScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.excerptButton);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.keySignature);
             this.Controls.Add(this.circleOfFifthsButton);
@@ -113,5 +125,6 @@
         private System.Windows.Forms.Button circleOfFifthsButton;
         private System.Windows.Forms.PictureBox keySignature;
         private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.Button excerptButton;
     }
 }

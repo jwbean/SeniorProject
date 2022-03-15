@@ -20,5 +20,17 @@ namespace SeniorProject
         GFlatMajor,
         GMajor,
         AFlatMajor,
+        AMinor,
+        DMinor,
+        GMinor,
+        CMinor,
+        FMinor,
+        BFlatMinor,
+        EFlatMinor,
+        GSharpMinor,
+        CSharpMinor,
+        FSharpMinor,
+        BMinor,
+        EMinor
     }
 }
