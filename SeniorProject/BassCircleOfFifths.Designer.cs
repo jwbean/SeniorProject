@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BassCircleOfFifths));
             this.changeInstrumentButton = new System.Windows.Forms.Button();
             this.excerptsButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -244,7 +243,7 @@
             // 
             // BMajor
             // 
-            this.BMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BMajor.BackgroundImage")));
+            this.BMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassBMajor;
             this.BMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BMajor.Location = new System.Drawing.Point(336, 623);
             this.BMajor.Name = "BMajor";
@@ -255,7 +254,7 @@
             // 
             // GFlatMajor
             // 
-            this.GFlatMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GFlatMajor.BackgroundImage")));
+            this.GFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassGFlatMajor;
             this.GFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.GFlatMajor.Location = new System.Drawing.Point(463, 663);
             this.GFlatMajor.Name = "GFlatMajor";
@@ -266,7 +265,7 @@
             // 
             // DFlatMajor
             // 
-            this.DFlatMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DFlatMajor.BackgroundImage")));
+            this.DFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassDFlatMajor;
             this.DFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DFlatMajor.Location = new System.Drawing.Point(587, 623);
             this.DFlatMajor.Name = "DFlatMajor";
@@ -277,7 +276,7 @@
             // 
             // EMajor
             // 
-            this.EMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EMajor.BackgroundImage")));
+            this.EMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassEMajor;
             this.EMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EMajor.Location = new System.Drawing.Point(231, 510);
             this.EMajor.Name = "EMajor";
@@ -288,7 +287,7 @@
             // 
             // AMajor
             // 
-            this.AMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AMajor.BackgroundImage")));
+            this.AMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassAMajor;
             this.AMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AMajor.Location = new System.Drawing.Point(207, 390);
             this.AMajor.Name = "AMajor";
@@ -299,7 +298,7 @@
             // 
             // AFlatMajor
             // 
-            this.AFlatMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AFlatMajor.BackgroundImage")));
+            this.AFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassAFlatMajor;
             this.AFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AFlatMajor.Location = new System.Drawing.Point(697, 510);
             this.AFlatMajor.Name = "AFlatMajor";
@@ -310,7 +309,7 @@
             // 
             // EFlatMajor
             // 
-            this.EFlatMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EFlatMajor.BackgroundImage")));
+            this.EFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassEFlatMajor;
             this.EFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EFlatMajor.Location = new System.Drawing.Point(723, 390);
             this.EFlatMajor.Name = "EFlatMajor";
@@ -321,7 +320,7 @@
             // 
             // GMajor
             // 
-            this.GMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GMajor.BackgroundImage")));
+            this.GMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassGMajor;
             this.GMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.GMajor.Location = new System.Drawing.Point(336, 152);
             this.GMajor.Name = "GMajor";
@@ -332,7 +331,7 @@
             // 
             // DMajor
             // 
-            this.DMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DMajor.BackgroundImage")));
+            this.DMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassDMajor;
             this.DMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DMajor.Location = new System.Drawing.Point(231, 258);
             this.DMajor.Name = "DMajor";
@@ -343,7 +342,7 @@
             // 
             // BFlatMajor
             // 
-            this.BFlatMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BFlatMajor.BackgroundImage")));
+            this.BFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassBFlatMajor;
             this.BFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BFlatMajor.Location = new System.Drawing.Point(697, 258);
             this.BFlatMajor.Name = "BFlatMajor";
@@ -354,7 +353,7 @@
             // 
             // CMajor
             // 
-            this.CMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CMajor.BackgroundImage")));
+            this.CMajor.BackgroundImage = global::SeniorProject.Properties.Resources.bass_clef4;
             this.CMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CMajor.Location = new System.Drawing.Point(463, 109);
             this.CMajor.Name = "CMajor";
@@ -365,7 +364,7 @@
             // 
             // FMajor
             // 
-            this.FMajor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FMajor.BackgroundImage")));
+            this.FMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BassFMajor;
             this.FMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.FMajor.Location = new System.Drawing.Point(587, 152);
             this.FMajor.Name = "FMajor";
