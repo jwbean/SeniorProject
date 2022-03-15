@@ -210,6 +210,30 @@
     <None Include="Resources\BassDMajor.png" />
     <None Include="Resources\BassAMajor.png" />
     <None Include="Resources\BassEMajor.png" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxA4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxA5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxASharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxASharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxB4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxB5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxC4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxC5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxCSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxCSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxD4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxD5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxDSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxDSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxE4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxE5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxF4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxF5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxFSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxFSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxG4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxG5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxGSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxGSharp5.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -256,7 +280,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InstrumentWavFiles\AltoSax\" />
     <Folder Include="InstrumentWavFiles\Bassoon\" />
     <Folder Include="InstrumentWavFiles\Clarinet\" />
     <Folder Include="InstrumentWavFiles\FrenchHorn\" />
