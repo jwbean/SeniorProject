@@ -36,6 +36,10 @@ namespace SeniorProject
             {
                 primaryOctave = 3;
             }
+            else if (instrument == Instrument.Tuba)
+            {
+                primaryOctave = 2;
+            }
 
             noteArray = new[]{ "C"+primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave+1) }; //add switch statement for each scale (and instrument? :/)
             //maybe use switch statement from below

@@ -306,6 +306,30 @@
     <EmbeddedResource Include="InstrumentWavFiles\Trombone\TromboneG3.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Trombone\TromboneGSharp2.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Trombone\TromboneGSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaA1.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaA2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaASharp1.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaASharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaB1.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaB2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaC2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaC3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaCSharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaCSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaD2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaD3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaDSharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaDSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaE2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaE3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaF2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaF3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaFSharp1.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaFSharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaG1.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaG2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaGSharp1.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Tuba\TubaGSharp2.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -356,7 +380,6 @@
     <Folder Include="InstrumentWavFiles\Clarinet\" />
     <Folder Include="InstrumentWavFiles\Oboe\" />
     <Folder Include="InstrumentWavFiles\TenorSax\" />
-    <Folder Include="InstrumentWavFiles\Tuba\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
