@@ -33,13 +33,13 @@ namespace SeniorProject
             this.Hide();
             if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
             {
-                BassCircleOfFifths scales = new BassCircleOfFifths(instrument); //might even need to make own for tuba
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrument, true); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
             else
             {
-                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument); //might even need to make own for tuba
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument, true); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }

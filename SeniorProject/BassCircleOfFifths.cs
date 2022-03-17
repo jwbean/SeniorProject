@@ -14,10 +14,14 @@ namespace SeniorProject
     {
         private Instrument instrument;
 
-        public BassCircleOfFifths(Instrument instrument)
+        public BassCircleOfFifths(Instrument instrument, bool major)
         {
             InitializeComponent();
             this.instrument = instrument;
+            if(!major)
+            {
+                majorMinorSwitch_Click(null, EventArgs.Empty);
+            }
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
@@ -80,11 +84,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.CMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.CMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.AMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.AMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -96,11 +100,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.FMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.FMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.DMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.DMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -112,11 +116,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.GMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -128,11 +132,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.CMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.CMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -144,11 +148,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.GMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.EMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -160,11 +164,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.DMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.DMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.BMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -176,11 +180,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.AFlatMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.AFlatMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.FMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.FMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -192,11 +196,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.DFlatMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.DFlatMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BFlatMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -208,11 +212,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.GFlatMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GFlatMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EFlatMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -224,11 +228,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.BMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.BMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.GSharpMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.GSharpMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -240,11 +244,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.EMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.EMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.CSharpMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.CSharpMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();
@@ -256,11 +260,11 @@ namespace SeniorProject
             ScaleScreen scale;
             if (majorOrMinor.Text == "Major Scales")
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.AMajor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.AMajor, true);
             }
             else
             {
-                scale = new ScaleScreen(instrument, SeniorProject.Scale.FSharpMinor);
+                scale = new ScaleScreen(instrument, SeniorProject.Scale.FSharpMinor, false);
             }
             scale.Closed += (s, args) => this.Close();
             scale.Show();

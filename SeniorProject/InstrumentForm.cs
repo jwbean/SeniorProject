@@ -79,13 +79,13 @@ namespace SeniorProject
             Instrument instr = (Instrument)instrumentList.SelectedIndex;
             if (instr == Instrument.Bassoon || instr == Instrument.Trombone || instr == Instrument.Tuba)
             {
-                BassCircleOfFifths scales = new BassCircleOfFifths(instr);
+                BassCircleOfFifths scales = new BassCircleOfFifths(instr, true);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
             else
             {
-                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instr);
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instr, true);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }

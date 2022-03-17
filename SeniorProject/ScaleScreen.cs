@@ -21,12 +21,14 @@ namespace SeniorProject
         private string[] noteArray = new string[8];
         private float[] noteHeight = new float[8];
         private int primaryOctave;
+        bool major; //1 for major, 0 for minor
         
-        public ScaleScreen(Instrument instrument, Scale scale)
+        public ScaleScreen(Instrument instrument, Scale scale, bool majorOrMinor)
         {
             InitializeComponent();
             this.instrument = instrument;
             this.scale = scale;
+            major = majorOrMinor;
                 
             if (instrument == Instrument.Flute || instrument == Instrument.AltoSax || instrument == Instrument.Trumpet || instrument == Instrument.FrenchHorn)
             {
@@ -40,9 +42,75 @@ namespace SeniorProject
             {
                 primaryOctave = 2;
             }
-
-            noteArray = new[]{ "C"+primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave+1) }; //add switch statement for each scale (and instrument? :/)
-            //maybe use switch statement from below
+            switch (scale)
+            {
+                case SeniorProject.Scale.CMajor:
+                    noteArray = new[] { "C" + primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.CMinor:
+                    noteArray = new[] { "C" + primaryOctave, "D" + primaryOctave, "DSharp" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.DFlatMajor:
+                    noteArray = new[] { "CSharp" + primaryOctave, "DSharp" + primaryOctave, "F" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "CSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.CSharpMinor:
+                    noteArray = new[] { "CSharp" + primaryOctave, "DSharp" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.DMajor:
+                    noteArray = new[] { "D" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "D" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.DMinor:
+                    noteArray = new[] { "D" + primaryOctave, "E" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.EFlatMajor:
+                    noteArray = new[] { "DSharp" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.EFlatMinor:
+                    noteArray = new[] { "DSharp" + primaryOctave, "F" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.FMajor:
+                    noteArray = new[] { "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "F" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.FMinor:
+                    noteArray = new[] { "F" + primaryOctave, "G" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.GFlatMajor:
+                    noteArray = new[] { "FSharp" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.FSharpMinor:
+                    noteArray = new[] { "FSharp" + primaryOctave, "GSharp" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.GMajor:
+                    noteArray = new[] { "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "G" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.GMinor:
+                    noteArray = new[] { "G" + primaryOctave, "A" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.AFlatMajor:
+                    noteArray = new[] { "GSharp" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.GSharpMinor:
+                    noteArray = new[] { "GSharp" + primaryOctave, "ASharp" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.AMajor:
+                    noteArray = new[] { "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1), "A" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.AMinor:
+                    noteArray = new[] { "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1), "A" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.BFlatMajor:
+                    noteArray = new[] { "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1), "A" + (primaryOctave + 1), "ASharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.BFlatMinor:
+                    noteArray = new[] { "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1), "ASharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.BMajor:
+                    noteArray = new[] { "B" + primaryOctave, "CSharp" + (primaryOctave+1), "DSharp" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1), "ASharp" + (primaryOctave + 1), "B" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.BMinor:
+                    noteArray = new[] { "B" + primaryOctave, "CSharp" + primaryOctave, "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "G" + (primaryOctave + 1), "A" + (primaryOctave + 1), "B" + (primaryOctave + 1) };
+                    break;
+            }
         }
 
         //https://stackoverflow.com/questions/4052598/draw-a-music-staff-in-c-sharp
@@ -64,151 +132,317 @@ namespace SeniorProject
 
             switch (scale)
             {
+                case SeniorProject.Scale.CMinor:
                 case SeniorProject.Scale.CMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.bass_clef4;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.bass_clef4; //no flats or sharps
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassEFlatMajor; //three flats
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.CMajor;
-                    }                   
-                    g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
-                    noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
-                    noteHeight[1] = 5 * _staffHght;
-                    noteHeight[2] = 4.6f * _staffHght;
-                    noteHeight[3] = 4 * _staffHght;
-                    noteHeight[4] = 3.6f * _staffHght;
-                    noteHeight[5] = 3 * _staffHght;
-                    noteHeight[6] = 2.6f * _staffHght;
-                    noteHeight[7] = 2 * _staffHght;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.CMajor; //no flats or sharps
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.EFlatMajor; //three flats
+                        }
+                    }
+                    c_noteHeight(g);
                     break;
+                case SeniorProject.Scale.FMinor:
                 case SeniorProject.Scale.FMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassFMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassFMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassAFlatMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.FMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.FMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.AFlatMajor;
+                        }
                     }
-                    noteHeight[0] = 4 * _staffHght;
-                    noteHeight[1] = 3.6f * _staffHght;
-                    noteHeight[2] = 3 * _staffHght;
-                    noteHeight[3] = 2.6f * _staffHght;
-                    noteHeight[4] = 2 * _staffHght;
-                    noteHeight[5] = 1.6f * _staffHght;
-                    noteHeight[6] = _staffHght;
-                    noteHeight[7] = 0.6f * _staffHght;
+                    f_noteHeight();
                     break;
+                case SeniorProject.Scale.BFlatMinor:
                 case SeniorProject.Scale.BFlatMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassBFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassBFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassDFlatMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.BFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.DFlatMajor;
+                        }
                     }
-                    g.DrawLine(Pens.Black, 45, _staffHght - 20, 75, _staffHght - 20); //check this height
-                    noteHeight[0] = 2.6f * _staffHght;
-                    noteHeight[1] = 2 * _staffHght;
-                    noteHeight[2] = 1.6f * _staffHght;
-                    noteHeight[3] = _staffHght;
-                    noteHeight[4] = 0.6f * _staffHght;
-                    noteHeight[5] = 0.01f * _staffHght;
-                    noteHeight[6] = _staffHght - 20; //need to adjust to work with music panel
-                    noteHeight[7] = _staffHght - 30; // check this value
+                    b_noteHeight(g);
                     break;
+                case SeniorProject.Scale.EFlatMinor:
                 case SeniorProject.Scale.EFlatMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassEFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassEFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassGFlatMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.EFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.EFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.GFlatMajor;
+                        }
                     }
+                    e_noteHeight();
                     break;
+                case SeniorProject.Scale.GSharpMinor:
                 case SeniorProject.Scale.AFlatMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassAFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassAFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassBMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.AFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.AFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BMajor;
+                        }
                     }
+                    a_noteHeight();
                     break;
+                case SeniorProject.Scale.CSharpMinor:
                 case SeniorProject.Scale.DFlatMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassDFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassDFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassEMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.DFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.DFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.EMajor;
+                        }
                     }
+                    d_noteHeight();
                     break;
+                case SeniorProject.Scale.FSharpMinor:
                 case SeniorProject.Scale.GFlatMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassGFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassGFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassAMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.GFlatMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.GFlatMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.AMajor;
+                        }
                     }
+                    g_noteHeight();
                     break;
+                case SeniorProject.Scale.BMinor:
                 case SeniorProject.Scale.BMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassBMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassBMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassDMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.BMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.DMajor;
+                        }
                     }
+                    b_noteHeight(g);
                     break;
+                case SeniorProject.Scale.EMinor:
                 case SeniorProject.Scale.EMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassEMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassEMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassGMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.EMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.EMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.GMajor;
+                        }
                     }
+                    e_noteHeight();
                     break;
+                case SeniorProject.Scale.AMinor:
                 case SeniorProject.Scale.AMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassAMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassAMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.bass_clef4;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.AMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.AMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.CMajor;
+                        }
                     }
+                    a_noteHeight();
                     break;
+                case SeniorProject.Scale.DMinor:
                 case SeniorProject.Scale.DMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassDMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassDMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassFMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.DMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.DMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.FMajor;
+                        }
                     }
+                    d_noteHeight();
                     break;
+                case SeniorProject.Scale.GMinor:
                 case SeniorProject.Scale.GMajor:
                     if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
                     {
-                        keySignature.BackgroundImage = Resources.BassGMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.BassGMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BassBFlatMajor;
+                        }
                     }
                     else
                     {
-                        keySignature.BackgroundImage = Resources.GMajor;
+                        if (major)
+                        {
+                            keySignature.BackgroundImage = Resources.GMajor;
+                        }
+                        else
+                        {
+                            keySignature.BackgroundImage = Resources.BFlatMajor;
+                        }
                     }
+                    g_noteHeight();
                     break;
             }
 
@@ -221,6 +455,92 @@ namespace SeniorProject
             g.FillEllipse(_noteBrush, 300, noteHeight[5], _noteWdth, _noteHght);
             g.FillEllipse(_noteBrush, 350, noteHeight[6], _noteWdth, _noteHght);
             g.FillEllipse(_noteBrush, 400, noteHeight[7], _noteWdth, _noteHght);
+        }
+
+        private void a_noteHeight()
+        {
+            noteHeight[0] = 3 * _staffHght;
+            noteHeight[1] = 2.6f * _staffHght;
+            noteHeight[2] = 2 * _staffHght;
+            noteHeight[3] = 1.6f * _staffHght;
+            noteHeight[4] = _staffHght;
+            noteHeight[5] = 0.6f * _staffHght;
+            noteHeight[6] = 0.01f * _staffHght;
+            noteHeight[7] = _staffHght - 20; //need to adjust to work with music panel
+        }
+
+        private void b_noteHeight(Graphics g)
+        {
+            g.DrawLine(Pens.Black, 45, _staffHght - 20, 75, _staffHght - 20); //check this height
+            noteHeight[0] = 2.6f * _staffHght;
+            noteHeight[1] = 2 * _staffHght;
+            noteHeight[2] = 1.6f * _staffHght;
+            noteHeight[3] = _staffHght;
+            noteHeight[4] = 0.6f * _staffHght;
+            noteHeight[5] = 0.01f * _staffHght;
+            noteHeight[6] = _staffHght - 20; //need to adjust to work with music panel
+            noteHeight[7] = _staffHght - 30; // check this value
+        }
+
+        private void c_noteHeight(Graphics g)
+        {
+            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+            noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
+            noteHeight[1] = 5 * _staffHght;
+            noteHeight[2] = 4.6f * _staffHght;
+            noteHeight[3] = 4 * _staffHght;
+            noteHeight[4] = 3.6f * _staffHght;
+            noteHeight[5] = 3 * _staffHght;
+            noteHeight[6] = 2.6f * _staffHght;
+            noteHeight[7] = 2 * _staffHght;
+        }
+
+        private void d_noteHeight()
+        {
+            noteHeight[0] = 5 * _staffHght;
+            noteHeight[1] = 4.6f * _staffHght;
+            noteHeight[2] = 4 * _staffHght;
+            noteHeight[3] = 3.6f * _staffHght;
+            noteHeight[4] = 3 * _staffHght;
+            noteHeight[5] = 2.6f * _staffHght;
+            noteHeight[6] = 2 * _staffHght;
+            noteHeight[7] = 1.6f * _staffHght;
+        }
+
+        private void e_noteHeight()
+        {
+            noteHeight[0] = 4.6f * _staffHght;
+            noteHeight[1] = 4 * _staffHght;
+            noteHeight[2] = 3.6f * _staffHght;
+            noteHeight[3] = 3 * _staffHght;
+            noteHeight[4] = 2.6f * _staffHght;
+            noteHeight[5] = 2 * _staffHght;
+            noteHeight[6] = 1.6f * _staffHght;
+            noteHeight[7] = _staffHght;
+        }
+
+        private void f_noteHeight()
+        {
+            noteHeight[0] = 4 * _staffHght;
+            noteHeight[1] = 3.6f * _staffHght;
+            noteHeight[2] = 3 * _staffHght;
+            noteHeight[3] = 2.6f * _staffHght;
+            noteHeight[4] = 2 * _staffHght;
+            noteHeight[5] = 1.6f * _staffHght;
+            noteHeight[6] = _staffHght;
+            noteHeight[7] = 0.6f * _staffHght;
+        }
+
+        private void g_noteHeight()
+        {
+            noteHeight[0] = 3.6f * _staffHght;
+            noteHeight[1] = 3 * _staffHght;
+            noteHeight[2] = 2.6f * _staffHght;
+            noteHeight[3] = 2 * _staffHght;
+            noteHeight[4] = 1.6f * _staffHght;
+            noteHeight[5] = _staffHght;
+            noteHeight[6] = 0.6f * _staffHght;
+            noteHeight[7] = 0.01f * _staffHght;
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
@@ -236,13 +556,13 @@ namespace SeniorProject
             this.Hide();
             if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
             {
-                BassCircleOfFifths scales = new BassCircleOfFifths(instrument); //might even need to make own for tuba
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrument, major); //might even need to make own for tuba
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
             else
             {
-                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument); //might even need to make own for tuba
+                TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument, major);
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
