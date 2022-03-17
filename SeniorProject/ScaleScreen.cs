@@ -20,13 +20,24 @@ namespace SeniorProject
         private Scale scale;
         private string[] noteArray = new string[8];
         private float[] noteHeight = new float[8];
+        private int primaryOctave;
         
         public ScaleScreen(Instrument instrument, Scale scale)
         {
             InitializeComponent();
             this.instrument = instrument;
             this.scale = scale;
-            noteArray = new[]{ "C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"}; //add switch statement for each scale (and instrument? :/)
+                
+            if (instrument == Instrument.Flute || instrument == Instrument.AltoSax || instrument == Instrument.Trumpet || instrument == Instrument.FrenchHorn)
+            {
+                primaryOctave = 4;
+            }                   
+            else if (instrument == Instrument.Trombone)
+            {
+                primaryOctave = 3;
+            }
+
+            noteArray = new[]{ "C"+primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave+1) }; //add switch statement for each scale (and instrument? :/)
             //maybe use switch statement from below
         }
 
