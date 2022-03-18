@@ -121,6 +121,8 @@ namespace SeniorProject
         private int _noteWdth = 20;
         private Pen _notePen = new Pen(Color.Black, 2);
         private Brush _noteBrush = Brushes.Black;
+        private Brush _highlightBrush = Brushes.Green;
+        //private Graphics g;
 
         private void musicPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -650,9 +652,12 @@ namespace SeniorProject
         private void playButton_Click(object sender, EventArgs e)
         {
             var asmbly = Assembly.GetExecutingAssembly();
-            //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());            
+            //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());
+            Graphics g2 = musicPanel.CreateGraphics();
+            g2.SmoothingMode = SmoothingMode.HighQuality;
             for (int i = 0; i < 8; i++)
             {
+                g2.FillEllipse(_highlightBrush, 50 * (i+1), noteHeight[i], _noteWdth, _noteHght);
                 var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + instrument + "." + instrument + noteArray[i] + ".wav");
                 using (System.IO.Stream str = wav)
                 {
@@ -661,7 +666,9 @@ namespace SeniorProject
                     player.Play();
                     System.Threading.Thread.Sleep(800);
                 }
-            }          
+                g2.FillEllipse(_noteBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
+            }
+            g2.Dispose();
         }
 
         private void excerptButton_Click(object sender, EventArgs e)
