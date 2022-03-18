@@ -484,128 +484,183 @@ namespace SeniorProject
         private void a_noteHeight(Graphics g)
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
-            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
-            g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
-            g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
-            noteHeight[0] = (6.6f + tubaOffset) * _staffHght;
-            noteHeight[1] = (6 + tubaOffset) * _staffHght;
-            noteHeight[2] = (5.6f + tubaOffset) * _staffHght;
-            noteHeight[3] = (5 + tubaOffset) * _staffHght;
-            noteHeight[4] = (4.6f + tubaOffset) * _staffHght;
-            noteHeight[5] = (4 + tubaOffset) * _staffHght;
-            noteHeight[6] = (3.6f + tubaOffset) * _staffHght;
-            noteHeight[7] = (3 + tubaOffset) * _staffHght;
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+            }
+            if (tbnOffset == 0)
+            {
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
+            }
+            noteHeight[0] = (6.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[1] = (6 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[2] = (5.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[3] = (5 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[4] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[5] = (4 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[6] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[7] = (3 + tubaOffset - tbnOffset) * _staffHght;
         }
 
         private void b_noteHeight(Graphics g)
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
-            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
-            g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
-            noteHeight[0] = (6 + tubaOffset) * _staffHght;
-            noteHeight[1] = (5.6f + tubaOffset) * _staffHght;
-            noteHeight[2] = (5 + tubaOffset) * _staffHght;
-            noteHeight[3] = (4.6f + tubaOffset) * _staffHght;
-            noteHeight[4] = (4 + tubaOffset) * _staffHght;
-            noteHeight[5] = (3.6f + tubaOffset) * _staffHght;
-            noteHeight[6] = (3 + tubaOffset) * _staffHght;
-            noteHeight[7] = (2.6f + tubaOffset) * _staffHght; 
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+            }
+            if (tbnOffset == 0)
+            {
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+            }
+            noteHeight[0] = (6 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[1] = (5.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[2] = (5 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[3] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[4] = (4 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[5] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[6] = (3 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[7] = (2.6f + tubaOffset - tbnOffset) * _staffHght; 
         }
 
         private void c_noteHeight(Graphics g)
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
-            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);           
-            noteHeight[0] = (5.6f + tubaOffset) * _staffHght;
-            noteHeight[1] = (5 + tubaOffset) * _staffHght;
-            noteHeight[2] = (4.6f + tubaOffset) * _staffHght;
-            noteHeight[3] = (4 + tubaOffset) * _staffHght;
-            noteHeight[4] = (3.6f + tubaOffset) * _staffHght;
-            noteHeight[5] = (3 + tubaOffset) * _staffHght;
-            noteHeight[6] = (2.6f + tubaOffset) * _staffHght;
-            noteHeight[7] = (2 + tubaOffset) * _staffHght;
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+            }
+            if (tbnOffset == 0)
+            {
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+            }
+            else
+            {
+                //lines above staff
+            }       
+            noteHeight[0] = (5.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[1] = (5 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[2] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[3] = (4 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[4] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[5] = (3 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[6] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[7] = (2 + tubaOffset - tbnOffset) * _staffHght;
         }
 
         private void d_noteHeight()
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
-            noteHeight[0] = (5 + tubaOffset) * _staffHght;
-            noteHeight[1] = (4.6f + tubaOffset) * _staffHght;
-            noteHeight[2] = (4 + tubaOffset) * _staffHght;
-            noteHeight[3] = (3.6f + tubaOffset) * _staffHght;
-            noteHeight[4] = (3 + tubaOffset) * _staffHght;
-            noteHeight[5] = (2.6f + tubaOffset) * _staffHght;
-            noteHeight[6] = (2 + tubaOffset) * _staffHght;
-            noteHeight[7] = (1.6f + tubaOffset) * _staffHght;
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+                //insert lines above staff
+            }
+            noteHeight[0] = (5 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[1] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[2] = (4 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[3] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[4] = (3 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[5] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[6] = (2 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[7] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
         }
 
         private void e_noteHeight()
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
-            noteHeight[0] = (4.6f + tubaOffset) * _staffHght;
-            noteHeight[1] = (4 + tubaOffset) * _staffHght;
-            noteHeight[2] = (3.6f + tubaOffset) * _staffHght;
-            noteHeight[3] = (3 + tubaOffset) * _staffHght;
-            noteHeight[4] = (2.6f + tubaOffset) * _staffHght;
-            noteHeight[5] = (2 + tubaOffset) * _staffHght;
-            noteHeight[6] = (1.6f + tubaOffset) * _staffHght;
-            noteHeight[7] = (1 + tubaOffset) * _staffHght;
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+                //insert lines above staff
+            }
+            noteHeight[0] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[1] = (4 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[2] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[3] = (3 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[4] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[5] = (2 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[6] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[7] = (1 + tubaOffset - tbnOffset) * _staffHght;
         }
 
         private void f_noteHeight()
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
-            noteHeight[0] = (4 + tubaOffset) * _staffHght;
-            noteHeight[1] = (3.6f + tubaOffset) * _staffHght;
-            noteHeight[2] = (3 + tubaOffset) * _staffHght;
-            noteHeight[3] = (2.6f + tubaOffset) * _staffHght;
-            noteHeight[4] = (2 + tubaOffset) * _staffHght;
-            noteHeight[5] = (1.6f + tubaOffset) * _staffHght;
-            noteHeight[6] = (1 + tubaOffset) * _staffHght;
-            noteHeight[7] = (0.6f + tubaOffset) * _staffHght;
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+                //lines aboves staff
+            }
+            noteHeight[0] = (4 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[1] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[2] = (3 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[3] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[4] = (2 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[5] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[6] = (1 + tubaOffset - tbnOffset) * _staffHght;
+            noteHeight[7] = (0.6f + tubaOffset - tbnOffset) * _staffHght;
         }
 
         private void g_noteHeight(Graphics g, bool gflat)
         {
             float tubaOffset = 0;
+            float tbnOffset = 0;
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
             }
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                tbnOffset = 2.5f;
+            }
             if (gflat)
             {
-                noteHeight[0] = (3.6f + tubaOffset) * _staffHght;
-                noteHeight[1] = (3 + tubaOffset) * _staffHght;
-                noteHeight[2] = (2.6f + tubaOffset) * _staffHght;
-                noteHeight[3] = (2 + tubaOffset) * _staffHght;
-                noteHeight[4] = (1.6f + tubaOffset) * _staffHght;
-                noteHeight[5] = (1 + tubaOffset) * _staffHght;
-                noteHeight[6] = (0.6f + tubaOffset) * _staffHght;
-                noteHeight[7] = (0.01f + tubaOffset) * _staffHght;
+                if (tbnOffset != 0)
+                {
+                    //insert lines above staff
+                }
+                noteHeight[0] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[1] = (3 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[2] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[3] = (2 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[4] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[5] = (1 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[6] = (0.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[7] = (0.01f + tubaOffset - tbnOffset) * _staffHght;
             }
             else
             {
@@ -613,14 +668,14 @@ namespace SeniorProject
                 g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 195, 6 * _staffHght, 225, 6 * _staffHght);
-                noteHeight[0] = (7 + tubaOffset) * _staffHght;
-                noteHeight[1] = (6.6f + tubaOffset) * _staffHght;
-                noteHeight[2] = (6 + tubaOffset) * _staffHght;
-                noteHeight[3] = (5.6f + tubaOffset) * _staffHght;
-                noteHeight[4] = (5 + tubaOffset) * _staffHght;
-                noteHeight[5] = (4.6f + tubaOffset) * _staffHght;
-                noteHeight[6] = (4 + tubaOffset) * _staffHght;
-                noteHeight[7] = (3.6f + tubaOffset) * _staffHght;
+                noteHeight[0] = (7 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[1] = (6.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[2] = (6 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[3] = (5.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[4] = (5 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[5] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[6] = (4 + tubaOffset - tbnOffset) * _staffHght;
+                noteHeight[7] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
             }
         }
 
