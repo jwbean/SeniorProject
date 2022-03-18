@@ -30,6 +30,7 @@ namespace SeniorProject
             this.scale = scale;
             major = majorOrMinor;
                 
+            //maybe change flute to octave 5 (and possibly alto)
             if (instrument == Instrument.Flute || instrument == Instrument.AltoSax || instrument == Instrument.Trumpet || instrument == Instrument.FrenchHorn)
             {
                 primaryOctave = 4;
@@ -81,34 +82,34 @@ namespace SeniorProject
                     noteArray = new[] { "FSharp" + primaryOctave, "GSharp" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1) };
                     break;
                 case SeniorProject.Scale.GMajor:
-                    noteArray = new[] { "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "G" + (primaryOctave + 1) };
+                    noteArray = new[] { "G" + (primaryOctave - 1), "A" + (primaryOctave - 1), "B" + (primaryOctave - 1), "C" + primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "G" + primaryOctave };
                     break;
                 case SeniorProject.Scale.GMinor:
-                    noteArray = new[] { "G" + primaryOctave, "A" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1) };
+                    noteArray = new[] { "G" + (primaryOctave - 1), "A" + (primaryOctave - 1), "ASharp" + (primaryOctave - 1), "C" + primaryOctave, "D" + primaryOctave, "DSharp" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave };
                     break;
                 case SeniorProject.Scale.AFlatMajor:
-                    noteArray = new[] { "GSharp" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1) };
+                    noteArray = new[] { "GSharp" + (primaryOctave - 1), "ASharp" + (primaryOctave - 1), "C" + primaryOctave, "CSharp" + primaryOctave, "DSharp" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "GSharp" + primaryOctave };
                     break;
                 case SeniorProject.Scale.GSharpMinor:
-                    noteArray = new[] { "GSharp" + primaryOctave, "ASharp" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1) };
+                    noteArray = new[] { "GSharp" + (primaryOctave - 1), "ASharp" + (primaryOctave - 1), "B" + (primaryOctave - 1), "CSharp" + primaryOctave, "DSharp" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave };
                     break;
                 case SeniorProject.Scale.AMajor:
-                    noteArray = new[] { "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1), "A" + (primaryOctave + 1) };
+                    noteArray = new[] { "A" + (primaryOctave-1), "B" + (primaryOctave - 1), "CSharp" + primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "A" + primaryOctave };
                     break;
                 case SeniorProject.Scale.AMinor:
-                    noteArray = new[] { "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1), "A" + (primaryOctave + 1) };
+                    noteArray = new[] { "A" + (primaryOctave-1), "B" + (primaryOctave-1), "C" + primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave };
                     break;
                 case SeniorProject.Scale.BFlatMajor:
-                    noteArray = new[] { "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "G" + (primaryOctave + 1), "A" + (primaryOctave + 1), "ASharp" + (primaryOctave + 1) };
+                    noteArray = new[] { "ASharp" + (primaryOctave-1), "C" + primaryOctave, "D" + primaryOctave, "DSharp" + primaryOctave, "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "ASharp" + primaryOctave };
                     break;
                 case SeniorProject.Scale.BFlatMinor:
-                    noteArray = new[] { "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "F" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1), "ASharp" + (primaryOctave + 1) };
+                    noteArray = new[] { "ASharp" + (primaryOctave-1), "C" + primaryOctave, "CSharp" + primaryOctave, "DSharp" + primaryOctave, "F" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave };
                     break;
                 case SeniorProject.Scale.BMajor:
-                    noteArray = new[] { "B" + primaryOctave, "CSharp" + (primaryOctave+1), "DSharp" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "GSharp" + (primaryOctave + 1), "ASharp" + (primaryOctave + 1), "B" + (primaryOctave + 1) };
+                    noteArray = new[] { "B" + (primaryOctave-1), "CSharp" + primaryOctave, "DSharp" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "B" + primaryOctave };
                     break;
                 case SeniorProject.Scale.BMinor:
-                    noteArray = new[] { "B" + primaryOctave, "CSharp" + primaryOctave, "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "FSharp" + (primaryOctave + 1), "G" + (primaryOctave + 1), "A" + (primaryOctave + 1), "B" + (primaryOctave + 1) };
+                    noteArray = new[] { "B" + (primaryOctave-1), "CSharp" + primaryOctave, "D" + primaryOctave, "E" + primaryOctave, "FSharp" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave };
                     break;
             }
         }
@@ -260,7 +261,14 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.BMajor;
                         }
                     }
-                    a_noteHeight();
+                    if (major)
+                    {
+                        a_noteHeight(g);
+                    }
+                    else
+                    {
+                        g_noteHeight(g, false);
+                    }
                     break;
                 case SeniorProject.Scale.CSharpMinor:
                 case SeniorProject.Scale.DFlatMajor:
@@ -286,7 +294,14 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.EMajor;
                         }
                     }
-                    d_noteHeight();
+                    if (major)
+                    {
+                        d_noteHeight();
+                    }
+                    else
+                    {
+                        c_noteHeight(g);
+                    }
                     break;
                 case SeniorProject.Scale.FSharpMinor:
                 case SeniorProject.Scale.GFlatMajor:
@@ -312,7 +327,14 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.AMajor;
                         }
                     }
-                    g_noteHeight();
+                    if (major)
+                    {
+                        g_noteHeight(g, true);
+                    }
+                    else
+                    {
+                        f_noteHeight();
+                    }
                     break;
                 case SeniorProject.Scale.BMinor:
                 case SeniorProject.Scale.BMajor:
@@ -390,7 +412,7 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.CMajor;
                         }
                     }
-                    a_noteHeight();
+                    a_noteHeight(g);
                     break;
                 case SeniorProject.Scale.DMinor:
                 case SeniorProject.Scale.DMajor:
@@ -442,7 +464,7 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.BFlatMajor;
                         }
                     }
-                    g_noteHeight();
+                    g_noteHeight(g, false);
                     break;
             }
 
@@ -457,90 +479,147 @@ namespace SeniorProject
             g.FillEllipse(_noteBrush, 400, noteHeight[7], _noteWdth, _noteHght);
         }
 
-        private void a_noteHeight()
+        private void a_noteHeight(Graphics g)
         {
-            noteHeight[0] = 3 * _staffHght;
-            noteHeight[1] = 2.6f * _staffHght;
-            noteHeight[2] = 2 * _staffHght;
-            noteHeight[3] = 1.6f * _staffHght;
-            noteHeight[4] = _staffHght;
-            noteHeight[5] = 0.6f * _staffHght;
-            noteHeight[6] = 0.01f * _staffHght;
-            noteHeight[7] = _staffHght - 20; //need to adjust to work with music panel
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+            g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+            g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
+            noteHeight[0] = (6.6f + tubaOffset) * _staffHght;
+            noteHeight[1] = (6 + tubaOffset) * _staffHght;
+            noteHeight[2] = (5.6f + tubaOffset) * _staffHght;
+            noteHeight[3] = (5 + tubaOffset) * _staffHght;
+            noteHeight[4] = (4.6f + tubaOffset) * _staffHght;
+            noteHeight[5] = (4 + tubaOffset) * _staffHght;
+            noteHeight[6] = (3.6f + tubaOffset) * _staffHght;
+            noteHeight[7] = (3 + tubaOffset) * _staffHght;
         }
 
         private void b_noteHeight(Graphics g)
         {
-            g.DrawLine(Pens.Black, 45, _staffHght - 20, 75, _staffHght - 20); //check this height
-            noteHeight[0] = 2.6f * _staffHght;
-            noteHeight[1] = 2 * _staffHght;
-            noteHeight[2] = 1.6f * _staffHght;
-            noteHeight[3] = _staffHght;
-            noteHeight[4] = 0.6f * _staffHght;
-            noteHeight[5] = 0.01f * _staffHght;
-            noteHeight[6] = _staffHght - 20; //need to adjust to work with music panel
-            noteHeight[7] = _staffHght - 30; // check this value
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+            g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+            noteHeight[0] = (6 + tubaOffset) * _staffHght;
+            noteHeight[1] = (5.6f + tubaOffset) * _staffHght;
+            noteHeight[2] = (5 + tubaOffset) * _staffHght;
+            noteHeight[3] = (4.6f + tubaOffset) * _staffHght;
+            noteHeight[4] = (4 + tubaOffset) * _staffHght;
+            noteHeight[5] = (3.6f + tubaOffset) * _staffHght;
+            noteHeight[6] = (3 + tubaOffset) * _staffHght;
+            noteHeight[7] = (2.6f + tubaOffset) * _staffHght; 
         }
 
         private void c_noteHeight(Graphics g)
         {
-            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
-            noteHeight[0] = 5.6f * _staffHght; //need to add ledger lines somehow
-            noteHeight[1] = 5 * _staffHght;
-            noteHeight[2] = 4.6f * _staffHght;
-            noteHeight[3] = 4 * _staffHght;
-            noteHeight[4] = 3.6f * _staffHght;
-            noteHeight[5] = 3 * _staffHght;
-            noteHeight[6] = 2.6f * _staffHght;
-            noteHeight[7] = 2 * _staffHght;
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);           
+            noteHeight[0] = (5.6f + tubaOffset) * _staffHght;
+            noteHeight[1] = (5 + tubaOffset) * _staffHght;
+            noteHeight[2] = (4.6f + tubaOffset) * _staffHght;
+            noteHeight[3] = (4 + tubaOffset) * _staffHght;
+            noteHeight[4] = (3.6f + tubaOffset) * _staffHght;
+            noteHeight[5] = (3 + tubaOffset) * _staffHght;
+            noteHeight[6] = (2.6f + tubaOffset) * _staffHght;
+            noteHeight[7] = (2 + tubaOffset) * _staffHght;
         }
 
         private void d_noteHeight()
         {
-            noteHeight[0] = 5 * _staffHght;
-            noteHeight[1] = 4.6f * _staffHght;
-            noteHeight[2] = 4 * _staffHght;
-            noteHeight[3] = 3.6f * _staffHght;
-            noteHeight[4] = 3 * _staffHght;
-            noteHeight[5] = 2.6f * _staffHght;
-            noteHeight[6] = 2 * _staffHght;
-            noteHeight[7] = 1.6f * _staffHght;
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            noteHeight[0] = (5 + tubaOffset) * _staffHght;
+            noteHeight[1] = (4.6f + tubaOffset) * _staffHght;
+            noteHeight[2] = (4 + tubaOffset) * _staffHght;
+            noteHeight[3] = (3.6f + tubaOffset) * _staffHght;
+            noteHeight[4] = (3 + tubaOffset) * _staffHght;
+            noteHeight[5] = (2.6f + tubaOffset) * _staffHght;
+            noteHeight[6] = (2 + tubaOffset) * _staffHght;
+            noteHeight[7] = (1.6f + tubaOffset) * _staffHght;
         }
 
         private void e_noteHeight()
         {
-            noteHeight[0] = 4.6f * _staffHght;
-            noteHeight[1] = 4 * _staffHght;
-            noteHeight[2] = 3.6f * _staffHght;
-            noteHeight[3] = 3 * _staffHght;
-            noteHeight[4] = 2.6f * _staffHght;
-            noteHeight[5] = 2 * _staffHght;
-            noteHeight[6] = 1.6f * _staffHght;
-            noteHeight[7] = _staffHght;
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            noteHeight[0] = (4.6f + tubaOffset) * _staffHght;
+            noteHeight[1] = (4 + tubaOffset) * _staffHght;
+            noteHeight[2] = (3.6f + tubaOffset) * _staffHght;
+            noteHeight[3] = (3 + tubaOffset) * _staffHght;
+            noteHeight[4] = (2.6f + tubaOffset) * _staffHght;
+            noteHeight[5] = (2 + tubaOffset) * _staffHght;
+            noteHeight[6] = (1.6f + tubaOffset) * _staffHght;
+            noteHeight[7] = (1 + tubaOffset) * _staffHght;
         }
 
         private void f_noteHeight()
         {
-            noteHeight[0] = 4 * _staffHght;
-            noteHeight[1] = 3.6f * _staffHght;
-            noteHeight[2] = 3 * _staffHght;
-            noteHeight[3] = 2.6f * _staffHght;
-            noteHeight[4] = 2 * _staffHght;
-            noteHeight[5] = 1.6f * _staffHght;
-            noteHeight[6] = _staffHght;
-            noteHeight[7] = 0.6f * _staffHght;
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            noteHeight[0] = (4 + tubaOffset) * _staffHght;
+            noteHeight[1] = (3.6f + tubaOffset) * _staffHght;
+            noteHeight[2] = (3 + tubaOffset) * _staffHght;
+            noteHeight[3] = (2.6f + tubaOffset) * _staffHght;
+            noteHeight[4] = (2 + tubaOffset) * _staffHght;
+            noteHeight[5] = (1.6f + tubaOffset) * _staffHght;
+            noteHeight[6] = (1 + tubaOffset) * _staffHght;
+            noteHeight[7] = (0.6f + tubaOffset) * _staffHght;
         }
 
-        private void g_noteHeight()
+        private void g_noteHeight(Graphics g, bool gflat)
         {
-            noteHeight[0] = 3.6f * _staffHght;
-            noteHeight[1] = 3 * _staffHght;
-            noteHeight[2] = 2.6f * _staffHght;
-            noteHeight[3] = 2 * _staffHght;
-            noteHeight[4] = 1.6f * _staffHght;
-            noteHeight[5] = _staffHght;
-            noteHeight[6] = 0.6f * _staffHght;
-            noteHeight[7] = 0.01f * _staffHght;
+            float tubaOffset = 0;
+            if (instrument == Instrument.Tuba)
+            {
+                tubaOffset = 1;
+            }
+            if (gflat)
+            {
+                noteHeight[0] = (3.6f + tubaOffset) * _staffHght;
+                noteHeight[1] = (3 + tubaOffset) * _staffHght;
+                noteHeight[2] = (2.6f + tubaOffset) * _staffHght;
+                noteHeight[3] = (2 + tubaOffset) * _staffHght;
+                noteHeight[4] = (1.6f + tubaOffset) * _staffHght;
+                noteHeight[5] = (1 + tubaOffset) * _staffHght;
+                noteHeight[6] = (0.6f + tubaOffset) * _staffHght;
+                noteHeight[7] = (0.01f + tubaOffset) * _staffHght;
+            }
+            else
+            {
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 195, 6 * _staffHght, 225, 6 * _staffHght);
+                noteHeight[0] = (7 + tubaOffset) * _staffHght;
+                noteHeight[1] = (6.6f + tubaOffset) * _staffHght;
+                noteHeight[2] = (6 + tubaOffset) * _staffHght;
+                noteHeight[3] = (5.6f + tubaOffset) * _staffHght;
+                noteHeight[4] = (5 + tubaOffset) * _staffHght;
+                noteHeight[5] = (4.6f + tubaOffset) * _staffHght;
+                noteHeight[6] = (4 + tubaOffset) * _staffHght;
+                noteHeight[7] = (3.6f + tubaOffset) * _staffHght;
+            }
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
