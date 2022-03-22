@@ -57,6 +57,9 @@
             this.BFlatMajor = new System.Windows.Forms.Button();
             this.CMajor = new System.Windows.Forms.Button();
             this.FMajor = new System.Windows.Forms.Button();
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
+            this.instrumentName = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // changeInstrumentButton
@@ -373,11 +376,32 @@
             this.FMajor.UseVisualStyleBackColor = true;
             this.FMajor.Click += new System.EventHandler(this.FMajor_Click);
             // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
+            this.instrumentPicture.TabIndex = 59;
+            this.instrumentPicture.TabStop = false;
+            // 
+            // instrumentName
+            // 
+            this.instrumentName.Location = new System.Drawing.Point(971, 179);
+            this.instrumentName.Name = "instrumentName";
+            this.instrumentName.Size = new System.Drawing.Size(100, 20);
+            this.instrumentName.TabIndex = 62;
+            this.instrumentName.Text = "this is a test";
+            this.instrumentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BassCircleOfFifths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 779);
+            this.Controls.Add(this.instrumentName);
+            this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.excerptsButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.oneSharp);
@@ -410,6 +434,7 @@
             this.Name = "BassCircleOfFifths";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BassCircleOfFifths";
+            ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,5 +471,7 @@
         private System.Windows.Forms.Button BFlatMajor;
         private System.Windows.Forms.Button CMajor;
         private System.Windows.Forms.Button FMajor;
+        private System.Windows.Forms.PictureBox instrumentPicture;
+        private System.Windows.Forms.Label instrumentName;
     }
 }

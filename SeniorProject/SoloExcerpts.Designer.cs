@@ -30,13 +30,16 @@
         {
             this.changeInstrumentButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.circleOfFifths = new System.Windows.Forms.Button();
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
+            this.instrumentName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // changeInstrumentButton
@@ -56,7 +59,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 279F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
@@ -78,16 +81,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(679, 223);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Title";
             // 
             // label2
             // 
@@ -129,6 +122,16 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Store Link";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Title";
+            // 
             // circleOfFifths
             // 
             this.circleOfFifths.Location = new System.Drawing.Point(13, 13);
@@ -139,11 +142,32 @@
             this.circleOfFifths.UseVisualStyleBackColor = true;
             this.circleOfFifths.Click += new System.EventHandler(this.circleOfFifths_Click);
             // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
+            this.instrumentPicture.TabIndex = 60;
+            this.instrumentPicture.TabStop = false;
+            // 
+            // instrumentName
+            // 
+            this.instrumentName.Location = new System.Drawing.Point(971, 179);
+            this.instrumentName.Name = "instrumentName";
+            this.instrumentName.Size = new System.Drawing.Size(100, 20);
+            this.instrumentName.TabIndex = 63;
+            this.instrumentName.Text = "this is a test";
+            this.instrumentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SoloExcerpts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.instrumentName);
+            this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.circleOfFifths);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.changeInstrumentButton);
@@ -152,6 +176,7 @@
             this.Text = "SoloExcerpts";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -166,5 +191,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button circleOfFifths;
+        private System.Windows.Forms.PictureBox instrumentPicture;
+        private System.Windows.Forms.Label instrumentName;
     }
 }

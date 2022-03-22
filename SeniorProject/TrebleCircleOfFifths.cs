@@ -22,6 +22,40 @@ namespace SeniorProject
             {
                 majorMinorSwitch_Click(null, EventArgs.Empty);
             }
+
+            switch (instrument)
+            {
+                case Instrument.AltoSax:
+                    instrumentPicture.BackgroundImage = Properties.Resources.AltoSax;
+                    instrumentName.Text = "Alto Sax";
+                    break;
+                case Instrument.Clarinet:
+                    instrumentPicture.BackgroundImage = Properties.Resources.Clarinet;
+                    instrumentName.Text = "Clarinet";
+                    break;
+                case Instrument.FrenchHorn:
+                    instrumentPicture.BackgroundImage = Properties.Resources.FrenchHorn;
+                    instrumentName.Text = "French Horn";
+                    break;
+                case Instrument.Flute:
+                    instrumentPicture.BackgroundImage = Properties.Resources.Flute;
+                    instrumentName.Text = "Flute";
+                    break;
+                case Instrument.Oboe:
+                    instrumentPicture.BackgroundImage = Properties.Resources.Oboe;
+                    instrumentName.Text = "Oboe";
+                    break;
+                case Instrument.TenorSax:
+                    instrumentPicture.BackgroundImage = Properties.Resources.TenorSax;
+                    instrumentName.Text = "Tenor Sax";
+                    break;
+                case Instrument.Trumpet:
+                    instrumentPicture.BackgroundImage = Properties.Resources.Trumpet;
+                    instrumentName.Text = "Trumpet";
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
