@@ -43,7 +43,7 @@
             // 
             this.musicPanel.Location = new System.Drawing.Point(300, 200);
             this.musicPanel.Name = "musicPanel";
-            this.musicPanel.Size = new System.Drawing.Size(494, 99);
+            this.musicPanel.Size = new System.Drawing.Size(494, 150);
             this.musicPanel.TabIndex = 0;
             this.musicPanel.TabStop = false;
             this.musicPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.musicPanel_Paint);
@@ -81,7 +81,7 @@
             // 
             this.playButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("playButton.BackgroundImage")));
             this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.playButton.Location = new System.Drawing.Point(335, 328);
+            this.playButton.Location = new System.Drawing.Point(335, 350);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(45, 41);
             this.playButton.TabIndex = 4;

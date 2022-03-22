@@ -129,10 +129,20 @@ namespace SeniorProject
             Graphics g = e.Graphics;
             g.SmoothingMode = SmoothingMode.HighQuality;
 
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                musicPanel.Top = musicPanel.Top - 30;
+                for (int i = 1; i < 6; i++)
+                    g.DrawLine(Pens.Black, 0, (i * _staffHght)+30, musicPanel.Width, (i * _staffHght)+30);
+            }
+            
             // draw some staff lines
-            for (int i = 1; i < 6; i++)
-                g.DrawLine(Pens.Black, 0, i * _staffHght, musicPanel.Width, i * _staffHght);
-
+            else
+            {
+                for (int i = 1; i < 6; i++)
+                    g.DrawLine(Pens.Black, 0, i * _staffHght, musicPanel.Width, i * _staffHght);
+            }
+                      
             switch (scale)
             {
                 case SeniorProject.Scale.CMinor:
@@ -495,6 +505,7 @@ namespace SeniorProject
             }
             if (tbnOffset == 0)
             {
+                g.DrawLine(Pens.Black, 45, 7 * _staffHght, 75, 7 * _staffHght);
                 g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
@@ -507,6 +518,13 @@ namespace SeniorProject
             noteHeight[5] = (4 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (3 + tubaOffset - tbnOffset) * _staffHght;
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
+            }
         }
 
         private void b_noteHeight(Graphics g)
@@ -533,7 +551,14 @@ namespace SeniorProject
             noteHeight[4] = (4 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[5] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (3 + tubaOffset - tbnOffset) * _staffHght;
-            noteHeight[7] = (2.6f + tubaOffset - tbnOffset) * _staffHght; 
+            noteHeight[7] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
+            }
         }
 
         private void c_noteHeight(Graphics g)
@@ -564,6 +589,13 @@ namespace SeniorProject
             noteHeight[5] = (3 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (2 + tubaOffset - tbnOffset) * _staffHght;
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
+            }
         }
 
         private void d_noteHeight()
@@ -587,6 +619,13 @@ namespace SeniorProject
             noteHeight[5] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (2 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
+            }
         }
 
         private void e_noteHeight()
@@ -610,6 +649,13 @@ namespace SeniorProject
             noteHeight[5] = (2 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (1 + tubaOffset - tbnOffset) * _staffHght;
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
+            }
         }
 
         private void f_noteHeight()
@@ -633,6 +679,13 @@ namespace SeniorProject
             noteHeight[5] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (1 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (0.6f + tubaOffset - tbnOffset) * _staffHght;
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
+            }
         }
 
         private void g_noteHeight(Graphics g, bool gflat)
@@ -647,7 +700,7 @@ namespace SeniorProject
             {
                 tbnOffset = 2.5f;
             }
-            if (gflat)
+            if (gflat && tbnOffset == 0)
             {
                 if (tbnOffset != 0)
                 {
@@ -664,8 +717,10 @@ namespace SeniorProject
             }
             else
             {
+                g.DrawLine(Pens.Black, 45, 7 * _staffHght, 75, 7 * _staffHght);
                 g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 95, 7 * _staffHght, 125, 7 * _staffHght);
                 g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 195, 6 * _staffHght, 225, 6 * _staffHght);
                 noteHeight[0] = (7 + tubaOffset - tbnOffset) * _staffHght;
@@ -676,6 +731,13 @@ namespace SeniorProject
                 noteHeight[5] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
                 noteHeight[6] = (4 + tubaOffset - tbnOffset) * _staffHght;
                 noteHeight[7] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
+            }
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    noteHeight[i] += 30;
+                }
             }
         }
 
