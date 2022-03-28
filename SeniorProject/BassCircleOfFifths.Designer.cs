@@ -102,6 +102,7 @@
             this.oneSharp.Size = new System.Drawing.Size(19, 17);
             this.oneSharp.TabIndex = 56;
             this.oneSharp.Text = "G";
+            this.oneSharp.Click += new System.EventHandler(this.GMajor_Click);
             // 
             // twoSharps
             // 
@@ -113,6 +114,7 @@
             this.twoSharps.Size = new System.Drawing.Size(18, 17);
             this.twoSharps.TabIndex = 55;
             this.twoSharps.Text = "D";
+            this.twoSharps.Click += new System.EventHandler(this.DMajor_Click);
             // 
             // threeSharps
             // 
@@ -124,6 +126,7 @@
             this.threeSharps.Size = new System.Drawing.Size(17, 17);
             this.threeSharps.TabIndex = 54;
             this.threeSharps.Text = "A";
+            this.threeSharps.Click += new System.EventHandler(this.AMajor_Click);
             // 
             // fourSharps
             // 
@@ -135,6 +138,7 @@
             this.fourSharps.Size = new System.Drawing.Size(17, 17);
             this.fourSharps.TabIndex = 53;
             this.fourSharps.Text = "E";
+            this.fourSharps.Click += new System.EventHandler(this.EMajor_Click);
             // 
             // fiveSharps
             // 
@@ -146,6 +150,7 @@
             this.fiveSharps.Size = new System.Drawing.Size(17, 17);
             this.fiveSharps.TabIndex = 52;
             this.fiveSharps.Text = "B";
+            this.fiveSharps.Click += new System.EventHandler(this.BMajor_Click);
             // 
             // sixFlats
             // 
@@ -157,6 +162,7 @@
             this.sixFlats.Size = new System.Drawing.Size(27, 17);
             this.sixFlats.TabIndex = 51;
             this.sixFlats.Text = "Gb";
+            this.sixFlats.Click += new System.EventHandler(this.GFlatMajor_Click);
             // 
             // fiveFlats
             // 
@@ -168,6 +174,7 @@
             this.fiveFlats.Size = new System.Drawing.Size(26, 17);
             this.fiveFlats.TabIndex = 50;
             this.fiveFlats.Text = "Db";
+            this.fiveFlats.Click += new System.EventHandler(this.DFlatMajor_Click);
             // 
             // fourFlats
             // 
@@ -179,6 +186,7 @@
             this.fourFlats.Size = new System.Drawing.Size(25, 17);
             this.fourFlats.TabIndex = 49;
             this.fourFlats.Text = "Ab";
+            this.fourFlats.Click += new System.EventHandler(this.AFlatMajor_Click);
             // 
             // threeFlats
             // 
@@ -190,6 +198,7 @@
             this.threeFlats.Size = new System.Drawing.Size(25, 17);
             this.threeFlats.TabIndex = 48;
             this.threeFlats.Text = "Eb";
+            this.threeFlats.Click += new System.EventHandler(this.EFlatMajor_Click);
             // 
             // oneFlat
             // 
@@ -201,6 +210,7 @@
             this.oneFlat.Size = new System.Drawing.Size(16, 17);
             this.oneFlat.TabIndex = 47;
             this.oneFlat.Text = "F";
+            this.oneFlat.Click += new System.EventHandler(this.FMajor_Click);
             // 
             // twoFlats
             // 
@@ -212,6 +222,7 @@
             this.twoFlats.Size = new System.Drawing.Size(25, 17);
             this.twoFlats.TabIndex = 46;
             this.twoFlats.Text = "Bb";
+            this.twoFlats.Click += new System.EventHandler(this.BFlatMajor_Click);
             // 
             // noFlats
             // 
@@ -223,6 +234,7 @@
             this.noFlats.Size = new System.Drawing.Size(17, 17);
             this.noFlats.TabIndex = 45;
             this.noFlats.Text = "C";
+            this.noFlats.Click += new System.EventHandler(this.CMajor_Click);
             // 
             // majorMinorSwitch
             // 

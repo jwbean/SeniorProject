@@ -21,7 +21,7 @@ namespace SeniorProject
         private string[] noteArray = new string[8];
         private float[] noteHeight = new float[8];
         private int primaryOctave;
-        bool major; //1 for major, 0 for minor
+        private bool major; //1 for major, 0 for minor
         
         public ScaleScreen(Instrument instrument, Scale scale, bool majorOrMinor)
         {
