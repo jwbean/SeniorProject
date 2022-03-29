@@ -241,7 +241,7 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.AFlatMajor;
                         }
                     }
-                    f_noteHeight();
+                    f_noteHeight(g);
                     break;
                 case SeniorProject.Scale.BFlatMinor:
                 case SeniorProject.Scale.BFlatMajor:
@@ -293,7 +293,7 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.GFlatMajor;
                         }
                     }
-                    e_noteHeight();
+                    e_noteHeight(g);
                     break;
                 case SeniorProject.Scale.GSharpMinor:
                 case SeniorProject.Scale.AFlatMajor:
@@ -354,7 +354,7 @@ namespace SeniorProject
                     }
                     if (major)
                     {
-                        d_noteHeight();
+                        d_noteHeight(g);
                     }
                     else
                     {
@@ -391,7 +391,7 @@ namespace SeniorProject
                     }
                     else
                     {
-                        f_noteHeight();
+                        f_noteHeight(g);
                     }
                     break;
                 case SeniorProject.Scale.BMinor:
@@ -444,7 +444,7 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.GMajor;
                         }
                     }
-                    e_noteHeight();
+                    e_noteHeight(g);
                     break;
                 case SeniorProject.Scale.AMinor:
                 case SeniorProject.Scale.AMajor:
@@ -496,7 +496,7 @@ namespace SeniorProject
                             keySignature.BackgroundImage = Resources.FMajor;
                         }
                     }
-                    d_noteHeight();
+                    d_noteHeight(g);
                     break;
                 case SeniorProject.Scale.GMinor:
                 case SeniorProject.Scale.GMajor:
@@ -618,15 +618,7 @@ namespace SeniorProject
             else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
                 tbnOffset = 2.5f;
-            }
-            if (tbnOffset == 0)
-            {
-                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
-            }
-            else
-            {
-                //lines above staff
-            }       
+            }                   
             noteHeight[0] = (5.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[1] = (5 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[2] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
@@ -641,10 +633,15 @@ namespace SeniorProject
                 {
                     noteHeight[i] += 30;
                 }
+                g.DrawLine(Pens.Black, 395, noteHeight[7] + 7, 425, noteHeight[7] + 7);
+            }
+            else
+            {
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
             }
         }
 
-        private void d_noteHeight()
+        private void d_noteHeight(Graphics g)
         {
             float tubaOffset = 0;
             float tbnOffset = 0;
@@ -655,7 +652,6 @@ namespace SeniorProject
             else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
                 tbnOffset = 2.5f;
-                //insert lines above staff
             }
             noteHeight[0] = (5 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[1] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
@@ -671,10 +667,12 @@ namespace SeniorProject
                 {
                     noteHeight[i] += 30;
                 }
+                g.DrawLine(Pens.Black, 345, noteHeight[6] + 7, 375, noteHeight[6] + 7);
+                g.DrawLine(Pens.Black, 395, noteHeight[6] + 7, 425, noteHeight[6] + 7);
             }
         }
 
-        private void e_noteHeight()
+        private void e_noteHeight(Graphics g)
         {
             float tubaOffset = 0;
             float tbnOffset = 0;
@@ -685,7 +683,6 @@ namespace SeniorProject
             else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
                 tbnOffset = 2.5f;
-                //insert lines above staff
             }
             noteHeight[0] = (4.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[1] = (4 + tubaOffset - tbnOffset) * _staffHght;
@@ -701,10 +698,14 @@ namespace SeniorProject
                 {
                     noteHeight[i] += 30;
                 }
+                g.DrawLine(Pens.Black, 295, noteHeight[5] + 7, 325, noteHeight[5] + 7);
+                g.DrawLine(Pens.Black, 345, noteHeight[5] + 7, 375, noteHeight[5] + 7);
+                g.DrawLine(Pens.Black, 395, noteHeight[5] + 7, 425, noteHeight[5] + 7);
+                g.DrawLine(Pens.Black, 395, noteHeight[5] - 8, 425, noteHeight[5] - 8);
             }
         }
 
-        private void f_noteHeight()
+        private void f_noteHeight(Graphics g)
         {
             float tubaOffset = 0;
             float tbnOffset = 0;
@@ -715,7 +716,6 @@ namespace SeniorProject
             else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
                 tbnOffset = 2.5f;
-                //lines aboves staff
             }
             noteHeight[0] = (4 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[1] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
@@ -731,6 +731,12 @@ namespace SeniorProject
                 {
                     noteHeight[i] += 30;
                 }
+                g.DrawLine(Pens.Black, 245, noteHeight[4] + 7, 275, noteHeight[4] + 7);
+                g.DrawLine(Pens.Black, 295, noteHeight[4] + 7, 325, noteHeight[4] + 7);
+                g.DrawLine(Pens.Black, 345, noteHeight[4] + 7, 375, noteHeight[4] + 7);
+                g.DrawLine(Pens.Black, 345, noteHeight[4] - 8, 375, noteHeight[4] - 8);
+                g.DrawLine(Pens.Black, 395, noteHeight[4] + 7, 425, noteHeight[4] + 7);
+                g.DrawLine(Pens.Black, 395, noteHeight[4] - 8, 425, noteHeight[4] - 8);
             }
         }
 
@@ -792,6 +798,7 @@ namespace SeniorProject
             this.Hide();
             InstrumentForm instruments = new InstrumentForm(instrument);
             instruments.Closed += (s, args) => this.Close();
+            musicPanel.Dispose();
             instruments.Show();
         }
 
@@ -800,14 +807,16 @@ namespace SeniorProject
             this.Hide();
             if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
             {
-                BassCircleOfFifths scales = new BassCircleOfFifths(instrument, major); //might even need to make own for tuba
+                BassCircleOfFifths scales = new BassCircleOfFifths(instrument, major); 
                 scales.Closed += (s, args) => this.Close();
+                musicPanel.Dispose();
                 scales.Show();
             }
             else
             {
                 TrebleCircleOfFifths scales = new TrebleCircleOfFifths(instrument, major);
                 scales.Closed += (s, args) => this.Close();
+                musicPanel.Dispose();
                 scales.Show();
             }
         }
@@ -839,6 +848,7 @@ namespace SeniorProject
             this.Hide();
             SoloExcerpts excerpts = new SoloExcerpts(instrument);
             excerpts.Closed += (s, args) => this.Close();
+            musicPanel.Dispose();
             excerpts.Show();
         }
     }
