@@ -74,7 +74,7 @@
             // keySignature
             // 
             this.keySignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.keySignature.Location = new System.Drawing.Point(141, 166);
+            this.keySignature.Location = new System.Drawing.Point(141, 163);
             this.keySignature.Name = "keySignature";
             this.keySignature.Size = new System.Drawing.Size(178, 166);
             this.keySignature.TabIndex = 3;

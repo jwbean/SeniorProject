@@ -130,35 +130,71 @@
   <data name="BassAFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassAFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassAFlatMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassAFlatMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BassAMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassAMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassAMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassAMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BassBFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassBFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassBFlatMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassBFlatMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BassBMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassBMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassBMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassBMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassCMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassCMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BassDFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassDFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassDFlatMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassDFlatMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BassDMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassDMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassDMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassDMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BassEFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassEFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassEFlatMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassEFlatMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BassEMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassEMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassEMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassEMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BassFMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassFMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassFMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassFMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BassGFlatMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassGFlatMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BassGFlatMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassGFlatMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BassGMajor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BassGMajor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BassGMajorV_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BassGMajorV_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bassoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bassoon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

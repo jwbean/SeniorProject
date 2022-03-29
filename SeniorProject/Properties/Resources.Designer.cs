@@ -113,9 +113,29 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BassAFlatMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassAFlatMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BassAMajor {
             get {
                 object obj = ResourceManager.GetObject("BassAMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BassAMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassAMajorV_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +153,39 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BassBFlatMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassBFlatMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BassBMajor {
             get {
                 object obj = ResourceManager.GetObject("BassBMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BassBMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassBMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BassCMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassCMajorV_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +203,29 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BassDFlatMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassDFlatMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BassDMajor {
             get {
                 object obj = ResourceManager.GetObject("BassDMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BassDMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassDMajorV_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +243,29 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BassEFlatMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassEFlatMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BassEMajor {
             get {
                 object obj = ResourceManager.GetObject("BassEMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BassEMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassEMajorV_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +283,16 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BassFMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassFMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BassGFlatMajor {
             get {
                 object obj = ResourceManager.GetObject("BassGFlatMajor", resourceCulture);
@@ -203,9 +303,29 @@ namespace SeniorProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BassGFlatMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassGFlatMajorV_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BassGMajor {
             get {
                 object obj = ResourceManager.GetObject("BassGMajor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BassGMajorV_2 {
+            get {
+                object obj = ResourceManager.GetObject("BassGMajorV_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

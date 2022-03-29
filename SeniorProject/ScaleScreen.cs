@@ -197,11 +197,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.bass_clef4; //no flats or sharps
+                            keySignature.BackgroundImage = Resources.BassCMajorV_2; //no flats or sharps
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassEFlatMajor; //three flats
+                            keySignature.BackgroundImage = Resources.BassEFlatMajorV_2; //three flats
                         }
                     }
                     else
@@ -223,11 +223,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassFMajor;
+                            keySignature.BackgroundImage = Resources.BassFMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassAFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassAFlatMajorV_2;
                         }
                     }
                     else
@@ -249,11 +249,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassBFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassBFlatMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassDFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassDFlatMajorV_2;
                         }
                     }
                     else
@@ -275,11 +275,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassEFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassEFlatMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassGFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassGFlatMajorV_2;
                         }
                     }
                     else
@@ -301,11 +301,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassAFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassAFlatMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassBMajor;
+                            keySignature.BackgroundImage = Resources.BassBMajorV_2;
                         }
                     }
                     else
@@ -334,11 +334,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassDFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassDFlatMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassEMajor;
+                            keySignature.BackgroundImage = Resources.BassEMajorV_2;
                         }
                     }
                     else
@@ -367,11 +367,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassGFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassGFlatMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassAMajor;
+                            keySignature.BackgroundImage = Resources.BassAMajorV_2;
                         }
                     }
                     else
@@ -400,11 +400,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassBMajor;
+                            keySignature.BackgroundImage = Resources.BassBMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassDMajor;
+                            keySignature.BackgroundImage = Resources.BassDMajorV_2;
                         }
                     }
                     else
@@ -426,11 +426,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassEMajor;
+                            keySignature.BackgroundImage = Resources.BassEMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassGMajor;
+                            keySignature.BackgroundImage = Resources.BassGMajorV_2;
                         }
                     }
                     else
@@ -452,11 +452,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassAMajor;
+                            keySignature.BackgroundImage = Resources.BassAMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.bass_clef4;
+                            keySignature.BackgroundImage = Resources.BassCMajorV_2;
                         }
                     }
                     else
@@ -478,11 +478,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassDMajor;
+                            keySignature.BackgroundImage = Resources.BassDMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassFMajor;
+                            keySignature.BackgroundImage = Resources.BassFMajorV_2;
                         }
                     }
                     else
@@ -504,11 +504,11 @@ namespace SeniorProject
                     {
                         if (major)
                         {
-                            keySignature.BackgroundImage = Resources.BassGMajor;
+                            keySignature.BackgroundImage = Resources.BassGMajorV_2;
                         }
                         else
                         {
-                            keySignature.BackgroundImage = Resources.BassBFlatMajor;
+                            keySignature.BackgroundImage = Resources.BassBFlatMajorV_2;
                         }
                     }
                     else
