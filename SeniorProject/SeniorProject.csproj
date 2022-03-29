@@ -355,6 +355,31 @@
     <None Include="Resources\BassEMajorV_2.png" />
     <None Include="Resources\BassFMajorV_2.png" />
     <None Include="Resources\BassGFlatMajorV_2.png" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonA2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonA3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonASharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonASharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonB2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonB3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonC3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonC4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonCSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonCSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonD3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonD4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonDSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonDSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonE3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonE4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonF3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonF4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonFSharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonFSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonFSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonG2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonG3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonGSharp2.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonGSharp3.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -401,7 +426,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InstrumentWavFiles\Bassoon\" />
     <Folder Include="InstrumentWavFiles\Clarinet\" />
     <Folder Include="InstrumentWavFiles\Oboe\" />
     <Folder Include="InstrumentWavFiles\TenorSax\" />

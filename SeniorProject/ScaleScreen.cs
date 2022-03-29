@@ -81,7 +81,7 @@ namespace SeniorProject
             {
                 primaryOctave = 4;
             }                   
-            else if (instrument == Instrument.Trombone)
+            else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
                 primaryOctave = 3;
             }
@@ -114,6 +114,12 @@ namespace SeniorProject
                     break;
                 case SeniorProject.Scale.EFlatMinor:
                     noteArray = new[] { "DSharp" + primaryOctave, "F" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "ASharp" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.EMajor:
+                    noteArray = new[] { "E" + primaryOctave, "FSharp" + primaryOctave, "GSharp" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "CSharp" + (primaryOctave + 1), "DSharp" + (primaryOctave + 1), "E" + (primaryOctave + 1) };
+                    break;
+                case SeniorProject.Scale.EMinor:
+                    noteArray = new[] { "E" + primaryOctave, "FSharp" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "B" + primaryOctave, "C" + (primaryOctave+1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1) };
                     break;
                 case SeniorProject.Scale.FMajor:
                     noteArray = new[] { "F" + primaryOctave, "G" + primaryOctave, "A" + primaryOctave, "ASharp" + primaryOctave, "C" + (primaryOctave + 1), "D" + (primaryOctave + 1), "E" + (primaryOctave + 1), "F" + (primaryOctave + 1) };
