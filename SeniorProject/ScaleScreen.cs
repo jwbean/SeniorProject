@@ -555,6 +555,14 @@ namespace SeniorProject
                 g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
+                if (tubaOffset != 0)
+                {
+                    g.DrawLine(Pens.Black, 45, 8 * _staffHght, 75, 8 * _staffHght);
+                    g.DrawLine(Pens.Black, 95, 7 * _staffHght, 125, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 145, 7 * _staffHght, 175, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 195, 6 * _staffHght, 225, 6 * _staffHght);
+                    g.DrawLine(Pens.Black, 245, 6 * _staffHght, 275, 6 * _staffHght);
+                }
             }
             noteHeight[0] = (6.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[1] = (6 + tubaOffset - tbnOffset) * _staffHght;
@@ -589,6 +597,13 @@ namespace SeniorProject
             {
                 g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+                if (tubaOffset != 0)
+                {
+                    g.DrawLine(Pens.Black, 45, 7 * _staffHght, 75, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 95, 7 * _staffHght, 125, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
+                    g.DrawLine(Pens.Black, 195, 6 * _staffHght, 225, 6 * _staffHght);
+                }
             }
             noteHeight[0] = (6 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[1] = (5.6f + tubaOffset - tbnOffset) * _staffHght;
@@ -638,6 +653,12 @@ namespace SeniorProject
             else
             {
                 g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+                if (tubaOffset != 0)
+                {
+                    g.DrawLine(Pens.Black, 45, 7 * _staffHght, 75, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
+                    g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
+                }
             }
         }
 
@@ -648,6 +669,8 @@ namespace SeniorProject
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
+                g.DrawLine(Pens.Black, 95, 6 * _staffHght, 125, 6 * _staffHght);
             }
             else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
@@ -679,6 +702,7 @@ namespace SeniorProject
             if (instrument == Instrument.Tuba)
             {
                 tubaOffset = 1;
+                g.DrawLine(Pens.Black, 45, 6 * _staffHght, 75, 6 * _staffHght);
             }
             else if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon)
             {
@@ -754,10 +778,6 @@ namespace SeniorProject
             }
             if (gflat && tbnOffset == 0)
             {
-                if (tbnOffset != 0)
-                {
-                    //insert lines above staff
-                }
                 noteHeight[0] = (3.6f + tubaOffset - tbnOffset) * _staffHght;
                 noteHeight[1] = (3 + tubaOffset - tbnOffset) * _staffHght;
                 noteHeight[2] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
@@ -775,6 +795,15 @@ namespace SeniorProject
                 g.DrawLine(Pens.Black, 95, 7 * _staffHght, 125, 7 * _staffHght);
                 g.DrawLine(Pens.Black, 145, 6 * _staffHght, 175, 6 * _staffHght);
                 g.DrawLine(Pens.Black, 195, 6 * _staffHght, 225, 6 * _staffHght);
+                if (tubaOffset != 0)
+                {
+                    g.DrawLine(Pens.Black, 45, 8 * _staffHght, 75, 8 * _staffHght);
+                    g.DrawLine(Pens.Black, 95, 8 * _staffHght, 125, 8 * _staffHght);
+                    g.DrawLine(Pens.Black, 145, 7 * _staffHght, 175, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 195, 7 * _staffHght, 225, 7 * _staffHght);
+                    g.DrawLine(Pens.Black, 245, 6 * _staffHght, 275, 6 * _staffHght);
+                    g.DrawLine(Pens.Black, 295, 6 * _staffHght, 325, 6 * _staffHght);
+                }
                 noteHeight[0] = (7 + tubaOffset - tbnOffset) * _staffHght;
                 noteHeight[1] = (6.6f + tubaOffset - tbnOffset) * _staffHght;
                 noteHeight[2] = (6 + tubaOffset - tbnOffset) * _staffHght;
