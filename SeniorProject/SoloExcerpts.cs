@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeniorProject.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -63,6 +64,31 @@ namespace SeniorProject
                 default:
                     break;
             }
+            
+            List<Excerpt> excerpts = ExcerptCollection.getExcerpts(instrumentName.Text, null);
+            for (int i = 0; i < excerpts.Count; i++)
+            {
+                Excerpt e = excerpts[i];
+                string[] row = { "", e.ExcerptTitle, e.Composer, e.YearPublished.ToString(), e.Difficulty.ToString(), e.StoreLink };
+                var listViewItem = new ListViewItem(row);
+                listViewItem.Font = new Font(listViewItem.Font, FontStyle.Regular);
+                excerptListView.Items.Add(listViewItem);
+            }
+            int listViewWidth = 0;
+            for (int j = 1; j < 6; j++)
+            {
+                if (j < 3 || j == 5)
+                {
+                    excerptListView.AutoResizeColumn(j, ColumnHeaderAutoResizeStyle.ColumnContent);
+                }
+                else
+                {
+                    excerptListView.AutoResizeColumn(j, ColumnHeaderAutoResizeStyle.HeaderSize);
+                }
+                var columns = excerptListView.Columns;
+                listViewWidth += columns[j].Width;
+            }
+            excerptListView.Width = listViewWidth;
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
@@ -88,6 +114,12 @@ namespace SeniorProject
                 scales.Closed += (s, args) => this.Close();
                 scales.Show();
             }
+        }
+
+        private void excerptListView_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e) //to prevent users from changing column width
+        {
+            e.Cancel = true;
+            e.NewWidth = excerptListView.Columns[e.ColumnIndex].Width;
         }
     }
 }

@@ -29,27 +29,83 @@ namespace SeniorProject.Models
                     {
                         new Excerpt //could make constructor in Excerpt to save space
                         {
-                            ExcerptTitle = "Concerto",
-                            Composer = "Bach",
-                            YearPublished = 2000,
-                            Difficulty = 5,
-                            StoreLink = "google"
+                            ExcerptTitle = "Syrinx",
+                            Composer = "Claude Debussy",
+                            YearPublished = 1913,
+                            Difficulty = 5, //maybe 6
+                            StoreLink = "https://www.jwpepper.com/Syrinx/10274794.item#.YkYr5OfMKUk"
                         },
                         new Excerpt
                         {
-                            ExcerptTitle = "Concerto",
-                            Composer = "Bach",
-                            YearPublished = 2000,
-                            Difficulty = 5,
-                            StoreLink = "google"
+                            ExcerptTitle = "Duo",
+                            Composer = "Aaron Copland",
+                            YearPublished = 1971,
+                            Difficulty = 4, //find difficulty
+                            StoreLink = "yahoo" //find website
                         },
                         new Excerpt
                         {
-                            ExcerptTitle = "Concerto",
-                            Composer = "Bach",
-                            YearPublished = 2000,
-                            Difficulty = 5,
-                            StoreLink = "google"
+                            ExcerptTitle = "Sonata for Flute and Piano",
+                            Composer = "Francis Poulenc",
+                            YearPublished = 1957,
+                            Difficulty = 3, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata in B Minor",
+                            Composer = "J.S. Bach",
+                            YearPublished = 1762,
+                            Difficulty = 3, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Flute Concerto No. 2 in D Major",
+                            Composer = "Wolfgang Mozart",
+                            YearPublished = 1778,
+                            Difficulty = 3, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Le Merle Noir",
+                            Composer = "Olivier Messiaen",
+                            YearPublished = 1952,
+                            Difficulty = 6, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Chant de Linos",
+                            Composer = "Andre Jolivet",
+                            YearPublished = 1944,
+                            Difficulty = 6, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Andante Pastoral and Scherzettino",
+                            Composer = "Paul Taffanel",
+                            YearPublished = 1907,
+                            Difficulty = 3, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata for Flute and Piano",
+                            Composer = "Paul Hindemith",
+                            YearPublished = 1937,
+                            Difficulty = 3, //find difficulty
+                            StoreLink = "duckduckgo" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata Appassionata",
+                            Composer = "Sigfrid Karg-Elert",
+                            YearPublished = 1921,
+                            Difficulty = 3, //find difficulty
+                            StoreLink = "duckduckgo" //find website
                         }
                     }
                 }
