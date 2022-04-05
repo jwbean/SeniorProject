@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Rectangle = System.Drawing.Rectangle;
 
 namespace SeniorProject
 {
@@ -22,10 +23,10 @@ namespace SeniorProject
         private float[] noteHeight = new float[8];
         private int primaryOctave;
         private bool major; //1 for major, 0 for minor
-        
+
         public ScaleScreen(Instrument instrument, Scale scale, bool majorOrMinor)
         {
-            InitializeComponent();
+            InitializeComponent();           
             this.instrument = instrument;
             this.scale = scale;
             major = majorOrMinor;
@@ -885,6 +886,80 @@ namespace SeniorProject
             excerpts.Closed += (s, args) => this.Close();
             musicPanel.Dispose();
             excerpts.Show();
+        }
+
+        private void musicPanel_Click(object sender, MouseEventArgs e)
+        {
+            int i = 0;
+            Region region1 = new Region(new Rectangle(new Point(50, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region2 = new Region(new Rectangle(new Point(100, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region3 = new Region(new Rectangle(new Point(150, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region4 = new Region(new Rectangle(new Point(200, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region5 = new Region(new Rectangle(new Point(250, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region6 = new Region(new Rectangle(new Point(300, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region7 = new Region(new Rectangle(new Point(350, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            i++;
+            Region region8 = new Region(new Rectangle(new Point(400, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
+            if (e.Button == MouseButtons.Left)
+            {
+                if (region1.IsVisible(e.Location))
+                {
+                    i = 0;
+                }
+                else if (region2.IsVisible(e.Location))
+                {
+                    i = 1;
+                }
+                else if (region3.IsVisible(e.Location))
+                {
+                    i = 2;
+                }
+                else if (region4.IsVisible(e.Location))
+                {
+                    i = 3;
+                }
+                else if (region5.IsVisible(e.Location))
+                {
+                    i = 4;
+                }
+                else if (region6.IsVisible(e.Location))
+                {
+                    i = 5;
+                }
+                else if (region7.IsVisible(e.Location))
+                {
+                    i = 6;
+                }
+                else if (region8.IsVisible(e.Location))
+                {
+                    i = 7;
+                }
+                else
+                {
+                    return;
+                }
+                var asmbly = Assembly.GetExecutingAssembly();
+                //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());
+                Graphics g2 = musicPanel.CreateGraphics();
+                g2.SmoothingMode = SmoothingMode.HighQuality;
+                g2.FillEllipse(_highlightBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
+                var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + instrument + "." + instrument + noteArray[i] + ".wav");
+                using (System.IO.Stream str = wav)
+                {
+                    SoundPlayer player = new SoundPlayer(str);
+                    player.Load();
+                    player.Play();
+                    System.Threading.Thread.Sleep(800);
+                }
+                g2.FillEllipse(_noteBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
+                g2.Dispose();
+            }
         }
     }
 }
