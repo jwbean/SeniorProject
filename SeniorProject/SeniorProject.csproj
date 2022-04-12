@@ -433,6 +433,31 @@
     <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetGSharp3.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetGSharp4.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetGSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxA4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxA5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxASharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxASharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxB3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxB4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxB5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxC4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxC5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxCSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxCSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxD4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxD5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxDSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxDSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxE4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxE5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxF4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxF5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxFSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxFSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxG4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxG5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxGSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxGSharp5.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -478,8 +503,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="InstrumentWavFiles\TenorSax\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

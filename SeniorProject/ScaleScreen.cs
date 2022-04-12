@@ -78,7 +78,7 @@ namespace SeniorProject
             }
 
             //maybe change flute to octave 5 (and possibly alto)
-            if (instrument == Instrument.Flute || instrument == Instrument.AltoSax || instrument == Instrument.Trumpet || instrument == Instrument.FrenchHorn || instrument == Instrument.Oboe || instrument == Instrument.Clarinet)
+            if (instrument == Instrument.Flute || instrument == Instrument.AltoSax || instrument == Instrument.Trumpet || instrument == Instrument.FrenchHorn || instrument == Instrument.Oboe || instrument == Instrument.Clarinet || instrument == Instrument.TenorSax)
             {
                 primaryOctave = 4;
             }                   
