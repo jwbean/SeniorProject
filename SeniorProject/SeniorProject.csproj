@@ -380,6 +380,30 @@
     <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonG3.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonGSharp2.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Bassoon\BassoonGSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeA4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeA5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeASharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeASharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeB4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeB5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeC4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeC5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeCSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeCSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeD4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeD5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeDSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeDSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeE4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeE5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeF4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeF5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeFSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeFSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeG4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeG5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeGSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeGSharp5.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -427,7 +451,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="InstrumentWavFiles\Clarinet\" />
-    <Folder Include="InstrumentWavFiles\Oboe\" />
     <Folder Include="InstrumentWavFiles\TenorSax\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
