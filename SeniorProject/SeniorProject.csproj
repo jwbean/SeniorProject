@@ -404,6 +404,35 @@
     <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeG5.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeGSharp4.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeGSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetA3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetA4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetA5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetASharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetASharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetASharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetB3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetB4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetB5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetC4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetC5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetCSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetCSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetD4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetD5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetDSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetDSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetE4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetE5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetF4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetF5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetFSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetFSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetG3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetG4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetG5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetGSharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetGSharp4.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Clarinet\ClarinetGSharp5.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
@@ -450,7 +479,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InstrumentWavFiles\Clarinet\" />
     <Folder Include="InstrumentWavFiles\TenorSax\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
