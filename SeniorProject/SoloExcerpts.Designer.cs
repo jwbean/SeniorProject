@@ -100,6 +100,7 @@
             this.excerptListView.UseCompatibleStateImageBehavior = false;
             this.excerptListView.View = System.Windows.Forms.View.Details;
             this.excerptListView.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.excerptListView_ColumnWidthChanging);
+            this.excerptListView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.ColumnClick);
             // 
             // Title
             // 

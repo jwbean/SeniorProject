@@ -286,11 +286,28 @@ namespace SeniorProject.Models
         {
             List<Excerpt> musicList;
             excerpts.TryGetValue(instrument, out musicList);
-            if (ordering == null)
-            {                
-                return musicList;
+            switch (ordering)
+            {
+                case null:
+                case "Title":
+                    //sort by title
+                    musicList = musicList.OrderBy(x => x.ExcerptTitle).ToList();
+                    break;
+                case "Composer":
+                    //sort by composer
+                    musicList = musicList.OrderBy(x => x.Composer).ToList();
+                    break;
+                case "Year Published":
+                    //sort by year published
+                    musicList = musicList.OrderBy(x => x.YearPublished).ToList();
+                    break;
+                case "Difficulty":
+                    //sort by difficulty
+                    musicList = musicList.OrderBy(x => x.Difficulty).ToList();
+                    break;
+                default:
+                    break;
             }
-            //add switch statement for ordering, then sort list of excerpts by that ordering
             return musicList;
         }
     }

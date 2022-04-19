@@ -125,5 +125,23 @@ namespace SeniorProject
             e.Cancel = true;
             e.NewWidth = excerptListView.Columns[e.ColumnIndex].Width;
         }
+
+        private void ColumnClick(object o, ColumnClickEventArgs e)
+        {
+            excerptListView.Items.Clear();
+            List<Excerpt> excerpts = ExcerptCollection.getExcerpts(instrumentName.Text, excerptListView.Columns[e.Column].Text);
+            for (int i = 0; i < excerpts.Count; i++)
+            {
+                Excerpt ex = excerpts[i];
+                string[] row = { "", ex.ExcerptTitle, ex.Composer, ex.YearPublished.ToString(), ex.Difficulty.ToString(), ex.StoreLink };
+                var listViewItem = new ListViewItem(row);
+                listViewItem.Font = new Font(listViewItem.Font, FontStyle.Regular);                
+                excerptListView.Items.Add(listViewItem);
+            }
+            // Set the ListViewItemSorter property to a new ListViewItemComparer 
+            // object. Setting this property immediately sorts the 
+            // ListView using the ListViewItemComparer object.
+            //this.excerptListView.ListViewItemSorter = new ListViewItemComparer(e.Column);
+        }
     }
 }
