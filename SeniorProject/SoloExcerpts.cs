@@ -89,6 +89,10 @@ namespace SeniorProject
                 listViewWidth += columns[j].Width;
             }
             excerptListView.Width = listViewWidth;
+            if (excerptListView.Width > 900)
+            {
+                excerptListView.Width = 900;
+            }
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
