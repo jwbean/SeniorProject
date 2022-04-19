@@ -24,6 +24,9 @@ namespace SeniorProject.Models
         {
             excerpts = new Dictionary<string, List<Excerpt>>
             {
+                /*This block contains all the excerpts
+                 * for the flute players
+                 */
                 {
                     "Flute", new List<Excerpt>
                     {
@@ -109,6 +112,9 @@ namespace SeniorProject.Models
                         }
                     }
                 },
+                /*This block contains all the excerpts
+                 * for the french horn players
+                 */
                 {
                     "French Horn", new List<Excerpt>
                     {
@@ -194,6 +200,9 @@ namespace SeniorProject.Models
                         }
                     }
                 },
+                /*This block contains all the excerpts
+                 * for the oboe players
+                 */
                 {
                     "Oboe", new List<Excerpt>
                     {

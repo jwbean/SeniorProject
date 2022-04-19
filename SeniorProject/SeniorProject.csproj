@@ -458,6 +458,11 @@
     <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxG5.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxGSharp4.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxGSharp5.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\TenorSax\TenorSaxASharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxASharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxB3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeASharp3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeB3.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
