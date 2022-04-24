@@ -25,6 +25,182 @@ namespace SeniorProject.Models
             excerpts = new Dictionary<string, List<Excerpt>>
             {
                 /*This block contains all the excerpts
+                 * for the alto sax players
+                 */
+                {
+                    "Alto Sax", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata",
+                            Composer = "Paul Creston",
+                            YearPublished = 1945,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Sonata/1006121.item#.YmR568jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Dix Figures a Danser",
+                            Composer = "Pierre Max Dubois",
+                            YearPublished = 1962,
+                            Difficulty = 1, //find difficulty
+                            StoreLink = "https://www.amazon.com/Figures-Danser-Alto-Saxophone-Piano/dp/B002DBRFI4"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Meditation",
+                            Composer = "Jules Massenet",
+                            YearPublished = 1894,
+                            Difficulty = 2, //or 3 since M?
+                            StoreLink = "https://www.jwpepper.com/Meditation-from-the-Opera-Thais/10564248.item#.YmR7yMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Holly Roller",
+                            Composer = "Libby Larsen",
+                            YearPublished = 1998,
+                            Difficulty = 6, 
+                            StoreLink = "https://www.jwpepper.com/Holy-Roller-Alto-Sax-and-Piano/5752555.item#.YmR8fcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Ode to Lord Buckley",
+                            Composer = "David Amram",
+                            YearPublished = 1980,
+                            Difficulty = 4, //find difficulty
+                            StoreLink = "https://www.jwpepper.com/7896921.item#.YmXKT8jMKUl"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Scaramouche",
+                            Composer = "Darius Milhaud",
+                            YearPublished = 1937,
+                            Difficulty = 4,
+                            StoreLink = "https://www.jwpepper.com/Scaramouche/10430286.item#.YmXLjsjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Concertino da Camera",
+                            Composer = "Jacques Ibert",
+                            YearPublished = 1935,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concertino-Da-Camera/4777694.item#.YmXMcMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Concerto for Alto Sax",
+                            Composer = "David Maslanka",
+                            YearPublished = 1999,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concerto-for-Alto-Sax-and-Wind-Ensemble/10346279.item#.YmXNW8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Light of Sothis",
+                            Composer = "Amy Quate",
+                            YearPublished = 1982,
+                            Difficulty = 5, //check difficulty
+                            StoreLink = "https://www.jwpepper.com/Light-of-Sothis-Alto-Sax-Piano/7895733.item#.YmXQBMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Parable XI",
+                            Composer = "Vincent Persichetti",
+                            YearPublished = 1972,
+                            Difficulty = 6, //check difficulty
+                            StoreLink = "https://www.jwpepper.com/Parable-for-Solo-Alto-Saxophone/4610572.item#.YmXOxcjMKUk"
+                        }
+                    }
+                },
+                /*This block contains all the excerpts
+                 * for the clarinet players
+                 */
+                {
+                    "Clarinet", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Premiere Rhapsodie",
+                            Composer = "Claude Debussy",
+                            YearPublished = 1910,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Premiere-Rhapsodie/10799668.item#.YmHENsjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Concerto for Clarinet",
+                            Composer = "Aaron Copland",
+                            YearPublished = 1949,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concerto-for-Clarinet/2023935.item#.YmHEm8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata for Clarinet",
+                            Composer = "Leonard Bernstein",
+                            YearPublished = 1942,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Clarinet-and-Piano/10162812.item#.YmHuF8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Clarinet Sonata",
+                            Composer = "Francis Poulenc",
+                            YearPublished = 1962,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Clarinet-and-Piano/10024397.item#.YmHvJcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Clarinet Concerto No. 2",
+                            Composer = "Carl Maria von Weber",
+                            YearPublished = 1811,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concerto-No.-2-in-E-flat%2C-Op.-74/4600383.item#.YmHvpMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata No. 2",
+                            Composer = "Johannes Brahms",
+                            YearPublished = 1894,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Sonata-No.-2-in-Eb-Op.-120-2/5983813.item#.YmHv28jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Fantasy Pieces",
+                            Composer = "Robert Schumann",
+                            YearPublished = 1849,
+                            Difficulty = 3, //M
+                            StoreLink = "https://www.jwpepper.com/Fantasy-Piece/4557260.item#.YmHxUcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Introduction, Theme, and Variations",
+                            Composer = "Gioacchino Rossini",
+                            YearPublished = 1819,
+                            Difficulty = 2, //ME
+                            StoreLink = "https://www.jwpepper.com/Introduction%2C-Theme-and-Variations/10799910.item#.YmHyS8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Three Pieces for Solo Clarinet",
+                            Composer = "Igor Stravinsky",
+                            YearPublished = 1919,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Three-Pieces-Clarinet-Solo/5043229.item#.YmHy3MjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Grand Duo Concertante",
+                            Composer = "Carl Maria von Weber",
+                            YearPublished = 1816,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Grand-Duo-Concertante%2C-for-Clarinet-and-Piano%2C-Op.-48/4894754.item#.YmHzdcjMKUk"
+                        }
+                    }
+                },
+                /*This block contains all the excerpts
                  * for the flute players
                  */
                 {
@@ -315,6 +491,8 @@ namespace SeniorProject.Models
                     musicList = musicList.OrderBy(x => x.Difficulty).ToList();
                     break;
                 default:
+                    //sort by title
+                    musicList = musicList.OrderBy(x => x.ExcerptTitle).ToList();
                     break;
             }
             return musicList;
