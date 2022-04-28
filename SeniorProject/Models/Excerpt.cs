@@ -551,6 +551,94 @@ namespace SeniorProject.Models
                             StoreLink = "https://www.sheetmusicplus.com/title/saint-sans-oboe-sonata-op-166-for-oboe-and-piano-digital-sheet-music/22206702"
                         }
                     }
+                },
+                /*This block contains all the excerpts
+                 * for the trumpet players
+                 */
+                {
+                    "Trumpet", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Trumpet Concerto in E-Flat Major",
+                            Composer = "Joseph Haydn",
+                            YearPublished = 1796,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Concerto-for-Trumpet/994053.item#.Ymr3v8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Trumpet Sonata",
+                            Composer = "Paul Hindemith",
+                            YearPublished = 1939,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Trumpet-and-Piano/997007.item#.Ymr4NMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Impromptu",
+                            Composer = "Jacques Ibert",
+                            YearPublished = 1951,
+                            Difficulty = 4,
+                            StoreLink = "https://www.jwpepper.com/Impromptu-for-Trumpet-and-Piano/6382626.item#.Ymr5SMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Polyphony",
+                            Composer = "Charles Whittenberg",
+                            YearPublished = 1970,
+                            Difficulty = 6,
+                            StoreLink = "https://www.sheetmusicplus.com/title/polyphony-sheet-music/20073015"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Cantilena",
+                            Composer = "G.F. Handel",
+                            YearPublished = 1740,
+                            Difficulty = 2, //E
+                            StoreLink = "https://www.jwpepper.com/Cantilena-for-Cornet%2C-Trumpet-or-Baritone-T.C./996272.item#.Ymr64MjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Andante et Allegro",
+                            Composer = "Guillaume Balay",
+                            YearPublished = 1910,
+                            Difficulty = 4, //MA
+                            StoreLink = "https://www.jwpepper.com/Andante-et-Allegretto/4593976.item#.Ymr8dsjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Metropolis",
+                            Composer = "Allen Vizzutti",
+                            YearPublished = 2002,
+                            Difficulty = 3, //M
+                            StoreLink = "https://www.jwpepper.com/Metropolis-Trumpet/5977827.item#.Ymr8-sjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Andante et Scherzo",
+                            Composer = "Joseph Edouard Barat",
+                            YearPublished = 1920,
+                            Difficulty = 4, //MA
+                            StoreLink = "https://www.jwpepper.com/Andante-et-Scherzo/4535498.item#.Ymr9sMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Shazam",
+                            Composer = "Folke Rabe",
+                            YearPublished = 1984,
+                            Difficulty = 6,
+                            StoreLink = "https://www.jwpepper.com/Shazam/7812654.item#.Ymr-K8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Contest Piece (Morceau de Concours)",
+                            Composer = "Georges Alary",
+                            YearPublished = 1900,
+                            Difficulty = 3, //MA
+                            StoreLink = "https://www.jwpepper.com/Contest-Piece/4796199.item#.Ymr_jMjMKUk"
+                        }
+                    }
                 }
             };
         }
