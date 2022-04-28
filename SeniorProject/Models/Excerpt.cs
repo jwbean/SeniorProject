@@ -113,6 +113,94 @@ namespace SeniorProject.Models
                     }
                 },
                 /*This block contains all the excerpts
+                 * for the bassoon players
+                 */
+                {
+                    "Bassoon", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Elegy for Innocence",
+                            Composer = "Jeff Scott",
+                            YearPublished = 2008,
+                            Difficulty = 6, //grade 8 on 8 scale
+                            StoreLink = "https://www.trevcomusic.com/products/tco-1103-scott-jeff-elegy-for-innocence-bsn-pn"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "The Sorcerer's Apprentice",
+                            Composer = "Paul Dukas",
+                            YearPublished = 1897,
+                            Difficulty = 2, //one arrangement was ME
+                            StoreLink = "https://www.jwpepper.com/The-Sorcerer%27s-Apprentice/11194249E.item#.YmoBGcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Song Without Words",
+                            Composer = "Ernest Weissenborn",
+                            YearPublished = 1989,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Song-Without-Words/995506.item#.YmoC8MjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Happy Farmer",
+                            Composer = "Robert Schumann",
+                            YearPublished = 1878,
+                            Difficulty = 1, //VE
+                            StoreLink = "https://www.jwpepper.com/Happy-Farmer/4586962.item#.YmrvVsjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Minuetto from Don Giovanni",
+                            Composer = "Wolfgang Mozart",
+                            YearPublished = 1787,
+                            Difficulty = 1,
+                            StoreLink = "https://www.jwpepper.com/Minuetto/4846978.item#.YmrwC8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Piece for Bassoon",
+                            Composer = "Gabriel Faure",
+                            YearPublished = 1902,
+                            Difficulty = 4, //maybe 5?
+                            StoreLink = "https://www.jwpepper.com/Piece-for-Bassoon-and-Piano/10674928.item#.YmrxGMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Fantasy for Bassoon",
+                            Composer = "Malcolm Arnold",
+                            YearPublished = 1966,
+                            Difficulty = 6,
+                            StoreLink = "https://www.boosey.com/shop/prod/Arnold-Malcolm-Fantasy-for-Bassoon/2016206"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Reverie",
+                            Composer = "Eugene Jancourt",
+                            YearPublished = 1882,
+                            Difficulty = 3, //M
+                            StoreLink = "https://www.jwpepper.com/Reverie-Op.-61-Bassoon-Solo/5005558.item#.Ymr0HcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Minute (Grace For A Fresh Egg)",
+                            Composer = "Herbert Howells",
+                            YearPublished = 1945,
+                            Difficulty = 3, //Intermediate
+                            StoreLink = "https://www.trevcomusic.com/products/nov-12056303-howells-minuet-grace-for-a-fresh-egg-bsn-pn"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Minuet in G",
+                            Composer = "J.S. Bach",
+                            YearPublished = 1720,
+                            Difficulty = 2,
+                            StoreLink = "https://www.jwpepper.com/Menuet-in-G-from-Anna-Bassoon-Solo/4608980.item#.Ymr1esjMKUk"
+                        }
+                    }
+                },
+                /*This block contains all the excerpts
                  * for the clarinet players
                  */
                 {
