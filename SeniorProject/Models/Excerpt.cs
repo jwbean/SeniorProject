@@ -553,6 +553,94 @@ namespace SeniorProject.Models
                     }
                 },
                 /*This block contains all the excerpts
+                 * for the trombone players
+                 */
+                {
+                    "Trombone", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Morceau Symphonique",
+                            Composer = "Alexandre Guilmant",
+                            YearPublished = 1902,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Morceau-Symphonique/1003235.item#.YmsDLcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Blue Bells of Scotland",
+                            Composer = "Arthur Pryor",
+                            YearPublished = 1901,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Blue-Bells-of-Scotland/995209.item#.YmsD1cjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Andante et Allegro",
+                            Composer = "Joseph Edouard Barat",
+                            YearPublished = 1926,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Andante-et-Allegro/4534608.item#.YmsEKMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata No. 1",
+                            Composer = "Johann Ernest Galliard",
+                            YearPublished = 1733,
+                            Difficulty = 4, //M
+                            StoreLink = "https://www.jwpepper.com/Six-Sonatas/6040257.item#.YmsErcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Trombone Concerto",
+                            Composer = "Nikolai Rimsky-Korsakov",
+                            YearPublished = 1877,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Trombone-Concerto/7265077.item#.YmsF6MjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Trombone Concertino",
+                            Composer = "Ferdinand David",
+                            YearPublished = 1838,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concertino%2C-Op.-4/2051126.item#.YmsGaMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Trombone Sonata",
+                            Composer = "Paul Hindemith",
+                            YearPublished = 1941,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Trombone-and-Piano/996686.item#.YmsG58jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Trombone Concerto",
+                            Composer = "Launy Grondahl",
+                            YearPublished = 1924,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concerto/7171283.item#.YmsuSMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Angels Serenade",
+                            Composer = "Gaetano Braga",
+                            YearPublished = 1867,
+                            Difficulty = 2,
+                            StoreLink = "https://www.jwpepper.com/Angels-Serenade-Trombone-Baritone/5946751.item#.YmsupsjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Meditation",
+                            Composer = "Forrest Buchtel",
+                            YearPublished = 1945,
+                            Difficulty = 1, //E
+                            StoreLink = "https://www.jwpepper.com/Meditation/4581716.item#.YmsyG8jMKUk"
+                        }
+                    }
+                },
+                /*This block contains all the excerpts
                  * for the trumpet players
                  */
                 {
