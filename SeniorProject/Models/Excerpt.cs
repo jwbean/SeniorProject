@@ -299,80 +299,80 @@ namespace SeniorProject.Models
                             ExcerptTitle = "Syrinx",
                             Composer = "Claude Debussy",
                             YearPublished = 1913,
-                            Difficulty = 5, //maybe 6
-                            StoreLink = "https://www.jwpepper.com/Syrinx/10274794.item#.YkYr5OfMKUk"
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Syrinx/998351.item#.YnAZIMjMKUk"
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Duo",
                             Composer = "Aaron Copland",
                             YearPublished = 1971,
-                            Difficulty = 4, //find difficulty
-                            StoreLink = "yahoo" //find website
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Duo-for-Flute-and-Piano/4607800.item#.YnAZVsjMKUk" 
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Sonata for Flute and Piano",
                             Composer = "Francis Poulenc",
                             YearPublished = 1957,
-                            Difficulty = 3, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Flute-and-Piano/4864740.item#.YnAZfsjMKUk" 
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Sonata in B Minor",
                             Composer = "J.S. Bach",
                             YearPublished = 1762,
-                            Difficulty = 3, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 3, //M
+                            StoreLink = "https://www.jwpepper.com/Sonata-in-B-Minor-BWV1030-Flute-Sol/5421292.item#.YnAZrMjMKUk" 
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Flute Concerto No. 2 in D Major",
                             Composer = "Wolfgang Mozart",
                             YearPublished = 1778,
-                            Difficulty = 3, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Concerto-No.-2-in-D-Major%2C-K.-314/7263072.item#.YnAZ6sjMKUk" 
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Le Merle Noir",
                             Composer = "Olivier Messiaen",
                             YearPublished = 1952,
-                            Difficulty = 6, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 4, //find difficulty
+                            StoreLink = "https://www.jwpepper.com/Le-Merle-Noir%2C-for-Flute-and-Piano/4777108.item#.YnAaLcjMKUk" 
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Chant de Linos",
                             Composer = "Andre Jolivet",
                             YearPublished = 1944,
-                            Difficulty = 6, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Chant-de-Linos-Flute-Solo/4777090.item#.YnAatcjMKUk"
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Andante Pastoral and Scherzettino",
                             Composer = "Paul Taffanel",
                             YearPublished = 1907,
-                            Difficulty = 3, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Andante-Pastoral-et-Scherzettino/10302444.item#.YnAa5cjMKUk"
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Sonata for Flute and Piano",
                             Composer = "Paul Hindemith",
                             YearPublished = 1937,
-                            Difficulty = 3, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Flute-and-Piano/997684.item#.YnAbFMjMKUk"
                         },
                         new Excerpt
                         {
                             ExcerptTitle = "Sonata Appassionata",
                             Composer = "Sigfrid Karg-Elert",
                             YearPublished = 1921,
-                            Difficulty = 3, //find difficulty
-                            StoreLink = "duckduckgo" //find website
+                            Difficulty = 5,
+                            StoreLink = "https://www.jwpepper.com/sheet-music/7169246.item#.YnAbSsjMKUk"
                         }
                     }
                 },
@@ -549,6 +549,94 @@ namespace SeniorProject.Models
                             YearPublished = 1921,
                             Difficulty = 3,
                             StoreLink = "https://www.sheetmusicplus.com/title/saint-sans-oboe-sonata-op-166-for-oboe-and-piano-digital-sheet-music/22206702"
+                        }
+                    }
+                },
+                /*This block contains all the excerpts
+                 * for the tenor sax players
+                 */
+                {
+                    "Tenor Sax", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Tre Pezzi",
+                            Composer = "Scelsi, Giacinto",
+                            YearPublished = 1956,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Tre+Pezzi+per+Saxophone/5569900.item#.YnAeI8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "The Upward Stream",
+                            Composer = "Peck, Russell",
+                            YearPublished = 2001,
+                            Difficulty = 6, 
+                            StoreLink = "https://www.jwpepper.com/Upward-Stream/10558659.item#.YnAfQMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Classical Concerto",
+                            Composer = "Ewazen, Eric",
+                            YearPublished = 1992,
+                            Difficulty = 6,
+                            StoreLink = "https://www.jwpepper.com/Classical-Concerto/10443956.item#.YnAf0cjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonatina",
+                            Composer = "Schmitt, Jacob",
+                            YearPublished = 1992,
+                            Difficulty = 5, //find difficulty
+                            StoreLink = "https://www.jwpepper.com/Classical-Concerto/10443956.item#.YnAf0cjMKUk" //find website
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata in G Minor",
+                            Composer = "Vivaldi, Antonio",
+                            YearPublished = 1709,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Sonata-in-G-Minor/4864971.item#.YnAhScjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Fantaise",
+                            Composer = "Bedard, Denis",
+                            YearPublished = 1995,
+                            Difficulty = 4, //find difficulty
+                            StoreLink = "https://www.jwpepper.com/sheet-music/10667359.item#.YnAhssjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonta",
+                            Composer = "DiPasquale, James",
+                            YearPublished = 1967,
+                            Difficulty = 6,
+                            StoreLink = "https://www.hickeys.com/music/contests/NYSSMA/tenor_saxophone_solos/level_6/products/sku028268-dipasquale-james-sonata.php"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Pitt County Excursions",
+                            Composer = "Duckworth, William",
+                            YearPublished = 1976,
+                            Difficulty = 3, //grades 7-8 (progressive)
+                            StoreLink = "https://www.jwpepper.com/Pitt-County-Excursions/10969450.item#.YnAkbMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Adagio and Allegro",
+                            Composer = "Handel, G.F.",
+                            YearPublished = 1722,
+                            Difficulty = 2,
+                            StoreLink = "https://www.jwpepper.com/Adagio-and-Allegro/7556152.item#.YnAlL8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Poem",
+                            Composer = "Hartley, Walter",
+                            YearPublished = 1967,
+                            Difficulty = 4,
+                            StoreLink = "https://www.jwpepper.com/Poem/4849063.item#.YnAm5cjMKUk"
                         }
                     }
                 },
