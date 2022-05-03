@@ -815,6 +815,94 @@ namespace SeniorProject.Models
                             StoreLink = "https://www.jwpepper.com/Contest-Piece/4796199.item#.Ymr_jMjMKUk"
                         }
                     }
+                },
+                /*This block contains all the excerpts
+                 * for the tuba players
+                 */
+                {
+                    "Tuba", new List<Excerpt>
+                    {
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Concerto for Tuba",
+                            Composer = "Vaughan Williams, Ralph",
+                            YearPublished = 1954,
+                            Difficulty = 6, //A
+                            StoreLink = "https://www.jwpepper.com/Concerto-for-Trumpet/994053.item#.Ymr3v8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Asleep in the Deep",
+                            Composer = "Petrie, H.W.",
+                            YearPublished = 1897,
+                            Difficulty = 2, //E but 6/8 time
+                            StoreLink = "https://www.jwpepper.com/Asleep-in-the-Deep-Tuba-Solo-------/4846168.item#.YnBPycjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Revenge! Timotheus Cries!",
+                            Composer = "Handel, G.F.",
+                            YearPublished = 1736,
+                            Difficulty = 2, //ME
+                            StoreLink = "https://www.jwpepper.com/Revenge-Timotheus-Cries-Tuba-Sol/4607305.item#.YnBQj8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Variations on the Theme of Judas Maccabeus",
+                            Composer = "Beethoven, Ludwig van",
+                            YearPublished = 1796,
+                            Difficulty = 5, //MA
+                            StoreLink = "https://www.jwpepper.com/Variations-on-the-Theme-of-Judas-Maccabeus/995233.item#.YnBQBsjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Fantasy for Tuba",
+                            Composer = "Arnold, Malcolm",
+                            YearPublished = 1969,
+                            Difficulty = 3,
+                            StoreLink = "https://www.jwpepper.com/Fantasy-for-Tuba%2C-Op.-102/5006762.item#.YnCDAcjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Suite for Tuba",
+                            Composer = "Haddad, Don",
+                            YearPublished = 1966,
+                            Difficulty = 4,
+                            StoreLink = "https://www.jwpepper.com/Suite-for-Tuba/1006105.item#.YnCD_8jMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "O Isis and Osiris",
+                            Composer = "Mozart, W.A.",
+                            YearPublished = 1791,
+                            Difficulty = 3, //ME
+                            StoreLink = "https://www.jwpepper.com/O-Isis-and-Osiris/4785440.item#.YnCE6sjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Andante and Rondo",
+                            Composer = "Capuzzi, Antonio",
+                            YearPublished = 1967,
+                            Difficulty = 4,
+                            StoreLink = "https://www.jwpepper.com/Andante-and-Rondo/4843991.item#.YnCGKMjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Sonata for Tuba",
+                            Composer = "Hindemith, Paul",
+                            YearPublished = 1955,
+                            Difficulty = 5,
+                            StoreLink = "https://www.jwpepper.com/Sonata-for-Tuba-and-Piano/996447.item#.YnCGksjMKUk"
+                        },
+                        new Excerpt
+                        {
+                            ExcerptTitle = "Encounters II",
+                            Composer = "Kraft, William",
+                            YearPublished = 1970,
+                            Difficulty = 6,
+                            StoreLink = "https://www.jwpepper.com/Encounters-Two-Tuba-Solo/7319445.item#.YnCHAcjMKUk"
+                        }
+                    }
                 }
             };
         }
