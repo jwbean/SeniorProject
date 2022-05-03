@@ -28,14 +28,17 @@ namespace SeniorProject
                 case Instrument.AltoSax:
                     instrumentPicture.BackgroundImage = Properties.Resources.AltoSax;
                     instrumentName.Text = "Alto Sax";
+                    transpositionLabel.Text = "Eb Transposition";
                     break;
                 case Instrument.Clarinet:
                     instrumentPicture.BackgroundImage = Properties.Resources.Clarinet;
                     instrumentName.Text = "Clarinet";
+                    transpositionLabel.Text = "Bb Transposition";
                     break;
                 case Instrument.FrenchHorn:
                     instrumentPicture.BackgroundImage = Properties.Resources.FrenchHorn;
                     instrumentName.Text = "French Horn";
+                    transpositionLabel.Text = "F Transposition";
                     break;
                 case Instrument.Flute:
                     instrumentPicture.BackgroundImage = Properties.Resources.Flute;
@@ -48,10 +51,12 @@ namespace SeniorProject
                 case Instrument.TenorSax:
                     instrumentPicture.BackgroundImage = Properties.Resources.TenorSax;
                     instrumentName.Text = "Tenor Sax";
+                    transpositionLabel.Text = "Bb Transposition";
                     break;
                 case Instrument.Trumpet:
                     instrumentPicture.BackgroundImage = Properties.Resources.Trumpet;
                     instrumentName.Text = "Trumpet";
+                    transpositionLabel.Text = "Bb Transposition";
                     break;
                 default:
                     break;

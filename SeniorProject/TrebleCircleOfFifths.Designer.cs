@@ -59,6 +59,7 @@
             this.excerptsButton = new System.Windows.Forms.Button();
             this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.instrumentName = new System.Windows.Forms.Label();
+            this.transpositionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -406,12 +407,24 @@
             this.instrumentName.Text = "this is a test";
             this.instrumentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // transpositionLabel
+            // 
+            this.transpositionLabel.AutoSize = true;
+            this.transpositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transpositionLabel.Location = new System.Drawing.Point(415, 365);
+            this.transpositionLabel.Name = "transpositionLabel";
+            this.transpositionLabel.Size = new System.Drawing.Size(178, 31);
+            this.transpositionLabel.TabIndex = 63;
+            this.transpositionLabel.Text = "Concert Pitch";
+            this.transpositionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // TrebleCircleOfFifths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 779);
+            this.Controls.Add(this.transpositionLabel);
             this.Controls.Add(this.instrumentName);
             this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.excerptsButton);
@@ -485,5 +498,6 @@
         private System.Windows.Forms.Button excerptsButton;
         private System.Windows.Forms.PictureBox instrumentPicture;
         private System.Windows.Forms.Label instrumentName;
+        private System.Windows.Forms.Label transpositionLabel;
     }
 }
