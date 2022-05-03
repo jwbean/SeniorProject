@@ -179,6 +179,8 @@
     <None Include="Resources\Clarinet.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\stopIcon.png" />
+    <None Include="Resources\playIcon.jpg" />
     <None Include="Resources\BFlatMajor.png" />
     <None Include="Resources\AFlatMajor.png" />
     <None Include="Resources\AMajor.png" />

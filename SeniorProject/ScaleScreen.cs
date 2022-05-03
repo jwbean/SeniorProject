@@ -24,6 +24,7 @@ namespace SeniorProject
         private int primaryOctave;
         private bool major; //1 for major, 0 for minor
         private bool staffPainted;
+        private bool scalePlaying = false;
 
         public ScaleScreen(Instrument instrument, Scale scale, bool majorOrMinor)
         {
@@ -908,26 +909,41 @@ namespace SeniorProject
             }
         }
 
-        private void playButton_Click(object sender, EventArgs e)
+        private async void playButton_Click(object sender, EventArgs e)
         {
-            var asmbly = Assembly.GetExecutingAssembly();
-            //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());
-            Graphics g2 = musicPanel.CreateGraphics();
-            g2.SmoothingMode = SmoothingMode.HighQuality;
-            for (int i = 0; i < 8; i++)
+            if (!scalePlaying)
             {
-                g2.FillEllipse(_highlightBrush, 50 * (i+1), noteHeight[i], _noteWdth, _noteHght);
-                var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + instrument + "." + instrument + noteArray[i] + ".wav");
-                using (System.IO.Stream str = wav)
+                scalePlaying = true;
+                playButton.BackgroundImage = Resources.stopIcon;
+                var asmbly = Assembly.GetExecutingAssembly();
+                //var embeddedResources = String.Join("; ", asmbly.GetManifestResourceNames());
+                Graphics g2 = musicPanel.CreateGraphics();
+                g2.SmoothingMode = SmoothingMode.HighQuality;
+                for (int i = 0; i < 8; i++)
                 {
-                    SoundPlayer player = new SoundPlayer(str);
-                    player.Load();
-                    player.Play();
-                    System.Threading.Thread.Sleep(800);
+                    if (scalePlaying)
+                    {
+                        g2.FillEllipse(_highlightBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
+                        var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles." + instrument + "." + instrument + noteArray[i] + ".wav");
+                        using (System.IO.Stream str = wav)
+                        {
+                            SoundPlayer player = new SoundPlayer(str);
+                            player.Load();
+                            player.Play();
+                            await Task.Delay(800);
+                        }
+                        g2.FillEllipse(_noteBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
+                    }                    
                 }
-                g2.FillEllipse(_noteBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
+                g2.Dispose();
+                scalePlaying = false;
+                playButton.BackgroundImage = Resources.playIcon;
             }
-            g2.Dispose();
+            else
+            {
+                scalePlaying = false;
+                playButton.BackgroundImage = Resources.playIcon;
+            }
         }
 
         private void excerptButton_Click(object sender, EventArgs e)
@@ -939,7 +955,7 @@ namespace SeniorProject
             excerpts.Show();
         }
 
-        private void musicPanel_Click(object sender, MouseEventArgs e)
+        private async void musicPanel_Click(object sender, MouseEventArgs e)
         {
             int i = 0;
             Region region1 = new Region(new Rectangle(new Point(50, (int)noteHeight[i]), new Size(_noteWdth, _noteHght)));
@@ -1006,7 +1022,7 @@ namespace SeniorProject
                     SoundPlayer player = new SoundPlayer(str);
                     player.Load();
                     player.Play();
-                    System.Threading.Thread.Sleep(800);
+                    await Task.Delay(800);
                 }
                 g2.FillEllipse(_noteBrush, 50 * (i + 1), noteHeight[i], _noteWdth, _noteHght);
                 g2.Dispose();
