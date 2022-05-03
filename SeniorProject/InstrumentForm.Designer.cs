@@ -37,6 +37,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(277, 3);
@@ -47,6 +48,7 @@
             // 
             // instrumentPicture
             // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentPicture.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
             this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.instrumentPicture.Location = new System.Drawing.Point(426, 295);
@@ -57,6 +59,7 @@
             // 
             // instrumentList
             // 
+            this.instrumentList.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentList.FormattingEnabled = true;
             this.instrumentList.Location = new System.Drawing.Point(464, 82);
             this.instrumentList.Name = "instrumentList";
@@ -66,6 +69,7 @@
             // 
             // advanceButton
             // 
+            this.advanceButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.advanceButton.Location = new System.Drawing.Point(479, 504);
             this.advanceButton.Name = "advanceButton";
             this.advanceButton.Size = new System.Drawing.Size(109, 52);

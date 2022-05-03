@@ -49,8 +49,8 @@
             this.musicPanel.Size = new System.Drawing.Size(494, 150);
             this.musicPanel.TabIndex = 0;
             this.musicPanel.TabStop = false;
-            this.musicPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.musicPanel_Click);
             this.musicPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.musicPanel_Paint);
+            this.musicPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.musicPanel_Click);
             // 
             // changeInstrumentButton
             // 

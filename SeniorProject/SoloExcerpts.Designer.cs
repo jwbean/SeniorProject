@@ -33,17 +33,18 @@
             this.instrumentName = new System.Windows.Forms.Label();
             this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.excerptListView = new System.Windows.Forms.ListView();
+            this.FillerHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Composer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.YearPublished = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Difficulty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.StoreLink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.FillerHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // changeInstrumentButton
             // 
+            this.changeInstrumentButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.changeInstrumentButton.Location = new System.Drawing.Point(950, 13);
             this.changeInstrumentButton.Name = "changeInstrumentButton";
             this.changeInstrumentButton.Size = new System.Drawing.Size(140, 34);
@@ -54,6 +55,7 @@
             // 
             // circleOfFifths
             // 
+            this.circleOfFifths.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.circleOfFifths.Location = new System.Drawing.Point(13, 13);
             this.circleOfFifths.Name = "circleOfFifths";
             this.circleOfFifths.Size = new System.Drawing.Size(140, 34);
@@ -64,6 +66,7 @@
             // 
             // instrumentName
             // 
+            this.instrumentName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentName.Location = new System.Drawing.Point(971, 179);
             this.instrumentName.Name = "instrumentName";
             this.instrumentName.Size = new System.Drawing.Size(100, 20);
@@ -73,6 +76,7 @@
             // 
             // instrumentPicture
             // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
             this.instrumentPicture.Name = "instrumentPicture";
@@ -82,6 +86,7 @@
             // 
             // excerptListView
             // 
+            this.excerptListView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.excerptListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.FillerHeader,
             this.Title,
@@ -99,8 +104,14 @@
             this.excerptListView.TabIndex = 64;
             this.excerptListView.UseCompatibleStateImageBehavior = false;
             this.excerptListView.View = System.Windows.Forms.View.Details;
-            this.excerptListView.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.excerptListView_ColumnWidthChanging);
             this.excerptListView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.ColumnClick);
+            this.excerptListView.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.excerptListView_ColumnWidthChanging);
+            // 
+            // FillerHeader
+            // 
+            this.FillerHeader.DisplayIndex = 5;
+            this.FillerHeader.Text = "";
+            this.FillerHeader.Width = 0;
             // 
             // Title
             // 
@@ -136,12 +147,6 @@
             this.StoreLink.Text = "Store Link";
             this.StoreLink.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.StoreLink.Width = 400;
-            // 
-            // FillerHeader
-            // 
-            this.FillerHeader.DisplayIndex = 5;
-            this.FillerHeader.Text = "";
-            this.FillerHeader.Width = 0;
             // 
             // SoloExcerpts
             // 

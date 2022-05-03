@@ -65,6 +65,7 @@
             // 
             // changeInstrumentButton
             // 
+            this.changeInstrumentButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.changeInstrumentButton.Location = new System.Drawing.Point(950, 13);
             this.changeInstrumentButton.Name = "changeInstrumentButton";
             this.changeInstrumentButton.Size = new System.Drawing.Size(140, 34);
@@ -75,6 +76,7 @@
             // 
             // BMajor
             // 
+            this.BMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BMajor;
             this.BMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BMajor.Location = new System.Drawing.Point(336, 623);
@@ -86,6 +88,7 @@
             // 
             // GFlatMajor
             // 
+            this.GFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GFlatMajor;
             this.GFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.GFlatMajor.Location = new System.Drawing.Point(463, 663);
@@ -97,6 +100,7 @@
             // 
             // DFlatMajor
             // 
+            this.DFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DFlatMajor;
             this.DFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DFlatMajor.Location = new System.Drawing.Point(587, 623);
@@ -108,6 +112,7 @@
             // 
             // EMajor
             // 
+            this.EMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EMajor;
             this.EMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EMajor.Location = new System.Drawing.Point(231, 510);
@@ -119,6 +124,7 @@
             // 
             // AMajor
             // 
+            this.AMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AMajor;
             this.AMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AMajor.Location = new System.Drawing.Point(207, 390);
@@ -130,6 +136,7 @@
             // 
             // AFlatMajor
             // 
+            this.AFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AFlatMajor;
             this.AFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AFlatMajor.Location = new System.Drawing.Point(697, 510);
@@ -141,6 +148,7 @@
             // 
             // EFlatMajor
             // 
+            this.EFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EFlatMajor;
             this.EFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EFlatMajor.Location = new System.Drawing.Point(723, 390);
@@ -152,6 +160,7 @@
             // 
             // GMajor
             // 
+            this.GMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GMajor;
             this.GMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.GMajor.Location = new System.Drawing.Point(336, 152);
@@ -163,6 +172,7 @@
             // 
             // DMajor
             // 
+            this.DMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DMajor;
             this.DMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DMajor.Location = new System.Drawing.Point(231, 258);
@@ -174,6 +184,7 @@
             // 
             // BFlatMajor
             // 
+            this.BFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BFlatMajor;
             this.BFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BFlatMajor.Location = new System.Drawing.Point(697, 258);
@@ -185,6 +196,7 @@
             // 
             // CMajor
             // 
+            this.CMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CMajor.BackgroundImage = global::SeniorProject.Properties.Resources.CMajor;
             this.CMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CMajor.Location = new System.Drawing.Point(463, 109);
@@ -196,6 +208,7 @@
             // 
             // FMajor
             // 
+            this.FMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FMajor.BackgroundImage = global::SeniorProject.Properties.Resources.FMajor;
             this.FMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.FMajor.Location = new System.Drawing.Point(587, 152);
@@ -207,6 +220,7 @@
             // 
             // majorOrMinor
             // 
+            this.majorOrMinor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.majorOrMinor.AutoSize = true;
             this.majorOrMinor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.majorOrMinor.Location = new System.Drawing.Point(331, 27);
@@ -217,6 +231,7 @@
             // 
             // majorMinorSwitch
             // 
+            this.majorMinorSwitch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.majorMinorSwitch.Location = new System.Drawing.Point(590, 34);
             this.majorMinorSwitch.Name = "majorMinorSwitch";
             this.majorMinorSwitch.Size = new System.Drawing.Size(140, 34);
@@ -227,6 +242,7 @@
             // 
             // noFlats
             // 
+            this.noFlats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.noFlats.AutoSize = true;
             this.noFlats.BackColor = System.Drawing.SystemColors.ControlLight;
             this.noFlats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,6 +255,7 @@
             // 
             // twoFlats
             // 
+            this.twoFlats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.twoFlats.AutoSize = true;
             this.twoFlats.BackColor = System.Drawing.SystemColors.ControlLight;
             this.twoFlats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,6 +268,7 @@
             // 
             // oneFlat
             // 
+            this.oneFlat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.oneFlat.AutoSize = true;
             this.oneFlat.BackColor = System.Drawing.SystemColors.ControlLight;
             this.oneFlat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -263,6 +281,7 @@
             // 
             // threeFlats
             // 
+            this.threeFlats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.threeFlats.AutoSize = true;
             this.threeFlats.BackColor = System.Drawing.SystemColors.ControlLight;
             this.threeFlats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -275,6 +294,7 @@
             // 
             // fourFlats
             // 
+            this.fourFlats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fourFlats.AutoSize = true;
             this.fourFlats.BackColor = System.Drawing.SystemColors.ControlLight;
             this.fourFlats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,6 +307,7 @@
             // 
             // fiveFlats
             // 
+            this.fiveFlats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fiveFlats.AutoSize = true;
             this.fiveFlats.BackColor = System.Drawing.SystemColors.ControlLight;
             this.fiveFlats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,6 +320,7 @@
             // 
             // sixFlats
             // 
+            this.sixFlats.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sixFlats.AutoSize = true;
             this.sixFlats.BackColor = System.Drawing.SystemColors.ControlLight;
             this.sixFlats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -311,6 +333,7 @@
             // 
             // fiveSharps
             // 
+            this.fiveSharps.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fiveSharps.AutoSize = true;
             this.fiveSharps.BackColor = System.Drawing.SystemColors.ControlLight;
             this.fiveSharps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -323,6 +346,7 @@
             // 
             // fourSharps
             // 
+            this.fourSharps.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fourSharps.AutoSize = true;
             this.fourSharps.BackColor = System.Drawing.SystemColors.ControlLight;
             this.fourSharps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -335,6 +359,7 @@
             // 
             // threeSharps
             // 
+            this.threeSharps.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.threeSharps.AutoSize = true;
             this.threeSharps.BackColor = System.Drawing.SystemColors.ControlLight;
             this.threeSharps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -347,6 +372,7 @@
             // 
             // twoSharps
             // 
+            this.twoSharps.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.twoSharps.AutoSize = true;
             this.twoSharps.BackColor = System.Drawing.SystemColors.ControlLight;
             this.twoSharps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -359,6 +385,7 @@
             // 
             // oneSharp
             // 
+            this.oneSharp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.oneSharp.AutoSize = true;
             this.oneSharp.BackColor = System.Drawing.SystemColors.ControlLight;
             this.oneSharp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,6 +398,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(358, 396);
@@ -381,6 +409,7 @@
             // 
             // excerptsButton
             // 
+            this.excerptsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.excerptsButton.Location = new System.Drawing.Point(13, 13);
             this.excerptsButton.Name = "excerptsButton";
             this.excerptsButton.Size = new System.Drawing.Size(140, 34);
@@ -391,6 +420,7 @@
             // 
             // instrumentPicture
             // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
             this.instrumentPicture.Name = "instrumentPicture";
@@ -400,6 +430,7 @@
             // 
             // instrumentName
             // 
+            this.instrumentName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentName.Location = new System.Drawing.Point(971, 179);
             this.instrumentName.Name = "instrumentName";
             this.instrumentName.Size = new System.Drawing.Size(100, 20);
@@ -409,6 +440,7 @@
             // 
             // transpositionLabel
             // 
+            this.transpositionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.transpositionLabel.AutoSize = true;
             this.transpositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.transpositionLabel.Location = new System.Drawing.Point(415, 365);

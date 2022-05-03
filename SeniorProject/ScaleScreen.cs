@@ -23,6 +23,7 @@ namespace SeniorProject
         private float[] noteHeight = new float[8];
         private int primaryOctave;
         private bool major; //1 for major, 0 for minor
+        private bool staffPainted;
 
         public ScaleScreen(Instrument instrument, Scale scale, bool majorOrMinor)
         {
@@ -186,6 +187,7 @@ namespace SeniorProject
 
         private void musicPanel_Paint(object sender, PaintEventArgs e)
         {
+            if (staffPainted) return;
             Graphics g = e.Graphics;
             g.SmoothingMode = SmoothingMode.HighQuality;
 
@@ -549,6 +551,8 @@ namespace SeniorProject
             g.FillEllipse(_noteBrush, 300, noteHeight[5], _noteWdth, _noteHght);
             g.FillEllipse(_noteBrush, 350, noteHeight[6], _noteWdth, _noteHght);
             g.FillEllipse(_noteBrush, 400, noteHeight[7], _noteWdth, _noteHght);
+
+            staffPainted = true;
         }
 
         private void a_noteHeight(Graphics g)
