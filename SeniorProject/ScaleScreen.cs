@@ -83,7 +83,7 @@ namespace SeniorProject
             if (instrument == Instrument.Flute || instrument == Instrument.AltoSax || instrument == Instrument.Trumpet || instrument == Instrument.FrenchHorn || instrument == Instrument.Oboe || instrument == Instrument.Clarinet || instrument == Instrument.TenorSax)
             {
                 primaryOctave = 4;
-                if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+                if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
                 {
                     fluteOboeOffset = 1;
                 }
@@ -189,7 +189,7 @@ namespace SeniorProject
             Graphics g = e.Graphics;
             g.SmoothingMode = SmoothingMode.HighQuality;
 
-            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 musicPanel.Top = musicPanel.Top - 30;
                 for (int i = 1; i < 6; i++)
@@ -564,7 +564,7 @@ namespace SeniorProject
             {
                 tbnOffset = 2.5f;
             }
-            else if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            else if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 fluteOboeOffset = 3.5f;
             }
@@ -617,7 +617,7 @@ namespace SeniorProject
             {
                 tbnOffset = 2.5f;
             }
-            else if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            else if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 fluteOboeOffset = 3.5f;
             }
@@ -675,7 +675,7 @@ namespace SeniorProject
             noteHeight[5] = (3 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (2 + tubaOffset - tbnOffset) * _staffHght;
-            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 for (int i = 0; i < 8; i++)
                 {
@@ -724,7 +724,7 @@ namespace SeniorProject
             noteHeight[5] = (2.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (2 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
-            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 for (int i = 0; i < 8; i++)
                 {
@@ -759,7 +759,7 @@ namespace SeniorProject
             noteHeight[5] = (2 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (1 + tubaOffset - tbnOffset) * _staffHght;
-            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 for (int i = 0; i < 8; i++)
                 {
@@ -795,7 +795,7 @@ namespace SeniorProject
             noteHeight[5] = (1.6f + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[6] = (1 + tubaOffset - tbnOffset) * _staffHght;
             noteHeight[7] = (0.6f + tubaOffset - tbnOffset) * _staffHght;
-            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            if (tbnOffset != 0 || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 for (int i = 0; i < 8; i++)
                 {
@@ -826,7 +826,7 @@ namespace SeniorProject
             {
                 tbnOffset = 2.5f;
             }
-            else if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax)
+            else if (instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
                 fluteOboeOffset = 0.01f;
             }
