@@ -31,7 +31,6 @@
             this.changeInstrumentButton = new System.Windows.Forms.Button();
             this.circleOfFifths = new System.Windows.Forms.Button();
             this.instrumentName = new System.Windows.Forms.Label();
-            this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.excerptListView = new System.Windows.Forms.ListView();
             this.FillerHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -39,6 +38,8 @@
             this.YearPublished = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Difficulty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.StoreLink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
+            this.metronomeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,16 +74,6 @@
             this.instrumentName.TabIndex = 63;
             this.instrumentName.Text = "this is a test";
             this.instrumentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // instrumentPicture
-            // 
-            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
-            this.instrumentPicture.Name = "instrumentPicture";
-            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
-            this.instrumentPicture.TabIndex = 60;
-            this.instrumentPicture.TabStop = false;
             // 
             // excerptListView
             // 
@@ -148,12 +139,34 @@
             this.StoreLink.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.StoreLink.Width = 400;
             // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
+            this.instrumentPicture.TabIndex = 60;
+            this.instrumentPicture.TabStop = false;
+            // 
+            // metronomeButton
+            // 
+            this.metronomeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.metronomeButton.Location = new System.Drawing.Point(13, 58);
+            this.metronomeButton.Name = "metronomeButton";
+            this.metronomeButton.Size = new System.Drawing.Size(140, 34);
+            this.metronomeButton.TabIndex = 65;
+            this.metronomeButton.Text = "Metronome";
+            this.metronomeButton.UseVisualStyleBackColor = true;
+            this.metronomeButton.Click += new System.EventHandler(this.metronomeButton_Click);
+            // 
             // SoloExcerpts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.metronomeButton);
             this.Controls.Add(this.excerptListView);
             this.Controls.Add(this.instrumentName);
             this.Controls.Add(this.instrumentPicture);
@@ -180,5 +193,6 @@
         private System.Windows.Forms.ColumnHeader YearPublished;
         private System.Windows.Forms.ColumnHeader Difficulty;
         private System.Windows.Forms.ColumnHeader StoreLink;
+        private System.Windows.Forms.Button metronomeButton;
     }
 }

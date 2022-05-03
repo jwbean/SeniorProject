@@ -287,5 +287,13 @@ namespace SeniorProject
             scale.Closed += (s, args) => this.Close();
             scale.Show();
         }
+
+        private void metronomeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Metronome metro = new Metronome(instrument);
+            metro.Closed += (s, args) => this.Close();
+            metro.Show();
+        }
     }
 }

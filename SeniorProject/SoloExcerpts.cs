@@ -143,5 +143,13 @@ namespace SeniorProject
             // ListView using the ListViewItemComparer object.
             //this.excerptListView.ListViewItemSorter = new ListViewItemComparer(e.Column);
         }
+
+        private void metronomeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Metronome metro = new Metronome(instrument);
+            metro.Closed += (s, args) => this.Close();
+            metro.Show();
+        }
     }
 }

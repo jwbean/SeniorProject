@@ -29,28 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScaleScreen));
-            this.musicPanel = new System.Windows.Forms.PictureBox();
             this.changeInstrumentButton = new System.Windows.Forms.Button();
             this.circleOfFifthsButton = new System.Windows.Forms.Button();
-            this.keySignature = new System.Windows.Forms.PictureBox();
-            this.playButton = new System.Windows.Forms.Button();
             this.excerptButton = new System.Windows.Forms.Button();
-            this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.instrumentName = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.keySignature)).BeginInit();
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
+            this.playButton = new System.Windows.Forms.Button();
+            this.keySignature = new System.Windows.Forms.PictureBox();
+            this.musicPanel = new System.Windows.Forms.PictureBox();
+            this.metronomeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.keySignature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).BeginInit();
             this.SuspendLayout();
-            // 
-            // musicPanel
-            // 
-            this.musicPanel.Location = new System.Drawing.Point(300, 200);
-            this.musicPanel.Name = "musicPanel";
-            this.musicPanel.Size = new System.Drawing.Size(494, 150);
-            this.musicPanel.TabIndex = 0;
-            this.musicPanel.TabStop = false;
-            this.musicPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.musicPanel_Paint);
-            this.musicPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.musicPanel_Click);
             // 
             // changeInstrumentButton
             // 
@@ -72,14 +63,33 @@
             this.circleOfFifthsButton.UseVisualStyleBackColor = true;
             this.circleOfFifthsButton.Click += new System.EventHandler(this.circleOfFifthsButton_Click);
             // 
-            // keySignature
+            // excerptButton
             // 
-            this.keySignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.keySignature.Location = new System.Drawing.Point(141, 163);
-            this.keySignature.Name = "keySignature";
-            this.keySignature.Size = new System.Drawing.Size(178, 166);
-            this.keySignature.TabIndex = 3;
-            this.keySignature.TabStop = false;
+            this.excerptButton.Location = new System.Drawing.Point(13, 57);
+            this.excerptButton.Name = "excerptButton";
+            this.excerptButton.Size = new System.Drawing.Size(140, 34);
+            this.excerptButton.TabIndex = 5;
+            this.excerptButton.Text = "Solo Excerpts";
+            this.excerptButton.UseVisualStyleBackColor = true;
+            this.excerptButton.Click += new System.EventHandler(this.excerptButton_Click);
+            // 
+            // instrumentName
+            // 
+            this.instrumentName.Location = new System.Drawing.Point(971, 179);
+            this.instrumentName.Name = "instrumentName";
+            this.instrumentName.Size = new System.Drawing.Size(100, 20);
+            this.instrumentName.TabIndex = 61;
+            this.instrumentName.Text = "this is a test";
+            this.instrumentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
+            this.instrumentPicture.TabIndex = 60;
+            this.instrumentPicture.TabStop = false;
             // 
             // playButton
             // 
@@ -92,33 +102,34 @@
             this.playButton.UseVisualStyleBackColor = true;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
-            // excerptButton
+            // keySignature
             // 
-            this.excerptButton.Location = new System.Drawing.Point(13, 57);
-            this.excerptButton.Name = "excerptButton";
-            this.excerptButton.Size = new System.Drawing.Size(140, 34);
-            this.excerptButton.TabIndex = 5;
-            this.excerptButton.Text = "Solo Excerpts";
-            this.excerptButton.UseVisualStyleBackColor = true;
-            this.excerptButton.Click += new System.EventHandler(this.excerptButton_Click);
+            this.keySignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.keySignature.Location = new System.Drawing.Point(141, 163);
+            this.keySignature.Name = "keySignature";
+            this.keySignature.Size = new System.Drawing.Size(178, 166);
+            this.keySignature.TabIndex = 3;
+            this.keySignature.TabStop = false;
             // 
-            // instrumentPicture
+            // musicPanel
             // 
-            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
-            this.instrumentPicture.Name = "instrumentPicture";
-            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
-            this.instrumentPicture.TabIndex = 60;
-            this.instrumentPicture.TabStop = false;
+            this.musicPanel.Location = new System.Drawing.Point(300, 200);
+            this.musicPanel.Name = "musicPanel";
+            this.musicPanel.Size = new System.Drawing.Size(494, 150);
+            this.musicPanel.TabIndex = 0;
+            this.musicPanel.TabStop = false;
+            this.musicPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.musicPanel_Paint);
+            this.musicPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.musicPanel_Click);
             // 
-            // instrumentName
+            // metronomeButton
             // 
-            this.instrumentName.Location = new System.Drawing.Point(971, 179);
-            this.instrumentName.Name = "instrumentName";
-            this.instrumentName.Size = new System.Drawing.Size(100, 20);
-            this.instrumentName.TabIndex = 61;
-            this.instrumentName.Text = "this is a test";
-            this.instrumentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metronomeButton.Location = new System.Drawing.Point(13, 100);
+            this.metronomeButton.Name = "metronomeButton";
+            this.metronomeButton.Size = new System.Drawing.Size(140, 34);
+            this.metronomeButton.TabIndex = 62;
+            this.metronomeButton.Text = "Metronome";
+            this.metronomeButton.UseVisualStyleBackColor = true;
+            this.metronomeButton.Click += new System.EventHandler(this.metronomeButton_Click);
             // 
             // ScaleScreen
             // 
@@ -126,6 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 625);
+            this.Controls.Add(this.metronomeButton);
             this.Controls.Add(this.instrumentName);
             this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.excerptButton);
@@ -137,9 +149,9 @@
             this.Name = "ScaleScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScaleScreen";
-            ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.keySignature)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.keySignature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPanel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,5 +166,6 @@
         private System.Windows.Forms.Button excerptButton;
         private System.Windows.Forms.PictureBox instrumentPicture;
         private System.Windows.Forms.Label instrumentName;
+        private System.Windows.Forms.Button metronomeButton;
     }
 }

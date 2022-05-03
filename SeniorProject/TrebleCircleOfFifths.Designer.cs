@@ -29,18 +29,6 @@
         private void InitializeComponent()
         {
             this.changeInstrumentButton = new System.Windows.Forms.Button();
-            this.BMajor = new System.Windows.Forms.Button();
-            this.GFlatMajor = new System.Windows.Forms.Button();
-            this.DFlatMajor = new System.Windows.Forms.Button();
-            this.EMajor = new System.Windows.Forms.Button();
-            this.AMajor = new System.Windows.Forms.Button();
-            this.AFlatMajor = new System.Windows.Forms.Button();
-            this.EFlatMajor = new System.Windows.Forms.Button();
-            this.GMajor = new System.Windows.Forms.Button();
-            this.DMajor = new System.Windows.Forms.Button();
-            this.BFlatMajor = new System.Windows.Forms.Button();
-            this.CMajor = new System.Windows.Forms.Button();
-            this.FMajor = new System.Windows.Forms.Button();
             this.majorOrMinor = new System.Windows.Forms.Label();
             this.majorMinorSwitch = new System.Windows.Forms.Button();
             this.noFlats = new System.Windows.Forms.Label();
@@ -57,9 +45,22 @@
             this.oneSharp = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.excerptsButton = new System.Windows.Forms.Button();
-            this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.instrumentName = new System.Windows.Forms.Label();
             this.transpositionLabel = new System.Windows.Forms.Label();
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
+            this.BMajor = new System.Windows.Forms.Button();
+            this.GFlatMajor = new System.Windows.Forms.Button();
+            this.DFlatMajor = new System.Windows.Forms.Button();
+            this.EMajor = new System.Windows.Forms.Button();
+            this.AMajor = new System.Windows.Forms.Button();
+            this.AFlatMajor = new System.Windows.Forms.Button();
+            this.EFlatMajor = new System.Windows.Forms.Button();
+            this.GMajor = new System.Windows.Forms.Button();
+            this.DMajor = new System.Windows.Forms.Button();
+            this.BFlatMajor = new System.Windows.Forms.Button();
+            this.CMajor = new System.Windows.Forms.Button();
+            this.FMajor = new System.Windows.Forms.Button();
+            this.metronomeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,150 +74,6 @@
             this.changeInstrumentButton.Text = "Change Instruments";
             this.changeInstrumentButton.UseVisualStyleBackColor = true;
             this.changeInstrumentButton.Click += new System.EventHandler(this.changeInstrumentButton_Click);
-            // 
-            // BMajor
-            // 
-            this.BMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BMajor;
-            this.BMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BMajor.Location = new System.Drawing.Point(336, 623);
-            this.BMajor.Name = "BMajor";
-            this.BMajor.Size = new System.Drawing.Size(100, 85);
-            this.BMajor.TabIndex = 13;
-            this.BMajor.UseVisualStyleBackColor = true;
-            this.BMajor.Click += new System.EventHandler(this.BMajor_Click);
-            // 
-            // GFlatMajor
-            // 
-            this.GFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.GFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GFlatMajor;
-            this.GFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.GFlatMajor.Location = new System.Drawing.Point(463, 663);
-            this.GFlatMajor.Name = "GFlatMajor";
-            this.GFlatMajor.Size = new System.Drawing.Size(100, 85);
-            this.GFlatMajor.TabIndex = 12;
-            this.GFlatMajor.UseVisualStyleBackColor = true;
-            this.GFlatMajor.Click += new System.EventHandler(this.GFlatMajor_Click);
-            // 
-            // DFlatMajor
-            // 
-            this.DFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DFlatMajor;
-            this.DFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DFlatMajor.Location = new System.Drawing.Point(587, 623);
-            this.DFlatMajor.Name = "DFlatMajor";
-            this.DFlatMajor.Size = new System.Drawing.Size(100, 85);
-            this.DFlatMajor.TabIndex = 11;
-            this.DFlatMajor.UseVisualStyleBackColor = true;
-            this.DFlatMajor.Click += new System.EventHandler(this.DFlatMajor_Click);
-            // 
-            // EMajor
-            // 
-            this.EMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EMajor;
-            this.EMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EMajor.Location = new System.Drawing.Point(231, 510);
-            this.EMajor.Name = "EMajor";
-            this.EMajor.Size = new System.Drawing.Size(100, 85);
-            this.EMajor.TabIndex = 10;
-            this.EMajor.UseVisualStyleBackColor = true;
-            this.EMajor.Click += new System.EventHandler(this.EMajor_Click);
-            // 
-            // AMajor
-            // 
-            this.AMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AMajor;
-            this.AMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AMajor.Location = new System.Drawing.Point(207, 390);
-            this.AMajor.Name = "AMajor";
-            this.AMajor.Size = new System.Drawing.Size(100, 85);
-            this.AMajor.TabIndex = 9;
-            this.AMajor.UseVisualStyleBackColor = true;
-            this.AMajor.Click += new System.EventHandler(this.AMajor_Click);
-            // 
-            // AFlatMajor
-            // 
-            this.AFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AFlatMajor;
-            this.AFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AFlatMajor.Location = new System.Drawing.Point(697, 510);
-            this.AFlatMajor.Name = "AFlatMajor";
-            this.AFlatMajor.Size = new System.Drawing.Size(100, 85);
-            this.AFlatMajor.TabIndex = 8;
-            this.AFlatMajor.UseVisualStyleBackColor = true;
-            this.AFlatMajor.Click += new System.EventHandler(this.AFlatMajor_Click);
-            // 
-            // EFlatMajor
-            // 
-            this.EFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EFlatMajor;
-            this.EFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EFlatMajor.Location = new System.Drawing.Point(723, 390);
-            this.EFlatMajor.Name = "EFlatMajor";
-            this.EFlatMajor.Size = new System.Drawing.Size(100, 85);
-            this.EFlatMajor.TabIndex = 7;
-            this.EFlatMajor.UseVisualStyleBackColor = true;
-            this.EFlatMajor.Click += new System.EventHandler(this.EFlatMajor_Click);
-            // 
-            // GMajor
-            // 
-            this.GMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.GMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GMajor;
-            this.GMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.GMajor.Location = new System.Drawing.Point(336, 152);
-            this.GMajor.Name = "GMajor";
-            this.GMajor.Size = new System.Drawing.Size(100, 85);
-            this.GMajor.TabIndex = 6;
-            this.GMajor.UseVisualStyleBackColor = true;
-            this.GMajor.Click += new System.EventHandler(this.GMajor_Click);
-            // 
-            // DMajor
-            // 
-            this.DMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DMajor;
-            this.DMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DMajor.Location = new System.Drawing.Point(231, 258);
-            this.DMajor.Name = "DMajor";
-            this.DMajor.Size = new System.Drawing.Size(100, 85);
-            this.DMajor.TabIndex = 5;
-            this.DMajor.UseVisualStyleBackColor = true;
-            this.DMajor.Click += new System.EventHandler(this.DMajor_Click);
-            // 
-            // BFlatMajor
-            // 
-            this.BFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BFlatMajor;
-            this.BFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BFlatMajor.Location = new System.Drawing.Point(697, 258);
-            this.BFlatMajor.Name = "BFlatMajor";
-            this.BFlatMajor.Size = new System.Drawing.Size(100, 85);
-            this.BFlatMajor.TabIndex = 4;
-            this.BFlatMajor.UseVisualStyleBackColor = true;
-            this.BFlatMajor.Click += new System.EventHandler(this.BFlatMajor_Click);
-            // 
-            // CMajor
-            // 
-            this.CMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CMajor.BackgroundImage = global::SeniorProject.Properties.Resources.CMajor;
-            this.CMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CMajor.Location = new System.Drawing.Point(463, 109);
-            this.CMajor.Name = "CMajor";
-            this.CMajor.Size = new System.Drawing.Size(100, 85);
-            this.CMajor.TabIndex = 3;
-            this.CMajor.UseVisualStyleBackColor = true;
-            this.CMajor.Click += new System.EventHandler(this.CMajor_Click);
-            // 
-            // FMajor
-            // 
-            this.FMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.FMajor.BackgroundImage = global::SeniorProject.Properties.Resources.FMajor;
-            this.FMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.FMajor.Location = new System.Drawing.Point(587, 152);
-            this.FMajor.Name = "FMajor";
-            this.FMajor.Size = new System.Drawing.Size(100, 85);
-            this.FMajor.TabIndex = 2;
-            this.FMajor.UseVisualStyleBackColor = true;
-            this.FMajor.Click += new System.EventHandler(this.FMajor_Click);
             // 
             // majorOrMinor
             // 
@@ -418,16 +275,6 @@
             this.excerptsButton.UseVisualStyleBackColor = true;
             this.excerptsButton.Click += new System.EventHandler(this.excerptsButton_Click);
             // 
-            // instrumentPicture
-            // 
-            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
-            this.instrumentPicture.Name = "instrumentPicture";
-            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
-            this.instrumentPicture.TabIndex = 30;
-            this.instrumentPicture.TabStop = false;
-            // 
             // instrumentName
             // 
             this.instrumentName.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -450,12 +297,178 @@
             this.transpositionLabel.Text = "Concert Pitch";
             this.transpositionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(100, 100);
+            this.instrumentPicture.TabIndex = 30;
+            this.instrumentPicture.TabStop = false;
+            // 
+            // BMajor
+            // 
+            this.BMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BMajor;
+            this.BMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BMajor.Location = new System.Drawing.Point(336, 623);
+            this.BMajor.Name = "BMajor";
+            this.BMajor.Size = new System.Drawing.Size(100, 85);
+            this.BMajor.TabIndex = 13;
+            this.BMajor.UseVisualStyleBackColor = true;
+            this.BMajor.Click += new System.EventHandler(this.BMajor_Click);
+            // 
+            // GFlatMajor
+            // 
+            this.GFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.GFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GFlatMajor;
+            this.GFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.GFlatMajor.Location = new System.Drawing.Point(463, 663);
+            this.GFlatMajor.Name = "GFlatMajor";
+            this.GFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.GFlatMajor.TabIndex = 12;
+            this.GFlatMajor.UseVisualStyleBackColor = true;
+            this.GFlatMajor.Click += new System.EventHandler(this.GFlatMajor_Click);
+            // 
+            // DFlatMajor
+            // 
+            this.DFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DFlatMajor;
+            this.DFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DFlatMajor.Location = new System.Drawing.Point(587, 623);
+            this.DFlatMajor.Name = "DFlatMajor";
+            this.DFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.DFlatMajor.TabIndex = 11;
+            this.DFlatMajor.UseVisualStyleBackColor = true;
+            this.DFlatMajor.Click += new System.EventHandler(this.DFlatMajor_Click);
+            // 
+            // EMajor
+            // 
+            this.EMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EMajor;
+            this.EMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EMajor.Location = new System.Drawing.Point(231, 510);
+            this.EMajor.Name = "EMajor";
+            this.EMajor.Size = new System.Drawing.Size(100, 85);
+            this.EMajor.TabIndex = 10;
+            this.EMajor.UseVisualStyleBackColor = true;
+            this.EMajor.Click += new System.EventHandler(this.EMajor_Click);
+            // 
+            // AMajor
+            // 
+            this.AMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AMajor;
+            this.AMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AMajor.Location = new System.Drawing.Point(207, 390);
+            this.AMajor.Name = "AMajor";
+            this.AMajor.Size = new System.Drawing.Size(100, 85);
+            this.AMajor.TabIndex = 9;
+            this.AMajor.UseVisualStyleBackColor = true;
+            this.AMajor.Click += new System.EventHandler(this.AMajor_Click);
+            // 
+            // AFlatMajor
+            // 
+            this.AFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.AFlatMajor;
+            this.AFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AFlatMajor.Location = new System.Drawing.Point(697, 510);
+            this.AFlatMajor.Name = "AFlatMajor";
+            this.AFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.AFlatMajor.TabIndex = 8;
+            this.AFlatMajor.UseVisualStyleBackColor = true;
+            this.AFlatMajor.Click += new System.EventHandler(this.AFlatMajor_Click);
+            // 
+            // EFlatMajor
+            // 
+            this.EFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.EFlatMajor;
+            this.EFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EFlatMajor.Location = new System.Drawing.Point(723, 390);
+            this.EFlatMajor.Name = "EFlatMajor";
+            this.EFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.EFlatMajor.TabIndex = 7;
+            this.EFlatMajor.UseVisualStyleBackColor = true;
+            this.EFlatMajor.Click += new System.EventHandler(this.EFlatMajor_Click);
+            // 
+            // GMajor
+            // 
+            this.GMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.GMajor.BackgroundImage = global::SeniorProject.Properties.Resources.GMajor;
+            this.GMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.GMajor.Location = new System.Drawing.Point(336, 152);
+            this.GMajor.Name = "GMajor";
+            this.GMajor.Size = new System.Drawing.Size(100, 85);
+            this.GMajor.TabIndex = 6;
+            this.GMajor.UseVisualStyleBackColor = true;
+            this.GMajor.Click += new System.EventHandler(this.GMajor_Click);
+            // 
+            // DMajor
+            // 
+            this.DMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DMajor.BackgroundImage = global::SeniorProject.Properties.Resources.DMajor;
+            this.DMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DMajor.Location = new System.Drawing.Point(231, 258);
+            this.DMajor.Name = "DMajor";
+            this.DMajor.Size = new System.Drawing.Size(100, 85);
+            this.DMajor.TabIndex = 5;
+            this.DMajor.UseVisualStyleBackColor = true;
+            this.DMajor.Click += new System.EventHandler(this.DMajor_Click);
+            // 
+            // BFlatMajor
+            // 
+            this.BFlatMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BFlatMajor.BackgroundImage = global::SeniorProject.Properties.Resources.BFlatMajor;
+            this.BFlatMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BFlatMajor.Location = new System.Drawing.Point(697, 258);
+            this.BFlatMajor.Name = "BFlatMajor";
+            this.BFlatMajor.Size = new System.Drawing.Size(100, 85);
+            this.BFlatMajor.TabIndex = 4;
+            this.BFlatMajor.UseVisualStyleBackColor = true;
+            this.BFlatMajor.Click += new System.EventHandler(this.BFlatMajor_Click);
+            // 
+            // CMajor
+            // 
+            this.CMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CMajor.BackgroundImage = global::SeniorProject.Properties.Resources.CMajor;
+            this.CMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CMajor.Location = new System.Drawing.Point(463, 109);
+            this.CMajor.Name = "CMajor";
+            this.CMajor.Size = new System.Drawing.Size(100, 85);
+            this.CMajor.TabIndex = 3;
+            this.CMajor.UseVisualStyleBackColor = true;
+            this.CMajor.Click += new System.EventHandler(this.CMajor_Click);
+            // 
+            // FMajor
+            // 
+            this.FMajor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FMajor.BackgroundImage = global::SeniorProject.Properties.Resources.FMajor;
+            this.FMajor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.FMajor.Location = new System.Drawing.Point(587, 152);
+            this.FMajor.Name = "FMajor";
+            this.FMajor.Size = new System.Drawing.Size(100, 85);
+            this.FMajor.TabIndex = 2;
+            this.FMajor.UseVisualStyleBackColor = true;
+            this.FMajor.Click += new System.EventHandler(this.FMajor_Click);
+            // 
+            // metronomeButton
+            // 
+            this.metronomeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.metronomeButton.Location = new System.Drawing.Point(13, 59);
+            this.metronomeButton.Name = "metronomeButton";
+            this.metronomeButton.Size = new System.Drawing.Size(140, 34);
+            this.metronomeButton.TabIndex = 64;
+            this.metronomeButton.Text = "Metronome";
+            this.metronomeButton.UseVisualStyleBackColor = true;
+            this.metronomeButton.Click += new System.EventHandler(this.metronomeButton_Click);
+            // 
             // TrebleCircleOfFifths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 779);
+            this.Controls.Add(this.metronomeButton);
             this.Controls.Add(this.transpositionLabel);
             this.Controls.Add(this.instrumentName);
             this.Controls.Add(this.instrumentPicture);
@@ -531,5 +544,6 @@
         private System.Windows.Forms.PictureBox instrumentPicture;
         private System.Windows.Forms.Label instrumentName;
         private System.Windows.Forms.Label transpositionLabel;
+        private System.Windows.Forms.Button metronomeButton;
     }
 }

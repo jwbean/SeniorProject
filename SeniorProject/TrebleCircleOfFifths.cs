@@ -307,6 +307,14 @@ namespace SeniorProject
             SoloExcerpts excerpts = new SoloExcerpts(instrument);
             excerpts.Closed += (s, args) => this.Close();
             excerpts.Show();
-        }       
+        }
+
+        private void metronomeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Metronome metro = new Metronome(instrument);
+            metro.Closed += (s, args) => this.Close();
+            metro.Show();
+        }
     }
 }

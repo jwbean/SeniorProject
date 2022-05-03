@@ -1028,5 +1028,14 @@ namespace SeniorProject
                 g2.Dispose();
             }
         }
+
+        private void metronomeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Metronome metro = new Metronome(instrument);
+            metro.Closed += (s, args) => this.Close();
+            musicPanel.Dispose();
+            metro.Show();
+        }
     }
 }
