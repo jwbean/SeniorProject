@@ -101,6 +101,12 @@
     <Compile Include="SoloExcerpts.Designer.cs">
       <DependentUpon>SoloExcerpts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Metronome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metronome.Designer.cs">
+      <DependentUpon>Metronome.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BassCircleOfFifths.resx">
       <DependentUpon>BassCircleOfFifths.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SoloExcerpts.resx">
       <DependentUpon>SoloExcerpts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metronome.resx">
+      <DependentUpon>Metronome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -463,6 +472,7 @@
     <EmbeddedResource Include="InstrumentWavFiles\AltoSax\AltoSaxB3.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeASharp3.wav" />
     <EmbeddedResource Include="InstrumentWavFiles\Oboe\OboeB3.wav" />
+    <EmbeddedResource Include="InstrumentWavFiles\MetronomeClick.wav" />
     <Content Include="Resources\CMajor.png" />
     <None Include="Resources\InstrumentWavFiles\FluteASharp5.wav" />
     <None Include="Resources\InstrumentWavFiles\FluteA5.wav" />
