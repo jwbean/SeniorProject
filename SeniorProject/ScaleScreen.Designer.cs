@@ -45,6 +45,7 @@
             // 
             // changeInstrumentButton
             // 
+            this.changeInstrumentButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.changeInstrumentButton.Location = new System.Drawing.Point(950, 13);
             this.changeInstrumentButton.Name = "changeInstrumentButton";
             this.changeInstrumentButton.Size = new System.Drawing.Size(140, 34);
@@ -55,6 +56,7 @@
             // 
             // circleOfFifthsButton
             // 
+            this.circleOfFifthsButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.circleOfFifthsButton.Location = new System.Drawing.Point(13, 13);
             this.circleOfFifthsButton.Name = "circleOfFifthsButton";
             this.circleOfFifthsButton.Size = new System.Drawing.Size(140, 34);
@@ -65,6 +67,7 @@
             // 
             // excerptButton
             // 
+            this.excerptButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.excerptButton.Location = new System.Drawing.Point(13, 57);
             this.excerptButton.Name = "excerptButton";
             this.excerptButton.Size = new System.Drawing.Size(140, 34);
@@ -75,6 +78,7 @@
             // 
             // instrumentName
             // 
+            this.instrumentName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentName.Location = new System.Drawing.Point(971, 179);
             this.instrumentName.Name = "instrumentName";
             this.instrumentName.Size = new System.Drawing.Size(100, 20);
@@ -84,6 +88,7 @@
             // 
             // instrumentPicture
             // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
             this.instrumentPicture.Name = "instrumentPicture";
@@ -93,6 +98,7 @@
             // 
             // playButton
             // 
+            this.playButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.playButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("playButton.BackgroundImage")));
             this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.playButton.Location = new System.Drawing.Point(335, 350);
@@ -104,6 +110,7 @@
             // 
             // keySignature
             // 
+            this.keySignature.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.keySignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.keySignature.Location = new System.Drawing.Point(141, 163);
             this.keySignature.Name = "keySignature";
@@ -113,6 +120,7 @@
             // 
             // musicPanel
             // 
+            this.musicPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.musicPanel.Location = new System.Drawing.Point(300, 200);
             this.musicPanel.Name = "musicPanel";
             this.musicPanel.Size = new System.Drawing.Size(494, 150);
@@ -123,6 +131,7 @@
             // 
             // metronomeButton
             // 
+            this.metronomeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metronomeButton.Location = new System.Drawing.Point(13, 100);
             this.metronomeButton.Name = "metronomeButton";
             this.metronomeButton.Size = new System.Drawing.Size(140, 34);

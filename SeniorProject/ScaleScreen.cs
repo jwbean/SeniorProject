@@ -184,17 +184,18 @@ namespace SeniorProject
         private Pen _notePen = new Pen(Color.Black, 2);
         private Brush _noteBrush = Brushes.Black;
         private Brush _highlightBrush = Brushes.Green;
-        //private Graphics g;
+        private Graphics g;
 
         private void musicPanel_Paint(object sender, PaintEventArgs e)
         {
-            if (staffPainted) return;
-            Graphics g = e.Graphics;
+            //if (staffPainted) return;
+            if (g != null) g.Dispose();
+            g = e.Graphics;
             g.SmoothingMode = SmoothingMode.HighQuality;
 
             if (instrument == Instrument.Trombone || instrument == Instrument.Bassoon || instrument == Instrument.Flute || instrument == Instrument.Oboe || instrument == Instrument.AltoSax || instrument == Instrument.TenorSax)
             {
-                musicPanel.Top = musicPanel.Top - 30;
+                if (!staffPainted) musicPanel.Top = musicPanel.Top - 30;
                 for (int i = 1; i < 6; i++)
                     g.DrawLine(Pens.Black, 0, (i * _staffHght)+30, musicPanel.Width, (i * _staffHght)+30);
             }

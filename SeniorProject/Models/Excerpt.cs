@@ -184,7 +184,7 @@ namespace SeniorProject.Models
                         },
                         new Excerpt
                         {
-                            ExcerptTitle = "Minute (Grace For A Fresh Egg)",
+                            ExcerptTitle = "Minuet (Grace For A Fresh Egg)",
                             Composer = "Howells, Herbert",
                             YearPublished = 1945,
                             Difficulty = 3, //Intermediate
