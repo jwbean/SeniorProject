@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeniorProject.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,11 +24,12 @@ namespace SeniorProject
             this.instrument = instrument;
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void playButton_Click(object sender, EventArgs e)
         {
             if (!buttonClicked)
             {
                 buttonClicked = true;
+                playButton.BackgroundImage = Resources.stopIcon;
                 var asmbly = Assembly.GetExecutingAssembly();
                 var wav = asmbly.GetManifestResourceStream("SeniorProject.InstrumentWavFiles.MetronomeClick.wav");
                 using (System.IO.Stream str = wav)
@@ -37,21 +39,20 @@ namespace SeniorProject
                     SoundPlayer player = new SoundPlayer(str);
                     while (buttonClicked)
                     {
+                        metroLight.BackColor = Color.Green;
                         player.Load();
                         player.Play();
-                        await Task.Delay((int) millis);
+                        await Task.Delay((int)(millis / 2));
+                        metroLight.BackColor = Color.White;
+                        await Task.Delay((int)(millis / 2));                      
                     }
                 }
             }
             else
             {
                 buttonClicked = false;
+                playButton.BackgroundImage = Resources.playIcon;
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            buttonClicked = false;
         }
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
