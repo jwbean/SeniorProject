@@ -57,6 +57,7 @@ namespace SeniorProject
 
         private void changeInstrumentButton_Click(object sender, EventArgs e)
         {
+            buttonClicked = false;
             this.Hide();
             InstrumentForm instruments = new InstrumentForm(instrument);
             instruments.Closed += (s, args) => this.Close();
@@ -65,6 +66,7 @@ namespace SeniorProject
 
         private void circleOfFifths_Click(object sender, EventArgs e)
         {
+            buttonClicked = false;
             this.Hide();
             if (instrument == Instrument.Bassoon || instrument == Instrument.Trombone || instrument == Instrument.Tuba)
             {

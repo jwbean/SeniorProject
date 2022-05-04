@@ -45,7 +45,7 @@
             // 
             // changeInstrumentButton
             // 
-            this.changeInstrumentButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.changeInstrumentButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.changeInstrumentButton.Location = new System.Drawing.Point(950, 13);
             this.changeInstrumentButton.Name = "changeInstrumentButton";
             this.changeInstrumentButton.Size = new System.Drawing.Size(140, 34);
@@ -56,7 +56,6 @@
             // 
             // circleOfFifths
             // 
-            this.circleOfFifths.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.circleOfFifths.Location = new System.Drawing.Point(13, 13);
             this.circleOfFifths.Name = "circleOfFifths";
             this.circleOfFifths.Size = new System.Drawing.Size(140, 34);
@@ -67,7 +66,7 @@
             // 
             // instrumentName
             // 
-            this.instrumentName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instrumentName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.instrumentName.Location = new System.Drawing.Point(971, 179);
             this.instrumentName.Name = "instrumentName";
             this.instrumentName.Size = new System.Drawing.Size(100, 20);
@@ -141,7 +140,7 @@
             // 
             // instrumentPicture
             // 
-            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instrumentPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.instrumentPicture.Location = new System.Drawing.Point(971, 64);
             this.instrumentPicture.Name = "instrumentPicture";
@@ -151,7 +150,6 @@
             // 
             // metronomeButton
             // 
-            this.metronomeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metronomeButton.Location = new System.Drawing.Point(13, 58);
             this.metronomeButton.Name = "metronomeButton";
             this.metronomeButton.Size = new System.Drawing.Size(140, 34);

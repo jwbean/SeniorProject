@@ -41,6 +41,7 @@ namespace SeniorProject
             // 
             // playButton
             // 
+            this.playButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.playButton.BackgroundImage = global::SeniorProject.Properties.Resources.playIcon;
             this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.playButton.Location = new System.Drawing.Point(371, 251);
@@ -52,6 +53,7 @@ namespace SeniorProject
             // 
             // tempoSelect
             // 
+            this.tempoSelect.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tempoSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempoSelect.Location = new System.Drawing.Point(368, 206);
             this.tempoSelect.Maximum = new decimal(new int[] {
@@ -75,6 +77,7 @@ namespace SeniorProject
             // 
             // changeInstrumentButton
             // 
+            this.changeInstrumentButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.changeInstrumentButton.Location = new System.Drawing.Point(648, 12);
             this.changeInstrumentButton.Name = "changeInstrumentButton";
             this.changeInstrumentButton.Size = new System.Drawing.Size(140, 34);
@@ -95,6 +98,7 @@ namespace SeniorProject
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(300, 12);
@@ -105,6 +109,7 @@ namespace SeniorProject
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(324, 166);
@@ -115,6 +120,7 @@ namespace SeniorProject
             // 
             // metroLight
             // 
+            this.metroLight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroLight.BackColor = System.Drawing.SystemColors.Window;
             this.metroLight.Enabled = false;
             this.metroLight.Location = new System.Drawing.Point(356, 313);
@@ -137,7 +143,8 @@ namespace SeniorProject
             this.Controls.Add(this.tempoSelect);
             this.Controls.Add(this.playButton);
             this.Name = "Metronome";
-            this.Text = "Tuner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Metronome";
             ((System.ComponentModel.ISupportInitialize)(this.tempoSelect)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
