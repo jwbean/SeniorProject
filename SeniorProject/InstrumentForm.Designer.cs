@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.instrumentPicture = new System.Windows.Forms.PictureBox();
             this.instrumentList = new System.Windows.Forms.ListBox();
             this.advanceButton = new System.Windows.Forms.Button();
+            this.instrumentPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.instrumentPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,17 +45,6 @@
             this.label1.Size = new System.Drawing.Size(511, 50);
             this.label1.TabIndex = 8;
             this.label1.Text = "Select Your Instrument:";
-            // 
-            // instrumentPicture
-            // 
-            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instrumentPicture.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
-            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.instrumentPicture.Location = new System.Drawing.Point(426, 295);
-            this.instrumentPicture.Name = "instrumentPicture";
-            this.instrumentPicture.Size = new System.Drawing.Size(213, 170);
-            this.instrumentPicture.TabIndex = 9;
-            this.instrumentPicture.TabStop = false;
             // 
             // instrumentList
             // 
@@ -78,6 +67,17 @@
             this.advanceButton.UseVisualStyleBackColor = true;
             this.advanceButton.Click += new System.EventHandler(this.advanceButton_Click);
             // 
+            // instrumentPicture
+            // 
+            this.instrumentPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instrumentPicture.BackgroundImage = global::SeniorProject.Properties.Resources.AltoSax;
+            this.instrumentPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.instrumentPicture.Location = new System.Drawing.Point(426, 295);
+            this.instrumentPicture.Name = "instrumentPicture";
+            this.instrumentPicture.Size = new System.Drawing.Size(213, 170);
+            this.instrumentPicture.TabIndex = 9;
+            this.instrumentPicture.TabStop = false;
+            // 
             // InstrumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -88,6 +88,7 @@
             this.Controls.Add(this.instrumentList);
             this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(550, 664);
             this.Name = "InstrumentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Instrument";

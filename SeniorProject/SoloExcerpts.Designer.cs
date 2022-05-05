@@ -88,7 +88,7 @@
             this.excerptListView.FullRowSelect = true;
             this.excerptListView.GridLines = true;
             this.excerptListView.HideSelection = false;
-            this.excerptListView.Location = new System.Drawing.Point(45, 144);
+            this.excerptListView.Location = new System.Drawing.Point(45, 221);
             this.excerptListView.Name = "excerptListView";
             this.excerptListView.Size = new System.Drawing.Size(900, 250);
             this.excerptListView.TabIndex = 64;
@@ -170,6 +170,7 @@
             this.Controls.Add(this.instrumentPicture);
             this.Controls.Add(this.circleOfFifths);
             this.Controls.Add(this.changeInstrumentButton);
+            this.MinimumSize = new System.Drawing.Size(1110, 425);
             this.Name = "SoloExcerpts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SoloExcerpts";

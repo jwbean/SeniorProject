@@ -152,6 +152,7 @@
             this.Controls.Add(this.circleOfFifthsButton);
             this.Controls.Add(this.changeInstrumentButton);
             this.Controls.Add(this.musicPanel);
+            this.MinimumSize = new System.Drawing.Size(940, 300);
             this.Name = "ScaleScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScaleScreen";

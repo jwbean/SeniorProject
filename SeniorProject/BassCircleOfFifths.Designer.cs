@@ -485,6 +485,7 @@
             this.Controls.Add(this.CMajor);
             this.Controls.Add(this.FMajor);
             this.Controls.Add(this.changeInstrumentButton);
+            this.MinimumSize = new System.Drawing.Size(800, 800);
             this.Name = "BassCircleOfFifths";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BassCircleOfFifths";

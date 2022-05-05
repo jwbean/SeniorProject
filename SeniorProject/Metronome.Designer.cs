@@ -142,6 +142,7 @@ namespace SeniorProject
             this.Controls.Add(this.changeInstrumentButton);
             this.Controls.Add(this.tempoSelect);
             this.Controls.Add(this.playButton);
+            this.MinimumSize = new System.Drawing.Size(535, 469);
             this.Name = "Metronome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Metronome";
